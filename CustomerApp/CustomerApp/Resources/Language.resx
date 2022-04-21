@@ -12,4 +12,28 @@
 	<resheader name="writer">
 		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
 	</resheader>
+	<data name="trang_chu">
+		<value>Trang chủ</value>
+	</data>
+	<data name="nhan_de_chinh_sua">
+		<value>Nhấn để chỉnh sửa</value>
+	</data>
+	<data name="gio_hang" >
+		<value>Giỏ hàng</value>
+	</data>
+	<data name="giao_dich" >
+		<value>Giao dịch</value>
+	</data>
+	<data name="phan_hoi" >
+		<value>Phản hồi</value>
+	</data>
+	<data name="lich" >
+		<value>Lịch</value>
+	</data>
+	<data name="tin_tuc" >
+		<value>Tin tức</value>
+	</data>
+	<data name="dang_xuat" >
+		<value>Đăng xuất</value>
+	</data>
 </root>

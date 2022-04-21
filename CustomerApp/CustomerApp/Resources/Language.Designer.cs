@@ -46,5 +46,53 @@ namespace CustomerApp.Resources {
                 resourceCulture = value;
             }
         }
+        
+        internal static string trang_chu {
+            get {
+                return ResourceManager.GetString("trang_chu", resourceCulture);
+            }
+        }
+        
+        internal static string nhan_de_chinh_sua {
+            get {
+                return ResourceManager.GetString("nhan_de_chinh_sua", resourceCulture);
+            }
+        }
+        
+        internal static string gio_hang {
+            get {
+                return ResourceManager.GetString("gio_hang", resourceCulture);
+            }
+        }
+        
+        internal static string giao_dich {
+            get {
+                return ResourceManager.GetString("giao_dich", resourceCulture);
+            }
+        }
+        
+        internal static string phan_hoi {
+            get {
+                return ResourceManager.GetString("phan_hoi", resourceCulture);
+            }
+        }
+        
+        internal static string lich {
+            get {
+                return ResourceManager.GetString("lich", resourceCulture);
+            }
+        }
+        
+        internal static string tin_tuc {
+            get {
+                return ResourceManager.GetString("tin_tuc", resourceCulture);
+            }
+        }
+        
+        internal static string dang_xuat {
+            get {
+                return ResourceManager.GetString("dang_xuat", resourceCulture);
+            }
+        }
     }
 }
