@@ -2,13 +2,23 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:controls="clr-namespace:CustomerApp.Controls"
              mc:Ignorable="d"
              x:Class="CustomerApp.Views.LoginPage"
              Shell.NavBarIsVisible="False">
     <ContentPage.Content>
-        <StackLayout Padding="10,0,10,0" VerticalOptions="Center">
+        <StackLayout Padding="20" VerticalOptions="Center">
             <Button VerticalOptions="Center" Text="Login" Command="{Binding LoginCommand}"/>
+            <controls:LabelListViewItem Title="text" Text="b" TextColor="Red"/>
+            <controls:LabelField x:Name="textfield" Title="text" Text="bbb" TextTapped="LabelField_ValueTapped"/>
+            <controls:LabelField Title="loai 1" Text="BBBBBB"/>
+            <controls:LabelField Title="loai 2" Text="100" FormatText="Percent"/>
+            <controls:LabelField Title="loai 3" Text="10000000" FormatText="Currency"/>
+            <controls:LabelField Title="loai 4" Text="BBBBBB" FormatStyle="BoldBlue"/>
+            <controls:LabelField Title="loai 5" Text="BBBBBB" FormatStyle="BoldRed"/>
+            <controls:ButtonCustom x:Name="btn" StyleName="Blue" Clicked="ButtonCustom_Clicked" TextBtn="Nhấn"/>
+            <controls:ButtonCustom StyleName="White" TextBtn="Btn 2"/>
+            <controls:ButtonCustom TextBtn="Btn 3"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

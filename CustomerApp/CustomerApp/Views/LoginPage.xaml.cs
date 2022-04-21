@@ -17,5 +17,17 @@ namespace CustomerApp.Views
             InitializeComponent();
             this.BindingContext = new LoginViewModel();
         }
+
+        private void LabelField_ValueTapped(object sender, EventArgs e)
+        {
+            textfield.Text = "aaaaaaa";
+        }
+
+        private async void ButtonCustom_Clicked(object sender, EventArgs e)
+        {
+            btn.isBusy = true;
+            await Task.Delay(3000);
+            btn.isBusy = false;
+        }
     }
 }

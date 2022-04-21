@@ -42,8 +42,6 @@
   <ItemGroup>
     <Folder Include="Models\" />
     <Folder Include="Services\" />
-    <Folder Include="Controls\" />
-    <Folder Include="Helpers\" />
     <Folder Include="Fonts\" />
     <Folder Include="Converters\" />
     <Folder Include="IServices\" />
@@ -57,6 +55,12 @@
     <EmbeddedResource Include="Fonts\FontAwesome5Solid.otf" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Update="Controls\LabelField.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Controls\LabelListViewItem.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Resources\Language.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Language.Designer.cs</LastGenOutput>
