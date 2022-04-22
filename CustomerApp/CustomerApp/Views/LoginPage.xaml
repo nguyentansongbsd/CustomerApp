@@ -18,7 +18,16 @@
             <controls:LabelField Title="loai 5" Text="BBBBBB" FormatStyle="BoldRed"/>
             <controls:ButtonCustom x:Name="btn" StyleName="Blue" Clicked="ButtonCustom_Clicked" TextBtn="Nhấn"/>
             <controls:ButtonCustom StyleName="White" TextBtn="Btn 2"/>
-            <controls:ButtonCustom TextBtn="Btn 3"/>
+            <controls:ButtonCustom TextBtn="Btn 3" Clicked="ButtonCustom_Clicked_1"/>
+            <controls:EntryField Text="{Binding Text}" Title="Dia Chi" Placeholder="Nhap dia chi" isRequired="True" isEnabledField="True"/>
+            <controls:StatusBox ColorStatus="Red" Text="Test" Icon="&#xf144;"/>
+            <controls:StatusBox ColorStatus="Red" Text="Test" Icon="&#xf144;"/>
+            <controls:StatusBox ColorStatus="Red" Text="Test"/>
+            <Grid ColumnDefinitions="Auto,Auto,Auto,*">
+                <controls:StatusBox ColorStatus="Red" Text="Test" Icon="&#xf144;" Grid.Column="0" Font="Regular"/>
+                <controls:StatusBox ColorStatus="Red" Text="Test" Icon="&#xf144;" Grid.Column="1"/>
+                <controls:StatusBox ColorStatus="Red" Text="TesT" Grid.Column="2"/>
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
