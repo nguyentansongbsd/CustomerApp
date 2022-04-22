@@ -19,12 +19,17 @@ namespace CustomerApp
 
         private string _contactName;
         public string ContactName { get => _contactName; set { _contactName = value; OnPropertyChanged(nameof(ContactName)); } }
+
+        private string _verApp;
+        public string VerApp { get => _verApp; set { _verApp = value; OnPropertyChanged(nameof(VerApp)); } }
+
         public AppShell()
         {
             InitializeComponent();
             UserName = UserLogged.User;
             ContactName = string.IsNullOrWhiteSpace(UserLogged.ContactName) ? UserLogged.User : UserLogged.ContactName;
             Avartar = UserLogged.Avartar;
+            VerApp = Config.OrgConfig.VerApp;
             NeedToRefeshUserInfo = false;
             this.BindingContext = this;
         }
@@ -50,9 +55,9 @@ namespace CustomerApp
 
         }
 
-        private void Logout_Clicked(object sender, EventArgs e)
+        private async void Logout_Clicked(object sender, EventArgs e)
         {
-
+            await Shell.Current.GoToAsync("//LoginPage");
         }
     }
 }
