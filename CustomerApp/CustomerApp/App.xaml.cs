@@ -15,8 +15,8 @@ namespace CustomerApp
             InitializeComponent();
             CultureInfo cultureInfo = new CultureInfo(UserLogged.Language);
             Language.Culture = cultureInfo;
-
             MainPage = new AppShell();
+            Shell.Current.Navigation.PushAsync(new LoginPage(), false);
         }
 
         protected override void OnStart ()
