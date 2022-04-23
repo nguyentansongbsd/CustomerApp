@@ -7,6 +7,7 @@
             <Color x:Key="NavigationPrimary">#2196F3</Color>
             <Color x:Key="Primary">#2196F3</Color>
             <Color x:Key="TextColor">#444444</Color>
+            <Color x:Key="EnableColor">#f1f1f1</Color>
             <Style TargetType="Button">
                 <Setter Property="TextColor" Value="White"></Setter>
                 <Setter Property="VisualStateManager.VisualStateGroups">
