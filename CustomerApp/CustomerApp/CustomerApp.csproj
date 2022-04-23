@@ -16,6 +16,7 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="Xam.Plugins.Settings" Version="3.1.1" />
     <PackageReference Include="Xam.Plugin.Media" Version="5.0.1" />
+    <PackageReference Include="FirebaseDatabase.net" Version="4.0.7" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Telerik.UI.for.Xamarin" />
@@ -38,6 +39,8 @@
     <None Remove="Fonts\FontAwesome5Regular.otf" />
     <None Remove="Fonts\FontAwesome5Solid.otf" />
     <None Remove="Xam.Plugin.Media" />
+    <None Remove="FirebaseDatabase.net" />
+    <None Remove="Behaviors\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
@@ -48,6 +51,7 @@
     <Folder Include="Resources\" />
     <Folder Include="Settings\" />
     <Folder Include="Configs\" />
+    <Folder Include="Behaviors\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Fonts\FontAwesome5BrandsRegular.otf" />
