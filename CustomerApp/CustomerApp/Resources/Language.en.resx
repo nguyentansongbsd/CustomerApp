@@ -393,4 +393,7 @@
 	<data name="noti_vui_long_chon_gioi_tinh" xml:space="preserve">
     <value>Please choose gender.</value>
   </data>
+<data name="xac_nhan_mat_khau_moi" >
+		<value>Confirm new password</value>
+	</data>
 </root>

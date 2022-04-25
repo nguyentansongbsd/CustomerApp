@@ -232,7 +232,7 @@ namespace CustomerApp.Views
                         UserLogged.Avartar = user.entityimage;
 
                         Application.Current.MainPage = new AppShell();
-                        
+
                         LoadingHelper.Hide();
                     }
                     else
@@ -288,6 +288,7 @@ namespace CustomerApp.Views
             }
             catch (Exception ex)
             { 
+            
             }
         }
     }
