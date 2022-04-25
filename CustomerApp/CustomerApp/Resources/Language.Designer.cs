@@ -107,23 +107,6 @@ namespace CustomerApp.Resources {
             }
         }
         
-        /// <summary>
-        ///   Looks up a localized string similar to Chụp hình.
-        /// </summary>
-        internal static string chup_hinh {
-            get {
-                return ResourceManager.GetString("chup_hinh", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Đã bán.
-        /// </summary>
-        internal static string da_ban_trang_chu {
-            get {
-                return ResourceManager.GetString("da_ban_trang_chu", resourceCulture);
-            }
-        }
         internal static string ghi_nho_dang_nhap {
             get {
                 return ResourceManager.GetString("ghi_nho_dang_nhap", resourceCulture);
@@ -139,15 +122,6 @@ namespace CustomerApp.Resources {
         internal static string quen_mat_khau {
             get {
                 return ResourceManager.GetString("quen_mat_khau", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Đặt cọc.
-        /// </summary>
-        internal static string dat_coc_trang_chu {
-            get {
-                return ResourceManager.GetString("dat_coc_trang_chu", resourceCulture);
             }
         }
         
@@ -223,27 +197,9 @@ namespace CustomerApp.Resources {
             }
         }
         
-        /// <summary>
-        ///   Looks up a localized string similar to Giữ chỗ.
-        /// </summary>
-        internal static string giu_cho_trang_chu {
-            get {
-                return ResourceManager.GetString("giu_cho_trang_chu", resourceCulture);
-            }
-        }
-        
         internal static string xac_nhan_mat_khau {
             get {
                 return ResourceManager.GetString("xac_nhan_mat_khau", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Hợp đồng.
-        /// </summary>
-        internal static string hop_dong_trang_chu {
-            get {
-                return ResourceManager.GetString("hop_dong_trang_chu", resourceCulture);
             }
         }
         
@@ -271,15 +227,6 @@ namespace CustomerApp.Resources {
             }
         }
         
-        /// <summary>
-        ///   Looks up a localized string similar to Loyalty.
-        /// </summary>
-        internal static string loyalty {
-            get {
-                return ResourceManager.GetString("loyalty", resourceCulture);
-            }
-        }
-        
         internal static string vui_long_nhap_mat_khau {
             get {
                 return ResourceManager.GetString("vui_long_nhap_mat_khau", resourceCulture);
@@ -301,15 +248,6 @@ namespace CustomerApp.Resources {
         internal static string mat_khau_khong_khop {
             get {
                 return ResourceManager.GetString("mat_khau_khong_khop", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Mật khẩu không đúng..
-        /// </summary>
-        internal static string mat_khau_khong_dung {
-            get {
-                return ResourceManager.GetString("mat_khau_khong_dung", resourceCulture);
             }
         }
         
@@ -385,42 +323,6 @@ namespace CustomerApp.Resources {
             }
         }
         
-        /// <summary>
-        ///   Looks up a localized string similar to Cập nhật thành công..
-        /// </summary>
-        internal static string noti_cap_nhat_thanh_cong {
-            get {
-                return ResourceManager.GetString("noti_cap_nhat_thanh_cong", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Cập nhật thất bại..
-        /// </summary>
-        internal static string noti_cap_nhat_that_bai {
-            get {
-                return ResourceManager.GetString("noti_cap_nhat_that_bai", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Đổi hình đại diện thành công..
-        /// </summary>
-        internal static string noti_doi_hinh_dai_dien_thanh_cong {
-            get {
-                return ResourceManager.GetString("noti_doi_hinh_dai_dien_thanh_cong", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Đổi hình đại diện thất bại..
-        /// </summary>
-        internal static string noti_doi_hinh_dai_dien_that_bai {
-            get {
-                return ResourceManager.GetString("noti_doi_hinh_dai_dien_that_bai", resourceCulture);
-            }
-        }
-        
         internal static string ngay_sinh {
             get {
                 return ResourceManager.GetString("ngay_sinh", resourceCulture);
@@ -436,24 +338,6 @@ namespace CustomerApp.Resources {
         internal static string nhap_so_dien_thoai {
             get {
                 return ResourceManager.GetString("nhap_so_dien_thoai", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Vui lòng chọn giới tính..
-        /// </summary>
-        internal static string noti_vui_long_chon_gioi_tinh {
-            get {
-                return ResourceManager.GetString("noti_vui_long_chon_gioi_tinh", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Vui lòng chọn ngày sinh..
-        /// </summary>
-        internal static string noti_vui_long_chon_ngay_sinh {
-            get {
-                return ResourceManager.GetString("noti_vui_long_chon_ngay_sinh", resourceCulture);
             }
         }
         
@@ -547,15 +431,6 @@ namespace CustomerApp.Resources {
             }
         }
         
-        /// <summary>
-        ///   Looks up a localized string similar to Thư viện.
-        /// </summary>
-        internal static string thu_vien {
-            get {
-                return ResourceManager.GetString("thu_vien", resourceCulture);
-            }
-        }
-        
         internal static string mat_khau_cu {
             get {
                 return ResourceManager.GetString("mat_khau_cu", resourceCulture);
@@ -577,15 +452,6 @@ namespace CustomerApp.Resources {
         internal static string nhap_mat_khau_moi {
             get {
                 return ResourceManager.GetString("nhap_mat_khau_moi", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Tuỳ chọn.
-        /// </summary>
-        internal static string tuy_chon {
-            get {
-                return ResourceManager.GetString("tuy_chon", resourceCulture);
             }
         }
         
@@ -676,6 +542,60 @@ namespace CustomerApp.Resources {
         internal static string loyalty {
             get {
                 return ResourceManager.GetString("loyalty", resourceCulture);
+            }
+        }
+        
+        internal static string chup_hinh {
+            get {
+                return ResourceManager.GetString("chup_hinh", resourceCulture);
+            }
+        }
+        
+        internal static string thu_vien {
+            get {
+                return ResourceManager.GetString("thu_vien", resourceCulture);
+            }
+        }
+        
+        internal static string tuy_chon {
+            get {
+                return ResourceManager.GetString("tuy_chon", resourceCulture);
+            }
+        }
+        
+        internal static string noti_doi_hinh_dai_dien_thanh_cong {
+            get {
+                return ResourceManager.GetString("noti_doi_hinh_dai_dien_thanh_cong", resourceCulture);
+            }
+        }
+        
+        internal static string noti_doi_hinh_dai_dien_that_bai {
+            get {
+                return ResourceManager.GetString("noti_doi_hinh_dai_dien_that_bai", resourceCulture);
+            }
+        }
+        
+        internal static string noti_cap_nhat_thanh_cong {
+            get {
+                return ResourceManager.GetString("noti_cap_nhat_thanh_cong", resourceCulture);
+            }
+        }
+        
+        internal static string noti_cap_nhat_that_bai {
+            get {
+                return ResourceManager.GetString("noti_cap_nhat_that_bai", resourceCulture);
+            }
+        }
+        
+        internal static string noti_vui_long_chon_ngay_sinh {
+            get {
+                return ResourceManager.GetString("noti_vui_long_chon_ngay_sinh", resourceCulture);
+            }
+        }
+        
+        internal static string noti_vui_long_chon_gioi_tinh {
+            get {
+                return ResourceManager.GetString("noti_vui_long_chon_gioi_tinh", resourceCulture);
             }
         }
         
