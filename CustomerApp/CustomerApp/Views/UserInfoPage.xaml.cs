@@ -2,12 +2,14 @@
 using CustomerApp.Resources;
 using CustomerApp.Settings;
 using CustomerApp.ViewModels;
+using Plugin.Media;
+using Plugin.Media.Abstractions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -30,9 +32,44 @@ namespace CustomerApp.Views
             await viewModel.LoadContact();
             LoadingHelper.Hide();
         }
-        private void Save_Clicked(object sender, EventArgs e)
+        private async void Save_Clicked(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(viewModel.Contact.mobilephone))
+            {
+                ToastMessageHelper.ShortMessage(Language.vui_long_nhap_so_dien_thoai);
+                return;
+            }
 
+            if (viewModel.Contact.birthdate == null)
+            {
+                ToastMessageHelper.ShortMessage(Language.noti_vui_long_chon_ngay_sinh);
+                return;
+            }
+
+            if (viewModel.Gender == null)
+            {
+                ToastMessageHelper.ShortMessage(Language.noti_vui_long_chon_gioi_tinh);
+                return;
+            }
+
+            LoadingHelper.Show();
+
+            bool isSuccess = await viewModel.UpdateUserInfor();
+            if (isSuccess)
+            {
+                if (viewModel.Contact.bsd_fullname != UserLogged.ContactName)
+                {
+                    UserLogged.ContactName = viewModel.Contact.bsd_fullname;
+                }
+                if (AppShell.NeedToRefeshUserInfo.HasValue) AppShell.NeedToRefeshUserInfo = true;
+                ToastMessageHelper.ShortMessage(Language.noti_cap_nhat_thanh_cong);
+                LoadingHelper.Hide();
+            }
+            else
+            {
+                LoadingHelper.Hide();
+                ToastMessageHelper.ShortMessage(Language.noti_cap_nhat_that_bai);
+            }
         }
         private async void ChangePassword_Tapped(object sender, EventArgs e)
         {
@@ -146,89 +183,89 @@ namespace CustomerApp.Views
         }
         private async void ChangeAvatar_Tapped(object sender, EventArgs e)
         {
-            //string[] options = new string[] { Language.thu_vien, Language.chup_hinh };
-            //string asw = await DisplayActionSheet(Language.tuy_chon, Language.huy, null, options);
-            //if (asw == Language.thu_vien)
-            //{
-            //    LoadingHelper.Show();
-            //    await CrossMedia.Current.Initialize();
-            //    PermissionStatus photostatus = await PermissionHelper.RequestPhotosPermission();
-            //    if (photostatus == PermissionStatus.Granted)
-            //    {
-            //        try
-            //        {
-            //            var file = await CrossMedia.Current.PickPhotoAsync(new PickMediaOptions() { PhotoSize = PhotoSize.MaxWidthHeight, MaxWidthHeight = 600 });
-            //            if (file != null)
-            //            {
-            //                viewModel.AvatarArr = System.IO.File.ReadAllBytes(file.Path);
-            //                string imgBase64 = Convert.ToBase64String(viewModel.AvatarArr);
-            //                viewModel.Avatar = imgBase64;
-            //                if (viewModel.Avatar != UserLogged.Avartar)
-            //                {
-            //                    bool isSuccess = await viewModel.ChangeAvatar();
-            //                    if (isSuccess)
-            //                    {
-            //                        UserLogged.Avartar = viewModel.Avatar;
-            //                        if (AppShell.NeedToRefeshUserInfo.HasValue) AppShell.NeedToRefeshUserInfo = true;
-            //                        ToastMessageHelper.ShortMessage(Language.doi_hinh_dai_dien_thanh_cong);
-            //                        LoadingHelper.Hide();
-            //                    }
-            //                    else
-            //                    {
-            //                        LoadingHelper.Hide();
-            //                        ToastMessageHelper.ShortMessage(Language.doi_hinh_dai_dien_that_bai);
-            //                    }
-            //                }
-            //                LoadingHelper.Hide();
-            //            }
-            //        }
-            //        catch (Exception ex)
-            //        {
-            //            ToastMessageHelper.LongMessage(ex.Message);
-            //            LoadingHelper.Hide();
-            //        }
-            //    }
-            //    LoadingHelper.Hide();
-            //}
-            //else if (asw == Language.chup_hinh)
-            //{
-            //    LoadingHelper.Show();
-            //    await CrossMedia.Current.Initialize();
-            //    PermissionStatus camerastatus = await PermissionHelper.RequestCameraPermission();
-            //    if (camerastatus == PermissionStatus.Granted)
-            //    {
-            //        string fileName = $"{Guid.NewGuid()}.jpg";
-            //        var file = await CrossMedia.Current.TakePhotoAsync(new StoreCameraMediaOptions
-            //        {
-            //            Name = fileName,
-            //            SaveToAlbum = false,
-            //            PhotoSize = PhotoSize.MaxWidthHeight,
-            //            MaxWidthHeight = 600
-            //        });
-            //        if (file != null)
-            //        {
-            //            viewModel.AvatarArr = System.IO.File.ReadAllBytes(file.Path);
-            //            viewModel.Avatar = Convert.ToBase64String(viewModel.AvatarArr);
-            //            if (viewModel.Avatar != UserLogged.Avartar)
-            //            {
-            //                bool isSuccess = await viewModel.ChangeAvatar();
-            //                if (isSuccess)
-            //                {
-            //                    UserLogged.Avartar = viewModel.Avatar;
-            //                    if (AppShell.NeedToRefeshUserInfo.HasValue) AppShell.NeedToRefeshUserInfo = true;
-            //                    ToastMessageHelper.ShortMessage(Language.doi_hinh_dai_dien_thanh_cong);
-            //                    LoadingHelper.Hide();
-            //                }
-            //                else
-            //                {
-            //                    LoadingHelper.Hide();
-            //                    ToastMessageHelper.ShortMessage(Language.doi_hinh_dai_dien_that_bai);
-            //                }
-            //            }
-            //        }
-            //    }
-            //    LoadingHelper.Hide();
-            //}
+            string[] options = new string[] { Language.thu_vien, Language.chup_hinh };
+            string asw = await DisplayActionSheet(Language.tuy_chon, Language.huy, null, options);
+            if (asw == Language.thu_vien)
+            {
+                LoadingHelper.Show();
+                await CrossMedia.Current.Initialize();
+                PermissionStatus photostatus = await PermissionHelper.RequestPhotosPermission();
+                if (photostatus == PermissionStatus.Granted)
+                {
+                    try
+                    {
+                        var file = await CrossMedia.Current.PickPhotoAsync(new PickMediaOptions() { PhotoSize = PhotoSize.MaxWidthHeight, MaxWidthHeight = 600 });
+                        if (file != null)
+                        {
+                            viewModel.AvatarArr = System.IO.File.ReadAllBytes(file.Path);
+                            string imgBase64 = Convert.ToBase64String(viewModel.AvatarArr);
+                            viewModel.Avatar = imgBase64;
+                            if (viewModel.Avatar != UserLogged.Avartar)
+                            {
+                                bool isSuccess = await viewModel.ChangeAvatar();
+                                if (isSuccess)
+                                {
+                                    UserLogged.Avartar = viewModel.Avatar;
+                                    if (AppShell.NeedToRefeshUserInfo.HasValue) AppShell.NeedToRefeshUserInfo = true;
+                                    ToastMessageHelper.ShortMessage(Language.noti_doi_hinh_dai_dien_thanh_cong);
+                                    LoadingHelper.Hide();
+                                }
+                                else
+                                {
+                                    LoadingHelper.Hide();
+                                    ToastMessageHelper.ShortMessage(Language.noti_doi_hinh_dai_dien_that_bai);
+                                }
+                            }
+                            LoadingHelper.Hide();
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        ToastMessageHelper.LongMessage(ex.Message);
+                        LoadingHelper.Hide();
+                    }
+                }
+                LoadingHelper.Hide();
+            }
+            else if (asw == Language.chup_hinh)
+            {
+                LoadingHelper.Show();
+                await CrossMedia.Current.Initialize();
+                PermissionStatus camerastatus = await PermissionHelper.RequestCameraPermission();
+                if (camerastatus == PermissionStatus.Granted)
+                {
+                    string fileName = $"{Guid.NewGuid()}.jpg";
+                    var file = await CrossMedia.Current.TakePhotoAsync(new StoreCameraMediaOptions
+                    {
+                        Name = fileName,
+                        SaveToAlbum = false,
+                        PhotoSize = PhotoSize.MaxWidthHeight,
+                        MaxWidthHeight = 600
+                    });
+                    if (file != null)
+                    {
+                        viewModel.AvatarArr = System.IO.File.ReadAllBytes(file.Path);
+                        viewModel.Avatar = Convert.ToBase64String(viewModel.AvatarArr);
+                        if (viewModel.Avatar != UserLogged.Avartar)
+                        {
+                            bool isSuccess = await viewModel.ChangeAvatar();
+                            if (isSuccess)
+                            {
+                                UserLogged.Avartar = viewModel.Avatar;
+                                if (AppShell.NeedToRefeshUserInfo.HasValue) AppShell.NeedToRefeshUserInfo = true;
+                                ToastMessageHelper.ShortMessage(Language.noti_doi_hinh_dai_dien_thanh_cong);
+                                LoadingHelper.Hide();
+                            }
+                            else
+                            {
+                                LoadingHelper.Hide();
+                                ToastMessageHelper.ShortMessage(Language.noti_doi_hinh_dai_dien_that_bai);
+                            }
+                        }
+                    }
+                }
+                LoadingHelper.Hide();
+            }
         }
     }
 }

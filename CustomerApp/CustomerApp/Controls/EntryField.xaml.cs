@@ -20,9 +20,9 @@ namespace CustomerApp.Controls
         public string Text { get => (string)GetValue(TextProperty); set => SetValue(TextProperty, value); }
         private static void TextChange(BindableObject bindable, object oldValue, object newValue)
         {
-            //EntryField control = (EntryField)bindable;
-            //if (newValue != null)
-            //    control.entry.Text = control.label.Text = (string)newValue;
+            EntryField control = (EntryField)bindable;
+            if (newValue != null)
+                control.entry.Text = control.label.Text = (string)newValue;
         }
         // Placeholder
         public static readonly BindableProperty PlaceholderProperty = BindableProperty.Create(nameof(Placeholder), typeof(string), typeof(EntryField), null, BindingMode.TwoWay, propertyChanged: PlaceholderChange);

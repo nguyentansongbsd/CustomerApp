@@ -51,7 +51,6 @@
     <Folder Include="Settings\" />
     <Folder Include="Configs\" />
     <Folder Include="Behaviors\" />
-    <Folder Include="Datas\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Fonts\FontAwesome5BrandsRegular.otf" />
