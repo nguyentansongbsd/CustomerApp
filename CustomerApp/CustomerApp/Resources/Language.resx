@@ -61,7 +61,7 @@
 		<value>Tên đăng nhập không đúng.</value>
 	</data>
 	<data name="khong_tim_thay_user" >
-		<value>Mật khẩu không đúng.</value>
+		<value>Không tìm thấy user.</value>
 	</data>
 	<data name="xac_nhan_ma_otp" >
 		<value>Xác nhận mã OTP</value>
@@ -119,5 +119,26 @@
 	</data>
 	<data name="da_co_loi_xay_ra_vui_long_thu_lai_sau" >
 		<value>Đã có lỗi xảy ra. Vui lòng thử lại sau.</value>
+	</data>
+	<data name="mat_khau_khong_dung" >
+		<value>Mật khẩu không đúng.</value>
+	</data>
+	<data name="giao_dich" >
+		<value>Giao Dịch</value>
+	</data>
+	<data name="giu_cho_trang_chu" >
+		<value>Giữ chỗ</value>
+	</data>
+	<data name="dat_coc_trang_chu" >
+		<value>Đặt cọc</value>
+	</data>
+	<data name="hop_dong_trang_chu" >
+		<value>Hợp đồng</value>
+	</data>
+	<data name="da_ban_trang_chu" >
+		<value>Đã bán</value>
+	</data>
+	<data name="loyalty" >
+		<value>Loyalty</value>
 	</data>
 </root>

@@ -41,6 +41,7 @@
     <None Remove="Xam.Plugin.Media" />
     <None Remove="FirebaseDatabase.net" />
     <None Remove="Behaviors\" />
+    <None Remove="Datas\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
@@ -52,6 +53,7 @@
     <Folder Include="Settings\" />
     <Folder Include="Configs\" />
     <Folder Include="Behaviors\" />
+    <Folder Include="Datas\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Fonts\FontAwesome5BrandsRegular.otf" />

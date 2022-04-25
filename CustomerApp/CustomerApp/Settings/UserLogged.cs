@@ -55,6 +55,11 @@ namespace CustomerApp.Settings
             get => AppSettings.GetValueOrDefault(nameof(User), string.Empty);
             set => AppSettings.AddOrUpdateValue(nameof(User), value);
         }
+        public static string Email
+        {
+            get => AppSettings.GetValueOrDefault(nameof(Email), string.Empty);
+            set => AppSettings.AddOrUpdateValue(nameof(Email), value);
+        }
         public static bool IsLogged
         {
             get => AppSettings.GetValueOrDefault(nameof(IsLogged), false);

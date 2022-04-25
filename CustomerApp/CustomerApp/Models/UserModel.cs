@@ -7,5 +7,6 @@ namespace CustomerApp.Models
         public string fullname { get; set; }
         public string emailaddress1 { get; set; }
         public Guid _ownerid_value { get; set; }
+        public string bsd_password { get; set; }
     }
 }

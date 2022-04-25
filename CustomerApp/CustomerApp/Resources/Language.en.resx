@@ -120,4 +120,25 @@
 	<data name="da_co_loi_xay_ra_vui_long_thu_lai_sau" >
 		<value>Error. Please try again.</value>
 	</data>
+	<data name="mat_khau_khong_dung" >
+		<value>Password is incorrect.</value>
+	</data>
+	<data name="giao_dich" >
+		<value>Transaction</value>
+	</data>
+	<data name="giu_cho_trang_chu" >
+		<value>Queuing</value>
+	</data>
+	<data name="dat_coc_trang_chu" >
+		<value>Reservation</value>
+	</data>
+	<data name="hop_dong_trang_chu" >
+		<value>Contract</value>
+	</data>
+	<data name="da_ban_trang_chu" >
+		<value>Sold</value>
+	</data>
+	<data name="loyalty" >
+		<value>Loyalty</value>
+	</data>
 </root>
