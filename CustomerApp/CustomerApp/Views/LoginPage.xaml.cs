@@ -231,7 +231,7 @@ namespace CustomerApp.Views
                         UserLogged.IsLogged = true;
 
                         Application.Current.MainPage = new AppShell();
-                        
+
                         LoadingHelper.Hide();
                     }
                     else
@@ -284,8 +284,9 @@ namespace CustomerApp.Views
                 await Shell.Current.Navigation.PushAsync(new ForgotPassWordPage());
                 LoadingHelper.Hide();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
+            }
         }
     }
 }
