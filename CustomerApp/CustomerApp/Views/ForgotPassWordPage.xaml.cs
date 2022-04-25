@@ -106,7 +106,7 @@ namespace CustomerApp.Views
             }
 
             LoadingHelper.Show();
-            string path = $"/bsd_employees({viewModel.User.contactid})";
+            string path = $"/contacts({viewModel.User.contactid})";
             Dictionary<string, object> data = new Dictionary<string, object>();
             data["bsd_password"] = viewModel.ConfirmPassword;
 

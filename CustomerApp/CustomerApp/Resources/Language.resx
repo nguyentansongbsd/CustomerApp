@@ -348,4 +348,133 @@
   <data name="noti_xac_nhan_mat_khau_khong_dung" xml:space="preserve">
     <value>Xác nhận mật khẩu không đúng.</value>
   </data>
+  <data name="trang_chu">
+		<value>Trang chủ</value>
+	</data>
+	<data name="nhan_de_chinh_sua">
+		<value>Nhấn để chỉnh sửa</value>
+	</data>
+	<data name="gio_hang" >
+		<value>Giỏ hàng</value>
+	</data>
+	<data name="giao_dich" >
+		<value>Giao dịch</value>
+	</data>
+	<data name="phan_hoi" >
+		<value>Phản hồi</value>
+	</data>
+	<data name="lich" >
+		<value>Lịch</value>
+	</data>
+	<data name="tin_tuc" >
+		<value>Tin tức</value>
+	</data>
+	<data name="dang_xuat" >
+		<value>Đăng xuất</value>
+	</data>
+	<data name="ten_dang_nhap" >
+		<value>Tên đăng nhập/Email</value>
+	</data>
+	<data name="mat_khau" >
+		<value>Mật khẩu</value>
+	</data>
+	<data name="ghi_nho_dang_nhap" >
+		<value>Ghi nhớ đăng nhập</value>
+	</data>
+	<data name="dang_nhap" >
+		<value>Đăng nhập</value>
+	</data>
+	<data name="quen_mat_khau" >
+		<value>Quên mật khẩu ?</value>
+	</data>
+	<data name="ten_dang_nhap_khong_duoc_de_trong" >
+		<value>Tên đăng nhập không được để trống.</value>
+	</data>
+	<data name="mat_khau_khong_duong_de_trong" >
+		<value>Mật khẩu không được để trống.</value>
+	</data>
+	<data name="ten_dang_nhap_khong_dung" >
+		<value>Tên đăng nhập không đúng.</value>
+	</data>
+	<data name="khong_tim_thay_user" >
+		<value>Không tìm thấy user.</value>
+	</data>
+	<data name="xac_nhan_ma_otp" >
+		<value>Xác nhận mã OTP</value>
+	</data>
+	<data name="otp_duoc_gui_ve_so_dien_thoai" >
+		<value>OTP được gửi về số điện thoại</value>
+	</data>
+	<data name="vui_long_nhap_otp_de_xac_nhan_tai_khoan" >
+		<value>Vui lòng nhập OTP để xác nhận tài khoản</value>
+	</data>
+	<data name="huy" >
+		<value>Hủy</value>
+	</data>
+	<data name="xac_nhan" >
+		<value>Xác nhận</value>
+	</data>
+	<data name="ban_chua_nhan_duoc_ma_gui_lai" >
+		<value>Bạn chưa nhận được mã ? Gửi lại</value>
+	</data>
+	<data name="ma_xac_thuc_khong_dung" >
+		<value>Mã xác thực không đúng</value>
+	</data>
+	<data name="so_dien_thoai" >
+		<value>Số điện thoại</value>
+	</data>
+	<data name="xac_nhan_mat_khau" >
+		<value>Xác nhận mật khẩu</value>
+	</data>
+	<data name="vui_long_nhap_ho_ten_email" >
+		<value>Vui lòng nhập họ tên hoặc email</value>
+	</data>
+	<data name="vui_long_nhap_so_dien_thoai" >
+		<value>Vui lòng nhập số điện thoại.</value>
+	</data>
+	<data name="user_name_khong_dung" >
+		<value>Họ tên không đúng.</value>
+	</data>
+	<data name="loi_he_thong" >
+		<value>Lỗi hệ thống.</value>
+	</data>
+	<data name="vui_long_nhap_mat_khau" >
+		<value>Vui lòng nhập mật khẩu</value>
+	</data>
+	<data name="mat_khau_it_nhat_6_ky_tu" >
+		<value>Mật khẩu ít nhất 6 ký tự.</value>
+	</data>
+	<data name="vui_long_nhap_xac_nhan_mat_khau" >
+		<value>Vui lòng nhập xác nhận mật khẩu.</value>
+	</data>
+	<data name="mat_khau_khong_khop" >
+		<value>Mật khẩu không khớp</value>
+	</data>
+	<data name="doi_mat_khau_thanh_cong" >
+		<value>Đổi mật khẩu thành công.</value>
+	</data>
+	<data name="da_co_loi_xay_ra_vui_long_thu_lai_sau" >
+		<value>Đã có lỗi xảy ra. Vui lòng thử lại sau.</value>
+	</data>
+	<data name="mat_khau_khong_dung" >
+		<value>Mật khẩu không đúng.</value>
+	</data>
+	<data name="giao_dich" >
+		<value>Giao Dịch</value>
+	</data>
+	<data name="giu_cho_trang_chu" >
+		<value>Giữ chỗ</value>
+	</data>
+	<data name="dat_coc_trang_chu" >
+		<value>Đặt cọc</value>
+	</data>
+	<data name="hop_dong_trang_chu" >
+		<value>Hợp đồng</value>
+	</data>
+	<data name="da_ban_trang_chu" >
+		<value>Đã bán</value>
+	</data>
+	<data name="loyalty" >
+		<value>Loyalty</value>
+	</data>
 </root>

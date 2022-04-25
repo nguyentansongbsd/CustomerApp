@@ -177,7 +177,8 @@ namespace CustomerApp.Views
                 flagEN.BorderColor = Color.FromHex("#2196F3");
                 CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("en-US");
             }
-            Application.Current.MainPage = new LoginPage();
+            Application.Current.MainPage = new AppShell();
+            Shell.Current.Navigation.PushAsync(new LoginPage(), false);
             LoadingHelper.Hide();
         }
 
@@ -188,11 +189,11 @@ namespace CustomerApp.Views
                 ToastMessageHelper.ShortMessage(Language.ten_dang_nhap_khong_duoc_de_trong);
                 return;
             }
-            //if (string.IsNullOrWhiteSpace(Password))
-            //{
-            //    ToastMessageHelper.ShortMessage(Language.mat_khau_khong_duong_de_trong);
-            //    return;
-            //}
+            if (string.IsNullOrWhiteSpace(Password))
+            {
+                ToastMessageHelper.ShortMessage(Language.mat_khau_khong_duong_de_trong);
+                return;
+            }
             try
             {
                 LoadingHelper.Show();
@@ -214,16 +215,17 @@ namespace CustomerApp.Views
                             return;
                         }
 
-                        //if (user.bsd_password != Password)
-                        //{
-                        //    LoadingHelper.Hide();
-                        //    //ToastMessageHelper.ShortMessage(Language.mat_khau_khong_dung);
-                        //    return;
-                        //}
+                        if (user.bsd_password != Password)
+                        {
+                            LoadingHelper.Hide();
+                            ToastMessageHelper.ShortMessage(Language.mat_khau_khong_dung);
+                            return;
+                        }
 
                         UserLogged.Id = user.contactid;
                         UserLogged.User = user.fullname;
-                        //UserLogged.Password = employeeModel.bsd_password;
+                        UserLogged.Email = user.emailaddress1;
+                        UserLogged.Password = user.bsd_password;
                         UserLogged.ManagerId = user._ownerid_value;
                         UserLogged.IsSaveInforUser = checkboxRememberAcc.IsChecked;
                         UserLogged.IsLogged = true;
@@ -254,6 +256,7 @@ namespace CustomerApp.Views
                     <attribute name='fullname' />
                     <attribute name='emailaddress1' />
                     <attribute name='ownerid'/>
+                    <attribute name='bsd_password'/>
                     <order attribute='fullname' descending='false' />
                     <filter type='or'>
                       <condition attribute='fullname' operator='eq' value='{UserName}' />
@@ -275,14 +278,14 @@ namespace CustomerApp.Views
 
         private async void ForgotPassword_Tapped(object sender, EventArgs e)
         {
-            LoadingHelper.Show();
-            await Navigation.PushAsync(new ForgotPassWordPage());
-            LoadingHelper.Hide();
-        }
-
-        private void ButtonCustom_Clicked_1(object sender, EventArgs e)
-        {
-          // string a = viewModel.Text;
+            try
+            {
+                LoadingHelper.Show();
+                await Shell.Current.Navigation.PushAsync(new ForgotPassWordPage());
+                LoadingHelper.Hide();
+            }
+            catch(Exception ex)
+            {
         }
     }
 }
