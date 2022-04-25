@@ -16,8 +16,14 @@ namespace CustomerApp.Controls
         public static readonly BindableProperty TitleProperty = BindableProperty.Create(nameof(Title), typeof(string), typeof(DatePickerField), null, BindingMode.TwoWay);
         public string Title { get => (string)GetValue(TitleProperty); set => SetValue(TitleProperty, value); }
         // value
-        public static readonly BindableProperty DateProperty = BindableProperty.Create(nameof(Date), typeof(DateTime), typeof(DatePickerField), null, BindingMode.TwoWay);
+        public static readonly BindableProperty DateProperty = BindableProperty.Create(nameof(Date), typeof(DateTime), typeof(DatePickerField), null, BindingMode.TwoWay, propertyChanged: DateChange);
         public DateTime Date { get => (DateTime)GetValue(DateProperty); set => SetValue(DateProperty, value); }
+        private static void DateChange(BindableObject bindable, object oldValue, object newValue)
+        {
+            DatePickerField control = (DatePickerField)bindable;
+            if (newValue != null)
+                control.datepicker.Date = (DateTime)newValue;
+        }
         // Placeholder
         public static readonly BindableProperty PlaceholderProperty = BindableProperty.Create(nameof(Placeholder), typeof(string), typeof(DatePickerField), null, BindingMode.TwoWay, propertyChanged: PlaceholderChange);
         public string Placeholder { get => (string)GetValue(PlaceholderProperty); set => SetValue(PlaceholderProperty, value); }

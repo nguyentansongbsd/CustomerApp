@@ -6,15 +6,21 @@
              xmlns:controls="clr-namespace:CustomerApp.Controls" 
              xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms" 
              xmlns:telerikPrimitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives" 
-             xmlns:ffimagetransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
+             xmlns:ffimagetransformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations" 
+             xmlns:converters="clr-namespace:CustomerApp.Converters"
              Title="{x:Static lang:Language.title_thong_tin_ca_nhan}">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:Base64ToImageSourceConverter x:Key="Base64ToImageSource"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
         <AbsoluteLayout>
             <ScrollView AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" Padding=" 0,0,0,60">
                 <StackLayout Padding="10,30,10,0" Spacing="10">
                     <Grid HorizontalOptions="CenterAndExpand" HeightRequest="78">
                         <controls:ExtendedFrame Padding="4" CornerRadius="39" HorizontalOptions="Center" VerticalOptions="Start">
-                            <ffimageloading:CachedImage Source="{Binding Avatar}" LoadingPlaceholder="user.png" HeightRequest="70" WidthRequest="70" DownsampleWidth="500">
+                            <ffimageloading:CachedImage Source="{Binding Avatar,Converter={StaticResource Base64ToImageSource}}" LoadingPlaceholder="user.png" HeightRequest="70" WidthRequest="70" DownsampleWidth="500">
                                 <ffimageloading:CachedImage.Transformations>
                                     <ffimagetransformations:CircleTransformation/>
                                 </ffimageloading:CachedImage.Transformations>
@@ -64,18 +70,20 @@
             <controls:CenterModal x:Name="centerModelPassword" Title="{x:Static lang:Language.doi_mat_khau}">
                 <controls:CenterModal.Body>
                     <StackLayout Padding="14">
-                        <controls:FormLabelRequired Text="{x:Static lang:Language.mat_khau_cu}" IsVisible="{Binding isNullPassword}"/>
-                        <controls:MainEntry Text="{Binding OldPassword}" Placeholder="{x:Static lang:Language.nhap_mat_khau_cu}" TextChanged="OldPassword_TextChanged" IsVisible="{Binding isNullPassword}"/>
+                        <controls:FormLabelRequired Text="{x:Static lang:Language.mat_khau_cu}"/>
+                        <controls:MainEntry Text="{Binding OldPassword}" Placeholder="{x:Static lang:Language.nhap_mat_khau_cu}" TextChanged="OldPassword_TextChanged"/>
 
                         <controls:FormLabelRequired Text="{x:Static lang:Language.mat_khau_moi}"/>
                         <controls:MainEntry Text="{Binding NewPassword}" Placeholder="{x:Static lang:Language.nhap_mat_khau_moi}" TextChanged="NewPassword_TextChanged"/>
 
-                        <controls:FormLabelRequired Text="{x:Static lang:Language.xac_nhan_mat_khau_moi}"/>
+                        <controls:FormLabelRequired Text="{x:Static lang:Language.xac_nhan_mat_khau}"/>
                         <controls:MainEntry Text="{Binding ConfirmNewPassword}" Placeholder="{x:Static lang:Language.nhap_xac_nhan_mat_khau_moi}" TextChanged="ConfirmPassword_TextChanged"/>
                     </StackLayout>
                 </controls:CenterModal.Body>
                 <controls:CenterModal.Footer>
-                    <Button Text="{x:Static lang:Language.btn_luu}" Margin="14,8" Clicked="SaveChangedPassword_Clicked" HeightRequest="40" BackgroundColor="{StaticResource NavigationPrimary}" TextColor="White" FontSize="15"/>
+                    <Grid Padding="10">
+                        <controls:ButtonCustom TextBtn="{x:Static lang:Language.btn_luu}" Clicked="SaveChangedPassword_Clicked"/>
+                    </Grid>
                 </controls:CenterModal.Footer>
             </controls:CenterModal>
 

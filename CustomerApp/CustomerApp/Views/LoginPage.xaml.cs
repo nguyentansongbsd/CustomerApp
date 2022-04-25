@@ -229,6 +229,7 @@ namespace CustomerApp.Views
                         UserLogged.ManagerId = user._ownerid_value;
                         UserLogged.IsSaveInforUser = checkboxRememberAcc.IsChecked;
                         UserLogged.IsLogged = true;
+                        UserLogged.Avartar = user.entityimage;
 
                         Application.Current.MainPage = new AppShell();
 
@@ -257,6 +258,7 @@ namespace CustomerApp.Views
                     <attribute name='emailaddress1' />
                     <attribute name='ownerid'/>
                     <attribute name='bsd_password'/>
+                    <attribute name='entityimage'/>
                     <order attribute='fullname' descending='false' />
                     <filter type='or'>
                       <condition attribute='fullname' operator='eq' value='{UserName}' />
@@ -285,7 +287,8 @@ namespace CustomerApp.Views
                 LoadingHelper.Hide();
             }
             catch (Exception ex)
-            {
+            { 
+            
             }
         }
     }
