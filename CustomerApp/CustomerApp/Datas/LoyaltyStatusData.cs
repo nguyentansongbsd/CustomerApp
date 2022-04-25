@@ -12,7 +12,7 @@ namespace CustomerApp.Datas
             return new List<OptionModel>()
             {
                 new OptionModel("100000000","None"),
-                new OptionModel("100000000","Active"),
+                new OptionModel("100000001","Active"),
             };
         }
 

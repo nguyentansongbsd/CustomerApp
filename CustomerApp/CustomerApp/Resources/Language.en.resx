@@ -477,4 +477,7 @@
 	<data name="loyalty" >
 		<value>Loyalty</value>
 	</data>
+    <data name="xac_nhan_mat_khau_moi" >
+		<value>Confirm new password</value>
+	</data>
 </root>
