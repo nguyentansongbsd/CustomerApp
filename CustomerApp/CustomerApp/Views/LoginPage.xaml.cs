@@ -286,9 +286,6 @@ namespace CustomerApp.Views
             }
             catch(Exception ex)
             {
-
-            }
-            
         }
     }
 }

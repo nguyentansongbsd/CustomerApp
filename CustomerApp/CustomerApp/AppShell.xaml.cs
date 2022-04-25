@@ -50,9 +50,19 @@ namespace CustomerApp
             }
         }
 
-        private void UserInfor_Tapped(object sender, EventArgs e)
+        private async void UserInfor_Tapped(object sender, EventArgs e)
         {
+            LoadingHelper.Show();
+            if (UserLogged.Id == Guid.Empty)
+            {
+               // ToastMessageHelper.ShortMessage(Language.chua_co_contact_khong_the_chinh_sua_thong_tin);
+                LoadingHelper.Hide();
+                return;
+            }
 
+            await Shell.Current.Navigation.PushAsync(new UserInfoPage());
+            this.FlyoutIsPresented = false;
+            LoadingHelper.Hide();
         }
 
         private async void Logout_Clicked(object sender, EventArgs e)

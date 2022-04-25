@@ -12,6 +12,7 @@ namespace CustomerApp.Controls
         
         public DatePickerBorder()
         {
+            this.HeightRequest = 40;
             this.FontSize = 15;
             this.TextColor = Color.FromHex("#333333");
         }
