@@ -262,5 +262,41 @@ namespace CustomerApp.Resources {
                 return ResourceManager.GetString("da_co_loi_xay_ra_vui_long_thu_lai_sau", resourceCulture);
             }
         }
+        
+        internal static string mat_khau_khong_dung {
+            get {
+                return ResourceManager.GetString("mat_khau_khong_dung", resourceCulture);
+            }
+        }
+        
+        internal static string giu_cho_trang_chu {
+            get {
+                return ResourceManager.GetString("giu_cho_trang_chu", resourceCulture);
+            }
+        }
+        
+        internal static string dat_coc_trang_chu {
+            get {
+                return ResourceManager.GetString("dat_coc_trang_chu", resourceCulture);
+            }
+        }
+        
+        internal static string hop_dong_trang_chu {
+            get {
+                return ResourceManager.GetString("hop_dong_trang_chu", resourceCulture);
+            }
+        }
+        
+        internal static string da_ban_trang_chu {
+            get {
+                return ResourceManager.GetString("da_ban_trang_chu", resourceCulture);
+            }
+        }
+        
+        internal static string loyalty {
+            get {
+                return ResourceManager.GetString("loyalty", resourceCulture);
+            }
+        }
     }
 }
