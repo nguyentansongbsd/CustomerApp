@@ -282,7 +282,7 @@ namespace CustomerApp.Views
 
         private void ButtonCustom_Clicked_1(object sender, EventArgs e)
         {
-           string a = viewModel.Text;
+          // string a = viewModel.Text;
         }
     }
 }

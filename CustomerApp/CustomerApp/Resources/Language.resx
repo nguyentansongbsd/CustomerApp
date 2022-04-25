@@ -1,123 +1,351 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-	<resheader name="resmimetype">
-		<value>text/microsoft-resx</value>
-	</resheader>
-	<resheader name="version">
-		<value>2.0</value>
-	</resheader>
-	<resheader name="reader">
-		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
-	<resheader name="writer">
-		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-	</resheader>
-	<data name="trang_chu">
-		<value>Trang chủ</value>
-	</data>
-	<data name="nhan_de_chinh_sua">
-		<value>Nhấn để chỉnh sửa</value>
-	</data>
-	<data name="gio_hang" >
-		<value>Giỏ hàng</value>
-	</data>
-	<data name="giao_dich" >
-		<value>Giao dịch</value>
-	</data>
-	<data name="phan_hoi" >
-		<value>Phản hồi</value>
-	</data>
-	<data name="lich" >
-		<value>Lịch</value>
-	</data>
-	<data name="tin_tuc" >
-		<value>Tin tức</value>
-	</data>
-	<data name="dang_xuat" >
-		<value>Đăng xuất</value>
-	</data>
-	<data name="ten_dang_nhap" >
-		<value>Tên đăng nhập/Email</value>
-	</data>
-	<data name="mat_khau" >
-		<value>Mật khẩu</value>
-	</data>
-	<data name="ghi_nho_dang_nhap" >
-		<value>Ghi nhớ đăng nhập</value>
-	</data>
-	<data name="dang_nhap" >
-		<value>Đăng nhập</value>
-	</data>
-	<data name="quen_mat_khau" >
-		<value>Quên mật khẩu ?</value>
-	</data>
-	<data name="ten_dang_nhap_khong_duoc_de_trong" >
-		<value>Tên đăng nhập không được để trống.</value>
-	</data>
-	<data name="mat_khau_khong_duong_de_trong" >
-		<value>Mật khẩu không được để trống.</value>
-	</data>
-	<data name="ten_dang_nhap_khong_dung" >
-		<value>Tên đăng nhập không đúng.</value>
-	</data>
-	<data name="khong_tim_thay_user" >
-		<value>Mật khẩu không đúng.</value>
-	</data>
-	<data name="xac_nhan_ma_otp" >
-		<value>Xác nhận mã OTP</value>
-	</data>
-	<data name="otp_duoc_gui_ve_so_dien_thoai" >
-		<value>OTP được gửi về số điện thoại</value>
-	</data>
-	<data name="vui_long_nhap_otp_de_xac_nhan_tai_khoan" >
-		<value>Vui lòng nhập OTP để xác nhận tài khoản</value>
-	</data>
-	<data name="huy" >
-		<value>Hủy</value>
-	</data>
-	<data name="xac_nhan" >
-		<value>Xác nhận</value>
-	</data>
-	<data name="ban_chua_nhan_duoc_ma_gui_lai" >
-		<value>Bạn chưa nhận được mã ? Gửi lại</value>
-	</data>
-	<data name="ma_xac_thuc_khong_dung" >
-		<value>Mã xác thực không đúng</value>
-	</data>
-	<data name="so_dien_thoai" >
-		<value>Số điện thoại</value>
-	</data>
-	<data name="xac_nhan_mat_khau" >
-		<value>Xác nhận mật khẩu</value>
-	</data>
-	<data name="vui_long_nhap_ho_ten_email" >
-		<value>Vui lòng nhập họ tên hoặc email</value>
-	</data>
-	<data name="vui_long_nhap_so_dien_thoai" >
-		<value>Vui lòng nhập số điện thoại.</value>
-	</data>
-	<data name="user_name_khong_dung" >
-		<value>Họ tên không đúng.</value>
-	</data>
-	<data name="loi_he_thong" >
-		<value>Lỗi hệ thống.</value>
-	</data>
-	<data name="vui_long_nhap_mat_khau" >
-		<value>Vui lòng nhập mật khẩu</value>
-	</data>
-	<data name="mat_khau_it_nhat_6_ky_tu" >
-		<value>Mật khẩu ít nhất 6 ký tự.</value>
-	</data>
-	<data name="vui_long_nhap_xac_nhan_mat_khau" >
-		<value>Vui lòng nhập xác nhận mật khẩu.</value>
-	</data>
-	<data name="mat_khau_khong_khop" >
-		<value>Mật khẩu không khớp</value>
-	</data>
-	<data name="doi_mat_khau_thanh_cong" >
-		<value>Đổi mật khẩu thành công.</value>
-	</data>
-	<data name="da_co_loi_xay_ra_vui_long_thu_lai_sau" >
-		<value>Đã có lỗi xảy ra. Vui lòng thử lại sau.</value>
-	</data>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="trang_chu" xml:space="preserve">
+    <value>Trang chủ</value>
+  </data>
+  <data name="nhan_de_chinh_sua" xml:space="preserve">
+    <value>Nhấn để chỉnh sửa</value>
+  </data>
+  <data name="gio_hang" xml:space="preserve">
+    <value>Giỏ hàng</value>
+  </data>
+  <data name="giao_dich" xml:space="preserve">
+    <value>Giao dịch</value>
+  </data>
+  <data name="phan_hoi" xml:space="preserve">
+    <value>Phản hồi</value>
+  </data>
+  <data name="lich" xml:space="preserve">
+    <value>Lịch</value>
+  </data>
+  <data name="tin_tuc" xml:space="preserve">
+    <value>Tin tức</value>
+  </data>
+  <data name="dang_xuat" xml:space="preserve">
+    <value>Đăng xuất</value>
+  </data>
+  <data name="ten_dang_nhap" xml:space="preserve">
+    <value>Tên đăng nhập/Email</value>
+  </data>
+  <data name="mat_khau" xml:space="preserve">
+    <value>Mật khẩu</value>
+  </data>
+  <data name="ghi_nho_dang_nhap" xml:space="preserve">
+    <value>Ghi nhớ đăng nhập</value>
+  </data>
+  <data name="dang_nhap" xml:space="preserve">
+    <value>Đăng nhập</value>
+  </data>
+  <data name="quen_mat_khau" xml:space="preserve">
+    <value>Quên mật khẩu ?</value>
+  </data>
+  <data name="ten_dang_nhap_khong_duoc_de_trong" xml:space="preserve">
+    <value>Tên đăng nhập không được để trống.</value>
+  </data>
+  <data name="mat_khau_khong_duong_de_trong" xml:space="preserve">
+    <value>Mật khẩu không được để trống.</value>
+  </data>
+  <data name="ten_dang_nhap_khong_dung" xml:space="preserve">
+    <value>Tên đăng nhập không đúng.</value>
+  </data>
+  <data name="khong_tim_thay_user" xml:space="preserve">
+    <value>Mật khẩu không đúng.</value>
+  </data>
+  <data name="xac_nhan_ma_otp" xml:space="preserve">
+    <value>Xác nhận mã OTP</value>
+  </data>
+  <data name="otp_duoc_gui_ve_so_dien_thoai" xml:space="preserve">
+    <value>OTP được gửi về số điện thoại</value>
+  </data>
+  <data name="vui_long_nhap_otp_de_xac_nhan_tai_khoan" xml:space="preserve">
+    <value>Vui lòng nhập OTP để xác nhận tài khoản</value>
+  </data>
+  <data name="huy" xml:space="preserve">
+    <value>Hủy</value>
+  </data>
+  <data name="xac_nhan" xml:space="preserve">
+    <value>Xác nhận</value>
+  </data>
+  <data name="ban_chua_nhan_duoc_ma_gui_lai" xml:space="preserve">
+    <value>Bạn chưa nhận được mã ? Gửi lại</value>
+  </data>
+  <data name="ma_xac_thuc_khong_dung" xml:space="preserve">
+    <value>Mã xác thực không đúng</value>
+  </data>
+  <data name="so_dien_thoai" xml:space="preserve">
+    <value>Số điện thoại</value>
+  </data>
+  <data name="xac_nhan_mat_khau" xml:space="preserve">
+    <value>Xác nhận mật khẩu</value>
+  </data>
+  <data name="vui_long_nhap_ho_ten_email" xml:space="preserve">
+    <value>Vui lòng nhập họ tên hoặc email</value>
+  </data>
+  <data name="vui_long_nhap_so_dien_thoai" xml:space="preserve">
+    <value>Vui lòng nhập số điện thoại.</value>
+  </data>
+  <data name="user_name_khong_dung" xml:space="preserve">
+    <value>Họ tên không đúng.</value>
+  </data>
+  <data name="loi_he_thong" xml:space="preserve">
+    <value>Lỗi hệ thống.</value>
+  </data>
+  <data name="vui_long_nhap_mat_khau" xml:space="preserve">
+    <value>Vui lòng nhập mật khẩu</value>
+  </data>
+  <data name="mat_khau_it_nhat_6_ky_tu" xml:space="preserve">
+    <value>Mật khẩu ít nhất 6 ký tự.</value>
+  </data>
+  <data name="vui_long_nhap_xac_nhan_mat_khau" xml:space="preserve">
+    <value>Vui lòng nhập xác nhận mật khẩu.</value>
+  </data>
+  <data name="mat_khau_khong_khop" xml:space="preserve">
+    <value>Mật khẩu không khớp</value>
+  </data>
+  <data name="doi_mat_khau_thanh_cong" xml:space="preserve">
+    <value>Đổi mật khẩu thành công.</value>
+  </data>
+  <data name="da_co_loi_xay_ra_vui_long_thu_lai_sau" xml:space="preserve">
+    <value>Đã có lỗi xảy ra. Vui lòng thử lại sau.</value>
+  </data>
+  <data name="btn_dong" xml:space="preserve">
+    <value>Đóng</value>
+  </data>
+  <data name="btn_luu" xml:space="preserve">
+    <value>Lưu</value>
+  </data>
+  <data name="btn_xac_nhan" xml:space="preserve">
+    <value>Xác nhận</value>
+  </data>
+  <data name="chon_ngay_sinh" xml:space="preserve">
+    <value>Chọn ngày sinh</value>
+  </data>
+  <data name="email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="employee" xml:space="preserve">
+    <value>Nhân viên</value>
+  </data>
+  <data name="gender_khac" xml:space="preserve">
+    <value>Khác</value>
+  </data>
+  <data name="gender_nam" xml:space="preserve">
+    <value>Nam</value>
+  </data>
+  <data name="gender_nu" xml:space="preserve">
+    <value>Nữ</value>
+  </data>
+  <data name="ho_ten" xml:space="preserve">
+    <value>Họ tên</value>
+  </data>
+  <data name="ngay_sinh" xml:space="preserve">
+    <value>Ngày sinh</value>
+  </data>
+  <data name="nhap_email" xml:space="preserve">
+    <value>Nhập email</value>
+  </data>
+  <data name="nhap_so_dien_thoai" xml:space="preserve">
+    <value>Nhập số điện thoại</value>
+  </data>
+  <data name="title_thong_tin_ca_nhan" xml:space="preserve">
+    <value>Thông Tin Cá Nhân</value>
+  </data>
+  <data name="chon_dia_chi" xml:space="preserve">
+    <value>Chọn địa chỉ</value>
+  </data>
+  <data name="chon_gioi_tinh" xml:space="preserve">
+    <value>Chọn giới tính</value>
+  </data>
+  <data name="chon_quan_huyen" xml:space="preserve">
+    <value>Chọn quận huyện</value>
+  </data>
+  <data name="chon_quoc_gia" xml:space="preserve">
+    <value>Chọn quốc gia</value>
+  </data>
+  <data name="chon_tinh_thanh" xml:space="preserve">
+    <value>Chọn tỉnh thành</value>
+  </data>
+  <data name="dia_chi" xml:space="preserve">
+    <value>Địa chỉ</value>
+  </data>
+  <data name="gioi_tinh" xml:space="preserve">
+    <value>Giới tính</value>
+  </data>
+  <data name="nhap_so_nha_duong_phuong" xml:space="preserve">
+    <value>Nhập số nhà/đường/phường</value>
+  </data>
+  <data name="noti_vui_long_nhap_so_nha_duong_phuong" xml:space="preserve">
+    <value>Vui lòng nhập số nhà/đường/phường.</value>
+  </data>
+  <data name="quan_huyen" xml:space="preserve">
+    <value>Quận huyện</value>
+  </data>
+  <data name="quoc_gia" xml:space="preserve">
+    <value>Quốc gia</value>
+  </data>
+  <data name="so_nha_duong_phuong" xml:space="preserve">
+    <value>Số nhà/Đường/Phường</value>
+  </data>
+  <data name="tinh_thanh" xml:space="preserve">
+    <value>Tỉnh thành</value>
+  </data>
+  <data name="doi_mat_khau" xml:space="preserve">
+    <value>Đổi Mật Khẩu</value>
+  </data>
+  <data name="mat_khau_cu" xml:space="preserve">
+    <value>Mật khẩu cũ</value>
+  </data>
+  <data name="mat_khau_moi" xml:space="preserve">
+    <value>Mật khẩu mới</value>
+  </data>
+  <data name="nhap_mat_khau_cu" xml:space="preserve">
+    <value>Nhập mật khẩu cũ</value>
+  </data>
+  <data name="nhap_mat_khau_moi" xml:space="preserve">
+    <value>Nhập mật khẩu mới</value>
+  </data>
+  <data name="nhap_xac_nhan_mat_khau_moi" xml:space="preserve">
+    <value>Nhập xác nhận mật khẩu mới</value>
+  </data>
+  <data name="noti_ban_dang_su_dung_mat_khau_cu_vui_long_nhap_lai" xml:space="preserve">
+    <value>Bạn đang sử dụng mật khẩu cũ. Vui lòng nhập lại.</value>
+  </data>
+  <data name="noti_doi_mat_khau_that_bai" xml:space="preserve">
+    <value>Đổi mật khẩu thất bại.</value>
+  </data>
+  <data name="noti_mat_khau_cu_khong_dung" xml:space="preserve">
+    <value>Mật khẩu cũ không đúng.</value>
+  </data>
+  <data name="noti_mat_khau_khong_duoc_chua_ky_tu_khoan_trang" xml:space="preserve">
+    <value>Password không được chứa ký tự khoảng trắng.</value>
+  </data>
+  <data name="noti_vui_long_nhap_mat_khau_cu" xml:space="preserve">
+    <value>Vui lòng nhập mật khẩu cũ.</value>
+  </data>
+  <data name="noti_vui_long_nhap_mat_khau_moi" xml:space="preserve">
+    <value>Vui lòng nhập mật khẩu mới.</value>
+  </data>
+  <data name="noti_vui_long_nhap_xac_nhan_mat_khau_moi" xml:space="preserve">
+    <value>Vui lòng nhập xác nhận mật khẩu mới.</value>
+  </data>
+  <data name="noti_xac_nhan_mat_khau_khong_dung" xml:space="preserve">
+    <value>Xác nhận mật khẩu không đúng.</value>
+  </data>
 </root>
