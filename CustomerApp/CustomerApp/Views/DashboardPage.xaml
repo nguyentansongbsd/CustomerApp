@@ -14,6 +14,42 @@
                 <ScrollView Padding="0,0,0,20">
                     <StackLayout Spacing="0">
                         <Label Text="{x:Static lang:Language.loyalty}" FontSize="16" TextColor="{StaticResource NavigationPrimary}" FontAttributes="Bold" Padding="14,14,14,8"/>
+                        <controls:ExtendedFrame BorderColor="#fefefe" CornerRadius="5" Padding="10,8" Margin="14,6">
+                            <StackLayout>
+                                <Label FontSize="14">
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="Membership Tier: " TextColor="#333333"/>
+                                            <Span Text="{Binding Loyalty.membershiptier_name}" FontAttributes="Bold" TextColor="{x:StaticResource NavigationPrimary}"/>
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+                                <Label FontSize="14" TextColor="#444444">
+                                    <Label.Text>
+                                        <MultiBinding StringFormat="{}{0:dd/MM/yyyy} - {1}">
+                                            <Binding Path="Loyalty.bsd_loyaltydate" />
+                                            <Binding Path="LoyaltyStatus" />
+                                        </MultiBinding>
+                                    </Label.Text>
+                                </Label>
+                                <Label FontSize="14">
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="Total Amount of Ownership: " TextColor="#444444"/>
+                                            <Span Text="{Binding Loyalty.bsd_totalamountofownership,StringFormat='{0:#,0} đ'}" TextColor="Red"/>
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+                                <Label FontSize="14">
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="Total Amount of Ownership (3 years): " TextColor="#444444"/>
+                                            <Span Text="{Binding Loyalty.bsd_totalamountofownership3years,StringFormat='{0:#,0} đ'}" TextColor="Red"/>
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+                            </StackLayout>
+                        </controls:ExtendedFrame>
 
 
                         <Label FontSize="16" TextColor="{StaticResource NavigationPrimary}" FontAttributes="Bold" Padding="14,14,14,8">

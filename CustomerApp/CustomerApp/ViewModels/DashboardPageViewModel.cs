@@ -4,6 +4,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using CustomerApp.Datas;
 using CustomerApp.Helper;
 using CustomerApp.Models;
 using CustomerApp.Settings;
@@ -20,6 +21,8 @@ namespace CustomerApp.ViewModels
 
         private LoyaltyModel _loyalty;
         public LoyaltyModel Loyalty { get => _loyalty; set { _loyalty = value;OnPropertyChanged(nameof(Loyalty)); } }
+        private string _loyaltyStatus;
+        public string LoyaltyStatus { get => _loyaltyStatus; set { _loyaltyStatus = value; OnPropertyChanged(nameof(LoyaltyStatus)); } }
 
         private DateTime _dateBefor;
         public DateTime dateBefor { get => _dateBefor; set { _dateBefor = value; OnPropertyChanged(nameof(dateBefor)); } }
@@ -45,7 +48,7 @@ namespace CustomerApp.ViewModels
         public ICommand RefreshCommand => new Command(async () =>
         {
             IsRefreshing = true;
-            //await RefreshDashboard();
+            await RefreshDashboard();
             IsRefreshing = false;
         });
 
@@ -82,6 +85,7 @@ namespace CustomerApp.ViewModels
             var result = await CrmHelper.RetrieveMultiple<RetrieveMultipleApiResponse<LoyaltyModel>>("contacts", fetchXml);
             if (result == null && result.value == null) return;
             this.Loyalty = (result.value as List<LoyaltyModel>).SingleOrDefault();
+            this.LoyaltyStatus = LoyaltyStatusData.GetLoyaltyById(this.Loyalty?.bsd_loyaltystatus)?.Value;
         }
 
         public async Task LoadQueueFourMonths()
@@ -250,6 +254,23 @@ namespace CustomerApp.ViewModels
             this.DataMonthUnit.Add(chartSecondMonth);
             this.DataMonthUnit.Add(chartThirdMonth);
             this.DataMonthUnit.Add(chartFourthMonth);
+        }
+
+        private async Task RefreshDashboard()
+        {
+            this.Loyalty = null;
+            this.DataMonthQueue.Clear();
+            this.DataMonthQuote.Clear();
+            this.DataMonthOptionEntry.Clear();
+            this.DataMonthUnit.Clear();
+
+            await Task.WhenAll(
+                LoadContactLoyalty(),
+                LoadQueueFourMonths(),
+                LoadQuoteFourMonths(),
+                LoadOptionEntryFourMonths(),
+                LoadUnitFourMonths()
+                );
         }
     }
 }

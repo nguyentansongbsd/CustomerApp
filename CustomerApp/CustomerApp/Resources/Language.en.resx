@@ -393,4 +393,151 @@
 	<data name="noti_vui_long_chon_gioi_tinh" xml:space="preserve">
     <value>Please choose gender.</value>
   </data>
+<data name="xac_nhan_mat_khau_moi" >
+		<value>Confirm new password</value>
+	</data>
+	<data name="direction_north" >
+		<value>North</value>
+	</data>
+	<data name="direction_south" >
+		<value>South</value>
+	</data>
+	<data name="direction_east" >
+		<value>East</value>
+	</data>
+	<data name="direction_west" >
+		<value>West</value>
+	</data>
+	<data name="direction_north_east" >
+		<value>North east</value>
+	</data>
+	<data name="direction_north_west" >
+		<value>North west</value>
+	</data>
+	<data name="direction_south_east" >
+		<value>South east</value>
+	</data>
+	<data name="direction_south_west" >
+		<value>South west</value>
+	</data>
+	<data name="title_thong_tin_gia_chu" xml:space="preserve">
+    <value>Thông Tin Gia Chủ</value>
+  </data>
+	<data name="nam_sinh_am_lich" xml:space="preserve">
+    <value>Năm sinh âm lịch</value>
+  </data>
+	<data name="que_menh" xml:space="preserve">
+    <value>Quẻ mệnh</value>
+  </data>
+	<data name="ngu_hanh" xml:space="preserve">
+    <value>Ngũ hành</value>
+  </data>
+	<data name="title_la_ban_phong_thuy" xml:space="preserve">
+    <value>La Bàn Phong Thủy</value>
+  </data>
+	<data name="huong_tot" xml:space="preserve">
+    <value>Hướng Tốt</value>
+  </data>
+	<data name="huong_xau" xml:space="preserve">
+    <value>Hướng Xấu</value>
+  </data>
+<data name="khong_co_du_lieu" xml:space="preserve">
+    <value>No data</value>
+  </data>
+<data name="btn_xoa" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+<data name="string_under" xml:space="preserve">
+    <value>Under</value>
+  </data>
+<data name="sqm" xml:space="preserve">
+    <value>sqm</value>
+  </data>
+<data name="string_more_than" xml:space="preserve">
+    <value>More than</value>
+  </data>
+<data name="currency_billion" xml:space="preserve">
+    <value>billion</value>
+  </data>
+<data name="unit_1st_installment_sts" xml:space="preserve">
+    <value>1st Installment</value>
+  </data>
+  <data name="unit_available_sts" xml:space="preserve">
+    <value>Available</value>
+  </data>
+  <data name="unit_collected_sts" xml:space="preserve">
+    <value>Collected</value>
+  </data>
+  <data name="unit_deposited_sts" xml:space="preserve">
+    <value>Deposited</value>
+  </data>
+  <data name="unit_draft_sts" xml:space="preserve">
+    <value>Draft</value>
+  </data>
+  <data name="unit_preparing_sts" xml:space="preserve">
+    <value>Preparing</value>
+  </data>
+  <data name="unit_queuing_sts" xml:space="preserve">
+    <value>Queuing</value>
+  </data>
+  <data name="unit_reserve_sts" xml:space="preserve">
+    <value>Reserve</value>
+  </data>
+  <data name="unit_sold_sts" xml:space="preserve">
+    <value>Sold</value>
+  </data>
+<data name="noti_vui_long_chon_du_an" xml:space="preserve">
+    <value>Please choose project.</value>
+  </data>
+<data name="du_an" xml:space="preserve">
+    <value>Project</value>
+  </data>
+<data name="chon_du_an" xml:space="preserve">
+    <value>Choose project</value>
+  </data>
+<data name="dot_mo_ban" xml:space="preserve">
+    <value>Phase launch</value>
+  </data>
+<data name="chon_dot_mo_ban" xml:space="preserve">
+    <value>Choose phase launch</value>
+  </data>
+<data name="su_kien" xml:space="preserve">
+    <value>Events</value>
+  </data>
+<data name="ma_san_pham" xml:space="preserve">
+    <value>Unit code</value>
+  </data>
+<data name="nhap_ma_san_pham" xml:space="preserve">
+    <value>Enter unit code</value>
+  </data>
+<data name="huong" xml:space="preserve">
+    <value>Direction</value>
+  </data>
+<data name="chon_huong" xml:space="preserve">
+    <value>Choose direction</value>
+  </data>
+<data name="tinh_trang_san_pham" xml:space="preserve">
+    <value>Unit status</value>
+  </data>
+<data name="chon_tinh_trang_san_pham" xml:space="preserve">
+    <value>Choose unit status</value>
+  </data>
+ <data name="dien_tich_su_dung" xml:space="preserve">
+    <value>Net usable area (spm)</value>
+  </data>
+ <data name="chon_dien_tich_su_dung" xml:space="preserve">
+    <value>Choose net usable area</value>
+  </data>
+<data name="gia_ban_vnd" xml:space="preserve">
+    <value>Price (VND)</value>
+  </data>
+<data name="chon_gia_ban" xml:space="preserve">
+    <value>Choose price</value>
+  </data>
+<data name="thong_tin_du_an" xml:space="preserve">
+    <value>Project information</value>
+  </data>
+<data name="tim_kiem" xml:space="preserve">
+    <value>Search</value>
+  </data>
 </root>

@@ -17,9 +17,14 @@ namespace CustomerApp.Controls
         public static readonly BindableProperty TitleProperty = BindableProperty.Create(nameof(Title), typeof(string), typeof(LabelField), null, BindingMode.TwoWay);
         public string Title { get => (string)GetValue(TitleProperty); set => SetValue(TitleProperty, value); }
         // value
-        public static readonly BindableProperty TextProperty = BindableProperty.Create(nameof(Text), typeof(string), typeof(LabelField), null, BindingMode.TwoWay);
+        public static readonly BindableProperty TextProperty = BindableProperty.Create(nameof(Text), typeof(string), typeof(LabelField), null, BindingMode.TwoWay, propertyChanged: TextChange);
         public string Text { get => (string)GetValue(TextProperty); set => SetValue(TextProperty, value); }
-       
+        private static void TextChange(BindableObject bindable, object oldValue, object newValue)
+        {
+            LabelField control = (LabelField)bindable;
+            if (newValue != null)
+                control.lb_text.Text = (string)newValue;
+        }
         //// color
         //public static readonly BindableProperty TextColorProperty = BindableProperty.Create(nameof(TextColor), typeof(Color), typeof(LabelField), (Color)App.Current.Resources["TextColor"], BindingMode.TwoWay, propertyChanged: TextColorChange);
         //public Color TextColor { get => (Color)GetValue(TextColorProperty); set => SetValue(TextColorProperty, value); }
@@ -66,7 +71,9 @@ namespace CustomerApp.Controls
         public LabelField()
         {
             InitializeComponent();
-            this.BindingContext = this;
+            // this.BindingContext = this;
+            // lb_text.SetBinding(Label.TextProperty, "Text");
+            lb_title.BindingContext = this;
         }
 
         private void Text_Tapped(object sender, EventArgs e)

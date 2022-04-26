@@ -4,6 +4,7 @@ using CustomerApp.Models;
 using CustomerApp.Settings;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -42,9 +43,16 @@ namespace CustomerApp.ViewModels
 
         private AddressModel _addressContact;
         public AddressModel AddressContact { get => _addressContact; set { _addressContact = value; OnPropertyChanged(nameof(AddressContact)); } }
-
+        
+        private PhongThuyModel _phongThuy;
+        public PhongThuyModel PhongThuy { get => _phongThuy; set { _phongThuy = value; OnPropertyChanged(nameof(PhongThuy)); } }
+        public ObservableCollection<HuongPhongThuy> list_HuongTot { set; get; }
+        public ObservableCollection<HuongPhongThuy> list_HuongXau { set; get; }
         public UserInfoPageViewModel()
         {
+            PhongThuy = new PhongThuyModel();
+            list_HuongTot = new ObservableCollection<HuongPhongThuy>();
+            list_HuongXau = new ObservableCollection<HuongPhongThuy>();
             Password = UserLogged.Password;
             Genders = Data.GenderData();
             Avatar = UserLogged.Avartar;
@@ -105,6 +113,7 @@ namespace CustomerApp.ViewModels
                 address = Contact.bsd_contactaddress,
                 lineaddress = Contact.bsd_housenumberstreet
             };
+            LoadPhongThuy();
         }
         // thay doi mat khau
         public async Task<bool> ChangePassword()
@@ -146,7 +155,7 @@ namespace CustomerApp.ViewModels
 
         public async Task<bool> UpdateUserInfor()
         {
-            string path = $"/contacts({UserLogged.ContactId})";
+            string path = $"/contacts({UserLogged.Id})";
             var content = await GetContent();
             CrmApiResponse apiResponse = await CrmHelper.PatchData(path, content);
             if (apiResponse.IsSuccess)
@@ -198,6 +207,52 @@ namespace CustomerApp.ViewModels
             }
 
             return data;
+        }
+        // phong thuy
+        public void LoadPhongThuy()
+        {
+            if (Contact.gendercode != null)
+            {
+                Gender = Data.GetGenderById(Contact.gendercode);
+            }
+            if (list_HuongTot != null || list_HuongXau != null)
+            {
+                list_HuongTot.Clear();
+                list_HuongXau.Clear();
+                if (Contact != null && Contact.gendercode != null && Gender != null)
+                {
+                    PhongThuy.gioi_tinh = Int32.Parse(Contact.gendercode);
+                    PhongThuy.nam_sinh = Contact.birthdate.HasValue ? Contact.birthdate.Value.Year : 0;
+                    if (PhongThuy.huong_tot != null && PhongThuy.huong_tot != null)
+                    {
+                        string[] huongtot = PhongThuy.huong_tot.Split('\n');
+                        string[] huongxau = PhongThuy.huong_xau.Split('\n');
+                        int i = 1;
+                        foreach (var x in huongtot)
+                        {
+                            string[] huong = x.Split(':');
+                            string name_huong = i + ". " + huong[0];
+                            string detail_huong = huong[1].Remove(0, 1);
+                            list_HuongTot.Add(new HuongPhongThuy { Name = name_huong, Detail = detail_huong });
+                            i++;
+                        }
+                        int j = 1;
+                        foreach (var x in huongxau)
+                        {
+                            string[] huong = x.Split(':');
+                            string name_huong = j + ". " + huong[0];
+                            string detail_huong = huong[1].Remove(0, 1);
+                            list_HuongXau.Add(new HuongPhongThuy { Name = name_huong, Detail = detail_huong });
+                            j++;
+                        }
+                    }
+                }
+                else
+                {
+                    PhongThuy.gioi_tinh = 0;
+                    PhongThuy.nam_sinh = 0;
+                }
+            }
         }
     }
 }

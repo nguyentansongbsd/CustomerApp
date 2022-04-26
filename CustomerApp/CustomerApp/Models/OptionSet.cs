@@ -9,6 +9,7 @@ namespace CustomerApp.Models
     {
         public Guid Id { get; set; }
         public string Val { get; set; }
+        public string Label { get; set; }
 
         public string _name;
         public string Name { get => _name; set { _name = value; OnPropertyChanged(nameof(Name)); } }
