@@ -111,7 +111,67 @@ namespace CustomerApp.Datas
             };
         }
         #endregion
-        #region
+        #region QueuesStatusCodeData
+        public static StatusCodeModel GetQueuesById(string id)
+        {
+            return GetQueuesData().SingleOrDefault(x => x.Id == id);
+        }
+        public static List<StatusCodeModel> GetQueuesByIds(string ids)
+        {
+            List<StatusCodeModel> listQueue = new List<StatusCodeModel>();
+            string[] Ids = ids.Split(',');
+            foreach (var item in Ids)
+            {
+                listQueue.Add(GetQueuesById(item));
+            }
+            return listQueue;
+        }
+        public static List<StatusCodeModel> GetQueuesData()
+        {
+            return new List<StatusCodeModel>()
+            {
+                new StatusCodeModel("1",Language.queue_draft_sts,"#808080"),
+                new StatusCodeModel("2",Language.queue_on_hold_sts,"#808080"),
+                new StatusCodeModel("3",Language.queue_won_sts,"#808080"),
+                new StatusCodeModel("4",Language.queue_canceled_sts,"#808080"),
+                new StatusCodeModel("5",Language.queue_out_sold_sts,"#808080"),
+                new StatusCodeModel("100000000",Language.queue_queuing_sts,"#00CF79"),
+                new StatusCodeModel("100000001",Language.queue_collected_queuing_fee_sts,"#808080"),
+                new StatusCodeModel("100000002",Language.queue_waiting_sts,"#FDC206"),
+                new StatusCodeModel("100000003",Language.queue_expired_sts,"#B3B3B3"),
+                new StatusCodeModel("100000004",Language.queue_completed_sts,"#C50147"),
+                new StatusCodeModel("0","","#808080")
+            };
+        }
+        #endregion
+        # region GetProjectType
+        public static OptionSet GetProjectTypeById(string projectType)
+        {
+            return ProjectTypeData().SingleOrDefault(x => x.Val == projectType);
+        }
+        public static List<OptionSet> ProjectTypeData()
+        {
+            return new List<OptionSet>()
+            {
+                new OptionSet("false",Language.project_residential_type), //Residential project_residential_type
+                new OptionSet("true",Language.project_commercial_type), //Commercial  project_commercial_type
+            };
+        }
+        #endregion
+        #region PropertyUsageTypes
+        public static OptionSet GetPropertyUsageTypeById(string Id)
+        {
+            return PropertyUsageTypeData().SingleOrDefault(x => x.Val == Id);
+        }
+        public static List<OptionSet> PropertyUsageTypeData()
+        {
+            return new List<OptionSet>()
+            {
+                new OptionSet("1",Language.project_condo_usagetype), //Condo project_condo_usagetype
+                new OptionSet("2",Language.project_apartment_usagetype), //Apartment project_apartment_usagetype
+                new OptionSet("3",Language.project_townhouse_usagetype), //Townhouse project_townhouse_usagetype
+            };
+        }
         #endregion
     }
 }

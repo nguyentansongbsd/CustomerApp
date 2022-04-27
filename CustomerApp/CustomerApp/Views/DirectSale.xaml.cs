@@ -155,20 +155,20 @@ namespace CustomerApp.Views
                 return;
             }
 
-            //ProjectInfo projectInfo = new ProjectInfo(Guid.Parse(viewModel.Project.bsd_projectid), viewModel.Project.bsd_name);
-            //projectInfo.OnCompleted = async (IsSuccess) =>
-            //{
-            //    if (IsSuccess == true)
-            //    {
-            //        await Navigation.PushAsync(projectInfo);
-            //        LoadingHelper.Hide();
-            //    }
-            //    else
-            //    {
-            //        await DisplayAlert("", Language.khong_tim_thay_thong_tin_vui_long_thu_lai, Language.dong);
-            //        LoadingHelper.Hide();
-            //    }
-            //};
+            ProjectInfoPage projectInfo = new ProjectInfoPage(Guid.Parse(viewModel.Project.bsd_projectid), viewModel.Project.bsd_name);
+            projectInfo.OnCompleted = async (IsSuccess) =>
+            {
+                if (IsSuccess == true)
+                {
+                    await Navigation.PushAsync(projectInfo);
+                    LoadingHelper.Hide();
+                }
+                else
+                {
+                    await DisplayAlert("", Language.noti_khong_tim_thay_du_an, Language.btn_dong);
+                    LoadingHelper.Hide();
+                }
+            };
         }
         private void Clear_Clicked(object sender, EventArgs e)
         {

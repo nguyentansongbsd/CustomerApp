@@ -63,26 +63,26 @@
                     </StackLayout>
                     <!-- Tab Phong Thuy-->
                     <StackLayout x:Name="TabPhongThuy" Margin="0,10,0,0">
-                        <Label Text="{x:Static lang:Language.title_thong_tin_gia_chu}"/>
+                        <controls:LabelTitleSection Text="{x:Static lang:Language.title_thong_tin_gia_chu}"/>
                         <StackLayout Spacing="1" BackgroundColor="{StaticResource EnableColor}">
                             <controls:LabelField Title="{x:Static lang:Language.gioi_tinh}" Text="Name"/>
                             <controls:LabelField Title="{x:Static lang:Language.nam_sinh_am_lich}" Text="{Binding PhongThuy.ten_nam_sinh_am_lich}"/>
                             <controls:LabelField Title="{x:Static lang:Language.que_menh}" Text="{Binding PhongThuy.quemenh_label}"/>
                             <controls:LabelField Title="{x:Static lang:Language.ngu_hanh}" Text="{Binding PhongThuy.menh_label}"/>
                         </StackLayout>
-                        <Label Text="{x:Static lang:Language.title_la_ban_phong_thuy}"/>
+                        <controls:LabelTitleSection Text="{x:Static lang:Language.title_la_ban_phong_thuy}"/>
                         <Image Source="{Binding PhongThuy.image}" Aspect="AspectFit" Margin="60,15,60,15">
                             <Image.GestureRecognizers>
                                 <TapGestureRecognizer NumberOfTapsRequired="1"/>
                             </Image.GestureRecognizers>
                         </Image>
-                        <Label Text="{x:Static lang:Language.huong_tot}"/>
+                        <controls:LabelTitleSection Text="{x:Static lang:Language.huong_tot}" TextColor="{StaticResource Primary}"/>
                         <StackLayout BindableLayout.ItemsSource="{Binding list_HuongTot}" BindableLayout.EmptyView="{x:Static lang:Language.khong_co_du_lieu}" Spacing="1" BackgroundColor="#F1F1F1">
-                            <!--<BindableLayout.EmptyViewTemplate>
+                            <BindableLayout.EmptyViewTemplate>
                                 <DataTemplate>
                                     <Label Text="{x:Static lang:Language.khong_co_du_lieu}" TextColor="#444444" HorizontalTextAlignment="Center" BackgroundColor="White" Padding="0,15"/>
                                 </DataTemplate>
-                            </BindableLayout.EmptyViewTemplate>-->
+                            </BindableLayout.EmptyViewTemplate>
                             <BindableLayout.ItemTemplate>
                                 <DataTemplate>
                                     <Grid BackgroundColor="White" RowDefinitions="Auto,Auto">
@@ -92,13 +92,13 @@
                                 </DataTemplate>
                             </BindableLayout.ItemTemplate>
                         </StackLayout>
-                        <Label Text="{x:Static lang:Language.huong_xau}" />
+                        <controls:LabelTitleSection Text="{x:Static lang:Language.huong_xau}" TextColor="{StaticResource Primary}"/>
                         <StackLayout BindableLayout.ItemsSource="{Binding list_HuongXau}" BindableLayout.EmptyView="{x:Static lang:Language.khong_co_du_lieu}" Spacing="1" BackgroundColor="#F1F1F1">
-                            <!--<BindableLayout.EmptyViewTemplate>
+                            <BindableLayout.EmptyViewTemplate>
                                 <DataTemplate>
-                                    <Label Text="{x:Static language:Language.khong_co_du_lieu}" TextColor="#444444" HorizontalTextAlignment="Center" BackgroundColor="White" Padding="0,15"/>
+                                    <Label Text="{x:Static lang:Language.khong_co_du_lieu}" TextColor="#444444" HorizontalTextAlignment="Center" BackgroundColor="White" Padding="0,15"/>
                                 </DataTemplate>
-                            </BindableLayout.EmptyViewTemplate>-->
+                            </BindableLayout.EmptyViewTemplate>
                             <BindableLayout.ItemTemplate>
                                 <DataTemplate>
                                     <Grid BackgroundColor="White" RowDefinitions="Auto,Auto">

@@ -16,7 +16,6 @@ namespace CustomerApp.Config
         public const string ClientId = "1b53e0dd-04fb-495c-a8d0-3f26ebb84468";
         public const string ClientSecret = "SII7Q~z5TqyjVoBBIKNuSxDJabQhuFE_~i5HI"; //JmC7Q~Ege0KWrZMODL6yv_ExwFDdkINIXrsF8
         //public const string UserName = "crmAdmin@phulong.com";
-        //public const string Password = "CRM@021crm";
-
+        //public const string Password = "CRM@021crm";       
     }
 }
