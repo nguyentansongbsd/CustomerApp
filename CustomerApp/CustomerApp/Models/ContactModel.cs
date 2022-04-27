@@ -21,7 +21,7 @@ namespace CustomerApp.Models
         // sdt
         public string mobilephone { get; set; }
         // ngày sinh
-        public DateTime birthdate { get; set; }
+        public DateTime? birthdate { get; set; }
         // địa chỉ
         public Guid country_id { get; set; }
         public string country_name { get; set; }

@@ -85,7 +85,7 @@ namespace CustomerApp.ViewModels
             var result = await CrmHelper.RetrieveMultiple<RetrieveMultipleApiResponse<LoyaltyModel>>("contacts", fetchXml);
             if (result == null && result.value == null) return;
             this.Loyalty = (result.value as List<LoyaltyModel>).SingleOrDefault();
-            this.LoyaltyStatus = LoyaltyStatusData.GetLoyaltyById(this.Loyalty.bsd_loyaltystatus).Value;
+            this.LoyaltyStatus = LoyaltyStatusData.GetLoyaltyById(this.Loyalty?.bsd_loyaltystatus)?.Value;
         }
 
         public async Task LoadQueueFourMonths()

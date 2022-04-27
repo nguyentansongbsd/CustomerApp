@@ -25,27 +25,13 @@ namespace CustomerApp.Controls
         public AddressModel SelectedItem { get => (AddressModel)GetValue(SelectedItemProperty); set { SetValue(SelectedItemProperty, value); } }
         public BottomModal BottomModal { get; set; }
         public CenterModal CenterModal { get; set; }
-
-       // public static readonly BindableProperty list_country_lookupProperty = BindableProperty.Create(nameof(list_country_lookup), typeof(ObservableCollection<OptionSet>), typeof(LookUpAddress), null, BindingMode.TwoWay, null);
-        public ObservableCollection<OptionSet> list_country_lookup { get; set; } // { get => (ObservableCollection<OptionSet>)GetValue(list_country_lookupProperty); set { SetValue(list_country_lookupProperty, value); } }
-
-        //  public static readonly BindableProperty list_province_lookupProperty = BindableProperty.Create(nameof(list_province_lookup), typeof(ObservableCollection<OptionSet>), typeof(LookUpAddress), null, BindingMode.TwoWay, null);
-        public ObservableCollection<OptionSet> list_province_lookup { get; set; } // { get => (ObservableCollection<OptionSet>)GetValue(list_province_lookupProperty); set { SetValue(list_province_lookupProperty, value); } }
-
-        // public static readonly BindableProperty list_district_lookupProperty = BindableProperty.Create(nameof(list_district_lookup), typeof(ObservableCollection<OptionSet>), typeof(LookUpAddress), null, BindingMode.TwoWay, null);
-        public ObservableCollection<OptionSet> list_district_lookup { get; set; } // { get => (ObservableCollection<OptionSet>)GetValue(list_district_lookupProperty); set { SetValue(list_district_lookupProperty, value); } }
-
-        //  public static readonly BindableProperty CountryProperty = BindableProperty.Create(nameof(Country), typeof(OptionSet), typeof(LookUpAddress), null, BindingMode.TwoWay);
-        public OptionSet Country { get; set; } // { get => (OptionSet)GetValue(CountryProperty); set { SetValue(CountryProperty, value); } }
-
-        //   public static readonly BindableProperty ProvinceProperty = BindableProperty.Create(nameof(Province), typeof(OptionSet), typeof(LookUpAddress), null, BindingMode.TwoWay);
-        public OptionSet Province { get; set; } // { get => (OptionSet)GetValue(ProvinceProperty); set { SetValue(ProvinceProperty, value); } }
-
-        //   public static readonly BindableProperty DistrictProperty = BindableProperty.Create(nameof(District), typeof(OptionSet), typeof(LookUpAddress), null, BindingMode.TwoWay);
-        public OptionSet District { get; set; } // { get => (OptionSet)GetValue(DistrictProperty); set { SetValue(DistrictProperty, value); } }
-
-        //   public static readonly BindableProperty LineAddressProperty = BindableProperty.Create(nameof(LineAddress), typeof(string), typeof(LookUpAddress), null, BindingMode.TwoWay);
-        public string LineAddress { get; set; } // { get => (string)GetValue(LineAddressProperty); set { SetValue(LineAddressProperty, value); } }
+        private ObservableCollection<OptionSet> list_country_lookup { get; set; }
+        private ObservableCollection<OptionSet> list_province_lookup { get; set; }
+        private ObservableCollection<OptionSet> list_district_lookup { get; set; }
+        private OptionSet Country { get; set; }
+        private OptionSet Province { get; set; }
+        private OptionSet District { get; set; }
+        private string LineAddress { get; set; }
 
         public static readonly BindableProperty AddressProperty = BindableProperty.Create(nameof(Address), typeof(string), typeof(LookUpAddress), null, BindingMode.TwoWay);
         public string Address { get => (string)GetValue(AddressProperty); set { SetValue(AddressProperty, value); } }
@@ -62,6 +48,7 @@ namespace CustomerApp.Controls
         }
 
         public AddressModel AddressCopy { get => (AddressModel)GetValue(AddressCopyProperty); set { SetValue(AddressCopyProperty, value); } }
+        public bool enableCopy { get; set; } = false;
         public LookUpAddress()
         {
             InitializeComponent();
@@ -461,22 +448,26 @@ namespace CustomerApp.Controls
             }
             Address = SelectedItem.address = string.Join(", ", _address);
             SelectedItem.address_en = string.Join(", ", _address_en);
-            AddressCopy = new AddressModel
+
+            if (enableCopy)
             {
-                country_id = SelectedItem.country_id,
-                country_name = SelectedItem.country_name,
-                country_name_en = SelectedItem.country_name_en,
-                province_id = SelectedItem.province_id,
-                province_name = SelectedItem.province_name,
-                province_name_en = SelectedItem.province_name_en,
-                district_id = SelectedItem.district_id,
-                district_name = SelectedItem.district_name,
-                district_name_en = SelectedItem.district_name_en,
-                address = SelectedItem.address,
-                address_en = SelectedItem.address_en,
-                lineaddress = SelectedItem.lineaddress,
-                lineaddress_en = SelectedItem.lineaddress_en
-            };
+                AddressCopy = new AddressModel
+                {
+                    country_id = SelectedItem.country_id,
+                    country_name = SelectedItem.country_name,
+                    country_name_en = SelectedItem.country_name_en,
+                    province_id = SelectedItem.province_id,
+                    province_name = SelectedItem.province_name,
+                    province_name_en = SelectedItem.province_name_en,
+                    district_id = SelectedItem.district_id,
+                    district_name = SelectedItem.district_name,
+                    district_name_en = SelectedItem.district_name_en,
+                    address = SelectedItem.address,
+                    address_en = SelectedItem.address_en,
+                    lineaddress = SelectedItem.lineaddress,
+                    lineaddress_en = SelectedItem.lineaddress_en
+                };
+            }
             await CenterModal.Hide();
         }
 
