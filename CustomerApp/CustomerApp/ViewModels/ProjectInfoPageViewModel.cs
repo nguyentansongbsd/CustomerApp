@@ -1,4 +1,5 @@
-﻿using CustomerApp.Helper;
+﻿using CustomerApp.Datas;
+using CustomerApp.Helper;
 using CustomerApp.Models;
 using CustomerApp.Settings;
 using System;
@@ -15,8 +16,8 @@ namespace CustomerApp.ViewModels
     {
         public ObservableCollection<CollectionData> Collections { get; set; } = new ObservableCollection<CollectionData>();
 
-        //public List<Photo> Photos { get; set; }
-        private bool _showCollections = true;
+      //  public List<Photo> Photos { get; set; }
+        private bool _showCollections = false;
         public bool ShowCollections { get => _showCollections; set { _showCollections = value; OnPropertyChanged(nameof(ShowCollections)); } }
 
         private int _totalMedia;
@@ -31,6 +32,9 @@ namespace CustomerApp.ViewModels
 
         private ObservableCollection<QueuesModel> _listGiuCho;
         public ObservableCollection<QueuesModel> ListGiuCho { get => _listGiuCho; set { _listGiuCho = value; OnPropertyChanged(nameof(ListGiuCho)); } }
+
+        private EventModel _event;
+        public EventModel Event { get => _event; set { _event = value; OnPropertyChanged(nameof(Event)); } }
 
         private ProjectModel _project;
         public ProjectModel Project
@@ -84,6 +88,10 @@ namespace CustomerApp.ViewModels
         public int DaDuTienCoc { get; set; } = 0;
         public int ThanhToanDot1 { get; set; } = 0;
         public int DaBan { get; set; } = 0;
+        public int Booking { get; set; } = 0;
+        public int Option { get; set; } = 0;
+        public int SignedDA { get; set; } = 0;
+        public int Qualified { get; set; } = 0;
 
         public bool IsLoadedGiuCho { get; set; }
 
@@ -92,8 +100,8 @@ namespace CustomerApp.ViewModels
         private ImageSource _ImageSource;
         public ImageSource ImageSource { get => _ImageSource; set { _ImageSource = value; OnPropertyChanged(nameof(ImageSource)); } }
 
-        private EventModel _event;
-        public EventModel Event { get => _event; set { _event = value; OnPropertyChanged(nameof(Event)); } }
+        private StatusCodeModel _statusCode;
+        public StatusCodeModel StatusCode { get => _statusCode; set { _statusCode = value; OnPropertyChanged(nameof(StatusCode)); } }
 
         public ProjectInfoPageViewModel()
         {
@@ -119,11 +127,15 @@ namespace CustomerApp.ViewModels
                                 <attribute name='bsd_managementamount' />
                                 <attribute name='bsd_bookingfee' />
                                 <attribute name='bsd_depositamount' />
-                                <attribute name='bsd_unitspersalesman' />
+                                <attribute name='statuscode' />
                                 <attribute name='bsd_queuesperunit' />
+                                <attribute name='bsd_unitspersalesman' />
+                                <attribute name='bsd_queueunitdaysaleman' />
                                 <attribute name='bsd_longqueuingtime' />
                                 <attribute name='bsd_shortqueingtime' />
-                                <attribute name='bsd_logo'/>
+                                <attribute name='bsd_projectslogo'/>
+                                <attribute name='bsd_queueproject'/>
+                                <attribute name='bsd_printagreement'/>
                                 <order attribute='bsd_name' descending='false' />
                                 <filter type='and'>
                                   <condition attribute='bsd_projectid' operator='eq' uitype='bsd_project' value='" + ProjectId.ToString() + @"' />
@@ -138,8 +150,10 @@ namespace CustomerApp.ViewModels
             var result = await CrmHelper.RetrieveMultiple<RetrieveMultipleApiResponse<ProjectModel>>("bsd_projects", FetchXml);
             if (result == null || result.value.Any() == false) return;
             Project = result.value.FirstOrDefault();
+            this.StatusCode = Data.GetProjectStatusCodeById(Project.statuscode);
             //await LoadAllCollection();
         }
+
         public async Task CheckEvent()
         {
             // ham check su kien hide/show cua du an (show khi du an dang trong thoi gian dien ra su kien, va trang thai la "Approved")
@@ -170,6 +184,7 @@ namespace CustomerApp.ViewModels
                 }
             }
         }
+
         public async Task LoadThongKe()
         {
             string fetchXml = $@"<fetch version='1.0' output-format='xml-platform' mapping='logical' distinct='false'>
@@ -203,6 +218,10 @@ namespace CustomerApp.ViewModels
                 DaDuTienCoc++;
                 ThanhToanDot1++;
                 DaBan++;
+                Booking++;
+                Option++;
+                SignedDA++;
+                Qualified++;
                 IsShowBtnGiuCho = true;
             }
             else
@@ -218,24 +237,33 @@ namespace CustomerApp.ViewModels
                 DaDuTienCoc = data.Where(x => x.statuscode == 100000003).Count();
                 ThanhToanDot1 = data.Where(x => x.statuscode == 100000001).Count();
                 DaBan = data.Where(x => x.statuscode == 100000002).Count();
+                Booking = data.Where(x => x.statuscode == 100000007).Count();
+                Option = data.Where(x => x.statuscode == 100000010).Count();
+                SignedDA = data.Where(x => x.statuscode == 100000009).Count();
+                Qualified = data.Where(x => x.statuscode == 100000008).Count();
             }
 
             unitChartModels = new List<ChartModel>()
             {
-                    new ChartModel {Category ="Giữ chỗ",Value=GiuCho},
-                    new ChartModel { Category = "Đặt cọc", Value = DatCoc },
-                    new ChartModel {Category ="Đồng ý chuyển cọc",Value=DongYChuyenCoc },
-                    new ChartModel { Category = "Đã đủ tiền cọc", Value = DaDuTienCoc },
-                    new ChartModel {Category ="Thanh toán đợt 1",Value=ThanhToanDot1},
-                    new ChartModel { Category = "Đã bán", Value =  DaBan},
-                    new ChartModel {Category ="Chuẩn bị", Value=ChuanBi},
-                    new ChartModel { Category = "Sẵn sàng", Value = SanSang }
+                new ChartModel {Category ="Giữ chỗ",Value=GiuCho},
+                new ChartModel { Category = "Đặt cọc", Value = DatCoc },
+                new ChartModel {Category ="Đồng ý chuyển cọc",Value=DongYChuyenCoc },
+                new ChartModel { Category = "Đã đủ tiền cọc", Value = DaDuTienCoc },
+                new ChartModel { Category = "Option", Value = Option },
+                new ChartModel {Category ="Thanh toán đợt 1",Value=ThanhToanDot1},
+                new ChartModel { Category = "Signed D.A", Value = SignedDA },
+                new ChartModel { Category = "Qualified", Value = Qualified },
+                new ChartModel { Category = "Đã bán", Value =  DaBan},
+                new ChartModel {Category ="Chuẩn bị", Value=ChuanBi},
+                new ChartModel { Category = "Sẵn sàng", Value = SanSang },
+                new ChartModel { Category = "Booking", Value = Booking },
             };
             foreach (var item in unitChartModels)
             {
                 UnitChart.Add(item);
             }
         }
+
         public async Task LoadThongKeGiuCho()
         {
             string fetchXml = @"<fetch version='1.0' output-format='xml-platform' mapping='logical' distinct='false'>
@@ -263,7 +291,7 @@ namespace CustomerApp.ViewModels
                                 <attribute name='name' />
                                 <order attribute='createdon' descending='true' />
                                 <filter type='and'>
-                                  <condition attribute='statuscode' operator='ne' value='100000006' />
+                                    <condition attribute='statuscode' operator='ne' value='100000006' />
                                 </filter>
                                 <link-entity name='bsd_project' from='bsd_projectid' to='bsd_project' link-type='inner' alias='ad'>
                                   <filter type='and'>
@@ -284,7 +312,7 @@ namespace CustomerApp.ViewModels
                                 <attribute name='name' />
                                 <order attribute='createdon' descending='true' />
                                 <filter type='and'>
-                                  <condition attribute='statuscode' operator='ne' value='100000007' />
+                                  <condition attribute='statuscode' operator='eq' value='100000007' />
                                 </filter>
                                 <link-entity name='bsd_project' from='bsd_projectid' to='bsd_projectid' link-type='inner' alias='ae'>
                                   <filter type='and'>
@@ -305,9 +333,12 @@ namespace CustomerApp.ViewModels
                                 <order attribute='createdon' descending='true' />
                                 <filter type='and'>
                                   <condition attribute='statuscode' operator='in'>
-                                    <value>100000006</value>
                                     <value>100000000</value>
+                                    <value>861450001</value>
+                                    <value>861450002</value>
+                                    <value>100000006</value>
                                     <value>3</value>
+                                    <value>861450000</value>
                                   </condition>
                                 </filter>
                                 <link-entity name='bsd_project' from='bsd_projectid' to='bsd_projectid' link-type='inner' alias='ae'>
@@ -345,16 +376,14 @@ namespace CustomerApp.ViewModels
                                     <condition attribute='bsd_projectid' operator='eq' value='{ProjectId}'/>
                                   </filter>
                                 </link-entity>
-                                <link-entity name='bsd_employee' from='bsd_employeeid' to='bsd_employee' link-type='inner' alias='ac'>
-                                  <filter type='and'>
-                                    <condition attribute='bsd_employeeid' operator='eq' value='{UserLogged.Id}' />
-                                  </filter>
-                                </link-entity>
                                 <link-entity name='account' from='accountid' to='customerid' visible='false' link-type='outer' alias='a_434f5ec290d1eb11bacc000d3a80021e'>
                                   <attribute name='name' alias='account_name'/>
                                 </link-entity>
                                 <link-entity name='contact' from='contactid' to='customerid' visible='false' link-type='outer' alias='a_884f5ec290d1eb11bacc000d3a80021e'>
                                   <attribute name='bsd_fullname' alias='contact_name'/>
+                                  <filter type='and'>
+                                    <condition attribute='contactid' operator='eq' value='{UserLogged.Id}' />
+                                  </filter>
                                 </link-entity>
                               </entity>
                             </fetch>";
@@ -369,56 +398,58 @@ namespace CustomerApp.ViewModels
                 ListGiuCho.Add(item);
             }
         }
-        //public async Task LoadAllCollection()
-        //{
-        //    if (ProjectId != null)
-        //    {
-        //        string fetchXml = $@"<fetch version='1.0' output-format='xml-platform' mapping='logical' distinct='false'>
-        //                          <entity name='sharepointdocument'>
-        //                            <attribute name='documentid' />
-        //                            <attribute name='absoluteurl' />
-        //                            <attribute name='fullname' />
-        //                            <attribute name='filetype' />
-        //                            <attribute name='relativelocation' />
-        //                            <order attribute='relativelocation' descending='false' />
-        //                            <link-entity name='bsd_project' from='bsd_projectid' to='regardingobjectid' link-type='inner' alias='ad'>
-        //                              <filter type='and'>
-        //                                <condition attribute='bsd_projectid' operator='eq' value='{ProjectId}' />
-        //                              </filter>
-        //                            </link-entity>
-        //                          </entity>
-        //                        </fetch>";
-        //        var result = await CrmHelper.RetrieveMultiple<RetrieveMultipleApiResponse<SharePonitModel>>("sharepointdocuments", fetchXml);
+        public async Task LoadAllCollection()
+        {
+            // khoa lai vi phu long chua co hinh anh va video
 
-        //        if (result == null || result.value.Any() == false)
-        //        {
-        //            ShowCollections = false;
-        //            return;
-        //        }
+            //if (ProjectId != null)
+            //{
+            //    string fetchXml = $@"<fetch version='1.0' output-format='xml-platform' mapping='logical' distinct='false'>
+            //                      <entity name='sharepointdocument'>
+            //                        <attribute name='documentid' />
+            //                        <attribute name='absoluteurl' />
+            //                        <attribute name='fullname' />
+            //                        <attribute name='filetype' />
+            //                        <attribute name='relativelocation' />
+            //                        <order attribute='relativelocation' descending='false' />
+            //                        <link-entity name='bsd_project' from='bsd_projectid' to='regardingobjectid' link-type='inner' alias='ad'>
+            //                          <filter type='and'>
+            //                            <condition attribute='bsd_projectid' operator='eq' value='{ProjectId}' />
+            //                          </filter>
+            //                        </link-entity>
+            //                      </entity>
+            //                    </fetch>";
+            //    var result = await CrmHelper.RetrieveMultiple<RetrieveMultipleApiResponse<SharePonitModel>>("sharepointdocuments", fetchXml);
 
-        //        Photos = new List<Photo>();
-        //        List<SharePonitModel> list = result.value;
-        //        var videos = list.Where(x => x.filetype == "mp4" || x.filetype == "flv" || x.filetype == "m3u8" || x.filetype == "3gp" || x.filetype == "mov" || x.filetype == "avi" || x.filetype == "wmv").ToList();
-        //        var images = list.Where(x => x.filetype == "jpg" || x.filetype == "jpeg" || x.filetype == "png").ToList();
-        //        this.TotalMedia = videos.Count;
-        //        this.TotalPhoto = images.Count;
+            //    if (result == null || result.value.Any() == false)
+            //    {
+            //        ShowCollections = false;
+            //        return;
+            //    }
 
-        //        foreach (var item in videos)
-        //        {
-        //            var urlVideo = await CrmHelper.RetrieveImagesSharePoint<RetrieveMultipleApiResponse<GraphThumbnailsUrlModel>>($"{Config.OrgConfig.SharePointProjectId}/items/{item.documentid}/driveItem/thumbnails");
-        //            string url = urlVideo.value.SingleOrDefault().large.url;// retri se lay duoc thumbnails gom 3 kich thuoc : large,medium,small
-        //            Collections.Add(new CollectionData { Id = item.documentid, MediaSourceId = item.documentid.ToString(), ImageSource = url, SharePointType = SharePointType.Video, Index = TotalMedia });
-        //        }
+            //    Photos = new List<Photo>();
+            //    List<SharePonitModel> list = result.value;
+            //    var videos = list.Where(x => x.filetype == "mp4" || x.filetype == "flv" || x.filetype == "m3u8" || x.filetype == "3gp" || x.filetype == "mov" || x.filetype == "avi" || x.filetype == "wmv").ToList();
+            //    var images = list.Where(x => x.filetype == "jpg" || x.filetype == "jpeg" || x.filetype == "png").ToList();
+            //    this.TotalMedia = videos.Count;
+            //    this.TotalPhoto = images.Count;
 
-        //        foreach (var item in images)
-        //        {
-        //            var urlVideo = await CrmHelper.RetrieveImagesSharePoint<RetrieveMultipleApiResponse<GraphThumbnailsUrlModel>>($"{Config.OrgConfig.SharePointProjectId}/items/{item.documentid}/driveItem/thumbnails");
-        //            string url = urlVideo.value.SingleOrDefault().large.url;// retri se lay duoc thumbnails gom 3 kich thuoc : large,medium,small
-        //            this.Photos.Add(new Photo { URL = url });
-        //            Collections.Add(new CollectionData { Id = item.documentid, MediaSourceId = null, ImageSource = url, SharePointType = SharePointType.Image, Index = TotalMedia });
-        //        }
-        //    }
-        //}
+            //    foreach (var item in videos)
+            //    {
+            //        var urlVideo = await CrmHelper.RetrieveImagesSharePoint<RetrieveMultipleApiResponse<GraphThumbnailsUrlModel>>($"{Config.OrgConfig.SharePointProjectId}/items/{item.documentid}/driveItem/thumbnails");
+            //        string url = urlVideo.value.SingleOrDefault().large.url;// retri se lay duoc thumbnails gom 3 kich thuoc : large,medium,small
+            //        Collections.Add(new CollectionData {Id = item.documentid, MediaSourceId = item.documentid.ToString(), ImageSource = url, SharePointType = SharePointType.Video, Index = TotalMedia });
+            //    }
+
+            //    foreach (var item in images)
+            //    {
+            //        var urlVideo = await CrmHelper.RetrieveImagesSharePoint<RetrieveMultipleApiResponse<GraphThumbnailsUrlModel>>($"{Config.OrgConfig.SharePointProjectId}/items/{item.documentid}/driveItem/thumbnails");
+            //        string url = urlVideo.value.SingleOrDefault().large.url;// retri se lay duoc thumbnails gom 3 kich thuoc : large,medium,small
+            //        this.Photos.Add(new Photo { URL = url });
+            //        Collections.Add(new CollectionData { Id = item.documentid, MediaSourceId = null, ImageSource = url, SharePointType = SharePointType.Image, Index = TotalMedia });
+            //    }
+            //}
+        }
         public async Task LoadDataEvent()
         {
             if (ProjectId == Guid.Empty) return;
@@ -443,12 +474,11 @@ namespace CustomerApp.ViewModels
 
             var result = await CrmHelper.RetrieveMultiple<RetrieveMultipleApiResponse<EventModel>>("bsd_events", FetchXml);
             if (result == null || result.value.Any() == false) return;
-            var data = result.value.FirstOrDefault();
-            Event = data;
-            if (data.bsd_startdate != null && data.bsd_enddate != null)
+            Event = result.value.FirstOrDefault();
+            if (Event.bsd_startdate.HasValue && Event.bsd_enddate.HasValue)
             {
-                Event.bsd_startdate = data.bsd_startdate.Value.ToLocalTime();
-                Event.bsd_enddate = data.bsd_enddate.Value.ToLocalTime();
+                Event.bsd_startdate = Event.bsd_startdate.Value.ToLocalTime();
+                Event.bsd_enddate = Event.bsd_enddate.Value.ToLocalTime();
             }
         }
     }

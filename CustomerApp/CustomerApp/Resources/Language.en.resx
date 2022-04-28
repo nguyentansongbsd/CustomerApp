@@ -747,4 +747,109 @@
 <data name="noti_khong_tim_thay_du_an" xml:space="preserve">
     <value>Couldn't find Project.</value>
   </data>
+	<data name="co" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+	<data name="khong" xml:space="preserve">
+    <value>No</value>
+  </data>
+<data name="btn_tao_giu_cho" xml:space="preserve">
+    <value>Create queue</value>
+  </data>
+<data name="noti_vui_long_nhap_tieu_de_giu_cho" xml:space="preserve">
+    <value>Please enter title queue.</value>
+  </data>
+<data name="noti_vui_long_chon_khach_hang" xml:space="preserve">
+    <value>Please choose customer.</value>
+  </data>
+<data name="noti_thanh_cong" xml:space="preserve">
+    <value>Successed.</value>
+  </data>
+<data name="noti_that_bai" xml:space="preserve">
+    <value>Failed.</value>
+  </data>
+<data name="noti_khach_hang_da_tham_gia_giu_cho_cho_du_an_nay" xml:space="preserve">
+    <value>This customer has already queued this unit.</value>
+  </data>
+ <data name="noti_khach_hang_phai_khac_dai_ly_ban_hang" xml:space="preserve">
+    <value>Customer and Sales agent company are duplicated. Please check again.</value>
+  </data>
+  <data name="noti_khach_hang_phai_khac_cong_tac_vien" xml:space="preserve">
+    <value>Customer and Collaborator are duplicated. Please check again.</value>
+  </data>
+  <data name="noti_khach_hang_phai_khac_khach_hang_gioi_thieu" xml:space="preserve">
+    <value>Customer and Customer Referral are duplicated. Please check again.</value>
+  </data>
+<data name="title_tao_giu_cho" xml:space="preserve">
+    <value>Create Queue</value>
+  </data>
+<data name="thong_tin_san_pham" xml:space="preserve">
+    <value>Unit Information</value>
+  </data>
+<data name="du_an" xml:space="preserve">
+    <value>Project</value>
+  </data>
+<data name="dot_mo_ban" xml:space="preserve">
+    <value>Phases launch</value>
+  </data>
+<data name="san_pham" xml:space="preserve">
+    <value>Unit</value>
+  </data>
+<data name="phi_giu_cho" xml:space="preserve">
+    <value>Queuing fee</value>
+  </data>
+<data name="thong_tin_giu_cho" xml:space="preserve">
+    <value>Queue Information</value>
+  </data>
+<data name="tieu_de" xml:space="preserve">
+    <value>Title</value>
+  </data>
+<data name="nhap_tieu_de_cua_giu_cho" xml:space="preserve">
+    <value>Enter title queue</value>
+  </data>
+<data name="khach_hang" xml:space="preserve">
+    <value>Customer</value>
+  </data>
+ <data name="mo_ta" xml:space="preserve">
+    <value>Description</value>
+  </data>
+<data name="nhap_mo_ta" xml:space="preserve">
+    <value>Enter description</value>
+  </data>
+<data name="dai_ly_san_giao_dich" xml:space="preserve">
+    <value>Sales agent company</value>
+  </data>
+ <data name="chon_dai_ly" xml:space="preserve">
+    <value>Choose sale agent company</value>
+  </data>
+<data name="nhan_vien_dai_ly_san" xml:space="preserve">
+    <value>Name of Staff-Agent</value>
+  </data>
+<data name="nhap_nhan_vien_dao_ly" xml:space="preserve">
+    <value>Enter name of staff agent</value>
+  </data>
+<data name="cong_tac_vien" xml:space="preserve">
+    <value>Collaborator</value>
+  </data>
+<data name="chon_cong_tac_vien" xml:space="preserve">
+    <value>Choose collaborator</value>
+  </data>
+<data name="chon_khach_hang_gioi_thieu" xml:space="preserve">
+    <value>Choose customer referral</value>
+  </data>
+ <data name="khach_hang_gioi_thieu" xml:space="preserve">
+    <value>Customer referral</value>
+  </data>
+<data name="tat_ca" xml:space="preserve">
+    <value>All</value>
+  </data>
+<data name="tinh_trang" xml:space="preserve">
+    <value>Status</value>
+  </data>
+ <data name="ma" xml:space="preserve">
+    <value>Code</value>
+  </data>
+ <data name="thoi_gian_het_han" xml:space="preserve">
+    <value>Queuing expired</value>
+  </data>
 </root>

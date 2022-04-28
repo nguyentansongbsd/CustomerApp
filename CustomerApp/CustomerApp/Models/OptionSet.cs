@@ -27,14 +27,14 @@ namespace CustomerApp.Models
         public OptionSet(string val, string label, bool selected = false)
         {
             Val = val;
-            Name = label;
+            Label = label;
             Selected = selected;
         }
 
-        public OptionSet(Guid id, string label, bool selected = false)
+        public OptionSet(Guid id, string name, bool selected = false)
         {
             Id = id;
-            Name = label;
+            Name = name;
             Selected = selected;
         }
     }

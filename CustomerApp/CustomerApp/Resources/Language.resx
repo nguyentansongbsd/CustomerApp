@@ -747,4 +747,109 @@
 	<data name="noti_khong_tim_thay_du_an" xml:space="preserve">
     <value>Không tìm thấy dự án.</value>
   </data>
+	<data name="co" xml:space="preserve">
+    <value>Có</value>
+  </data>
+	<data name="khong" xml:space="preserve">
+    <value>Không</value>
+  </data>
+	<data name="btn_tao_giu_cho" xml:space="preserve">
+    <value>Tạo giữ chỗ</value>
+  </data>
+	<data name="noti_vui_long_nhap_tieu_de_giu_cho" xml:space="preserve">
+    <value>Vui lòng nhập tiêu đề giữ chỗ.</value>
+  </data>
+	<data name="noti_vui_long_chon_khach_hang" xml:space="preserve">
+    <value>Vui lòng chọn khách hàng.</value>
+  </data>
+	<data name="noti_thanh_cong" xml:space="preserve">
+    <value>Thành công.</value>
+  </data>
+	<data name="noti_that_bai" xml:space="preserve">
+    <value>Thất bại</value>
+  </data>
+	<data name="noti_khach_hang_da_tham_gia_giu_cho_cho_du_an_nay" xml:space="preserve">
+    <value>Khách hàng đã tham gia giữ chỗ cho dự án này.</value>
+  </data>
+	<data name="noti_khach_hang_phai_khac_dai_ly_ban_hang" xml:space="preserve">
+    <value>Khách hàng phải khác Đại lý bán hàng.</value>
+  </data>
+	<data name="noti_khach_hang_phai_khac_cong_tac_vien" xml:space="preserve">
+    <value>Khách hàng phải khác Cộng tác viên.</value>
+  </data>
+	<data name="noti_khach_hang_phai_khac_khach_hang_gioi_thieu" xml:space="preserve">
+    <value>Khách hàng phải khác Khách hàng giới thiệu.</value>
+  </data>
+	<data name="title_tao_giu_cho" xml:space="preserve">
+    <value>Tạo Giữ Chỗ</value>
+  </data>
+	<data name="thong_tin_san_pham" xml:space="preserve">
+    <value>Thông Tin Sản Phẩm</value>
+  </data>
+	<data name="du_an" xml:space="preserve">
+    <value>Dự án</value>
+  </data>
+	<data name="dot_mo_ban" xml:space="preserve">
+    <value>Đợt mở bán</value>
+  </data>
+	<data name="san_pham" xml:space="preserve">
+    <value>Sản phẩm</value>
+  </data>
+	<data name="phi_giu_cho" xml:space="preserve">
+    <value>Phí giữ chỗ</value>
+  </data>
+	<data name="thong_tin_giu_cho" xml:space="preserve">
+    <value>Thông Tin Giữ Chỗ</value>
+  </data>
+	<data name="tieu_de" xml:space="preserve">
+    <value>Tiêu đề</value>
+  </data>
+	<data name="nhap_tieu_de_cua_giu_cho" xml:space="preserve">
+    <value>Nhập tiêu đề của giữ chỗ</value>
+  </data>
+	<data name="khach_hang" xml:space="preserve">
+    <value>Khách hàng</value>
+  </data>
+	<data name="mo_ta" xml:space="preserve">
+    <value>Mô tả</value>
+  </data>
+	<data name="nhap_mo_ta" xml:space="preserve">
+    <value>Nhập mô tả</value>
+  </data>
+	<data name="dai_ly_san_giao_dich" xml:space="preserve">
+    <value>Đại lý/Sàn giao dịch</value>
+  </data>
+	<data name="chon_dai_ly" xml:space="preserve">
+    <value>Chọn đại lý</value>
+  </data>
+	<data name="nhan_vien_dai_ly_san" xml:space="preserve">
+    <value>Nhân viên Đại lý/Sàn</value>
+  </data>
+	<data name="nhap_nhan_vien_dao_ly" xml:space="preserve">
+    <value>Nhập nhân viên đại lý</value>
+  </data>
+	<data name="cong_tac_vien" xml:space="preserve">
+    <value>Cộng tác viên</value>
+  </data>
+	<data name="chon_cong_tac_vien" xml:space="preserve">
+    <value>Chọn cộng tác viên</value>
+  </data>
+	<data name="chon_khach_hang_gioi_thieu" xml:space="preserve">
+    <value>Chọn khách hàng giới thiệu</value>
+  </data>
+	<data name="khach_hang_gioi_thieu" xml:space="preserve">
+    <value>Khách hàng giới thiệu</value>
+  </data>
+	<data name="tat_ca" xml:space="preserve">
+    <value>Tất cả</value>
+  </data>
+	<data name="tinh_trang" xml:space="preserve">
+    <value>Tình trạng</value>
+  </data>
+	<data name="ma" xml:space="preserve">
+    <value>Mã</value>
+  </data>
+	<data name="thoi_gian_het_han" xml:space="preserve">
+    <value>Thời gian hết hạn</value>
+  </data>
 </root>
