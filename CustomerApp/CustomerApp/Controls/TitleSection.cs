@@ -21,6 +21,7 @@ namespace CustomerApp.Controls
         {
             label = new Label();
             label.FontSize = 16;
+            label.FontAttributes = FontAttributes.Bold;
             label.SetBinding(Label.TextProperty, "Text");
             label.TextColor = Color.FromHex("#444444");
             ExpanderHeader headerStyle = new ExpanderHeader();

@@ -1,5 +1,6 @@
 ﻿using CustomerApp.Datas;
 using CustomerApp.Helper;
+using CustomerApp.Resources;
 using CustomerApp.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -17,6 +18,7 @@ namespace CustomerApp.Views
     {
         public Action<bool> OnCompleted;
         public static bool? NeedToRefreshQueue = null;
+        public static bool? NeedToRefreshNumQueue = null;
         public ProjectInfoPageViewModel viewModel;
 
         public ProjectInfoPage(Guid projectId, string projectName = null)
@@ -24,6 +26,7 @@ namespace CustomerApp.Views
             InitializeComponent();
             this.BindingContext = viewModel = new ProjectInfoPageViewModel();
             NeedToRefreshQueue = false;
+            NeedToRefreshNumQueue = false;
             viewModel.ProjectId = projectId;
             viewModel.ProjectName = projectName;
             Init();
@@ -40,13 +43,12 @@ namespace CustomerApp.Views
 
             await Task.WhenAll(
                 viewModel.LoadData(),
-                //viewModel.LoadAllCollection(),
+                viewModel.LoadAllCollection(),
                 viewModel.CheckEvent(),
                 viewModel.LoadThongKe(),
                 viewModel.LoadThongKeGiuCho(),
                 viewModel.LoadThongKeHopDong(),
-                viewModel.LoadThongKeBangTinhGia(),
-                viewModel.LoadDataEvent()
+                viewModel.LoadThongKeBangTinhGia()
             );
 
             if (viewModel.Project != null)
@@ -74,11 +76,18 @@ namespace CustomerApp.Views
                 viewModel.PageListGiuCho = 1;
                 viewModel.ListGiuCho.Clear();
                 await viewModel.LoadGiuCho();
-                await viewModel.LoadThongKeGiuCho();
                 NeedToRefreshQueue = false;
                 LoadingHelper.Hide();
             }
-            //await CrossMediaManager.Current.Stop();
+
+            if (NeedToRefreshNumQueue == true)
+            {
+                LoadingHelper.Show();
+                viewModel.SoGiuCho = 0;
+                await viewModel.LoadThongKeGiuCho();
+                NeedToRefreshNumQueue = false;
+                LoadingHelper.Hide();
+            }
         }
 
         private async void ThongKe_Tapped(object sender, EventArgs e)
@@ -129,19 +138,19 @@ namespace CustomerApp.Views
         private void GiuCho_Clicked(object sender, EventArgs e)
         {
             LoadingHelper.Show();
-            //QueueForm queue = new QueueForm(viewModel.ProjectId, false);
-            //queue.OnCompleted = async (IsSuccess) => {
-            //    if (IsSuccess)
-            //    {
-            //        await Navigation.PushAsync(queue);
-            //        LoadingHelper.Hide();
-            //    }
-            //    else
-            //    {
-            //        LoadingHelper.Hide();
-            //        ToastMessageHelper.ShortMessage("Không tìm thấy sản phẩm");
-            //    }
-            //};
+            QueueForm queue = new QueueForm(viewModel.ProjectId, false);
+            queue.OnCompleted = async (IsSuccess) => {
+                if (IsSuccess)
+                {
+                    await Navigation.PushAsync(queue);
+                    LoadingHelper.Hide();
+                }
+                else
+                {
+                    LoadingHelper.Hide();
+                    //ToastMessageHelper.ShortMessage(Language.khong_tim_thay_san_pham);
+                }
+            };
         }
 
         private async void ShowMoreListDatCho_Clicked(object sender, EventArgs e)
@@ -166,7 +175,7 @@ namespace CustomerApp.Views
             //    else
             //    {
             //        LoadingHelper.Hide();
-            //        ToastMessageHelper.ShortMessage("Không tìm thấy thông tin chủ đầu tư");
+            //        ToastMessageHelper.ShortMessage(Language.khong_tim_thay_thong_tin_vui_long_thu_lai);
             //    }
             //};
         }
@@ -185,13 +194,15 @@ namespace CustomerApp.Views
             //    else
             //    {
             //        LoadingHelper.Hide();
-            //        ToastMessageHelper.ShortMessage("Không tìm thấy thông tin");
+            //        ToastMessageHelper.ShortMessage(Language.khong_tim_thay_thong_tin_vui_long_thu_lai);
             //    }
             //};
         }
 
         private void ItemSlider_Tapped(object sender, EventArgs e)
         {
+            // khoa lai vi phu long chua co hinh anh va video
+
             //LoadingHelper.Show();
             //var item = (CollectionData)((sender as Grid).GestureRecognizers[0] as TapGestureRecognizer).CommandParameter;
             //if (item.SharePointType == SharePointType.Image)
@@ -237,14 +248,18 @@ namespace CustomerApp.Views
             //carouseView.ScrollTo(index, position: ScrollToPosition.End);
         }
 
+        private async void OpenEvent_Tapped(object sender, EventArgs e)
+        {
+            if (viewModel.Event == null)
+            {
+                await viewModel.LoadDataEvent();
+            }
+           // ContentEvent.IsVisible = true;
+        }
+
         private void CloseContentEvent_Tapped(object sender, EventArgs e)
         {
            // ContentEvent.IsVisible = false;
         }
-
-        private void OpenEvent_Tapped(object sender, EventArgs e)
-        {
-           // ContentEvent.IsVisible = true;
-        }
-    }   
+    }
 }
