@@ -1,5 +1,6 @@
 ﻿using CustomerApp.Helper;
 using CustomerApp.Models;
+using CustomerApp.Resources;
 using CustomerApp.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -34,22 +35,23 @@ namespace CustomerApp.Views
 
         private async void listView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
-            //QueuesModel val = e.Item as QueuesModel;
-            //LoadingHelper.Show();
-            //QueuesDetialPage queuesDetialPage = new QueuesDetialPage(val.opportunityid);
-            //queuesDetialPage.OnCompleted = async (isSuccess) => {
-            //    if (isSuccess)
-            //    {
-            //        await Navigation.PushAsync(queuesDetialPage);
-            //        LoadingHelper.Hide();
-            //    }
-            //    else
-            //    {
-            //        LoadingHelper.Hide();
-            //        ToastMessageHelper.ShortMessage(Language.khong_tim_thay_thong_tin_vui_long_thu_lai);
-            //    }
-            //};
-            //LoadingHelper.Hide();
+            QueuesModel val = e.Item as QueuesModel;
+            LoadingHelper.Show();
+            QueuesDetialPage queuesDetialPage = new QueuesDetialPage(val.opportunityid);
+            queuesDetialPage.OnCompleted = async (isSuccess) =>
+            {
+                if (isSuccess)
+                {
+                    await Navigation.PushAsync(queuesDetialPage);
+                    LoadingHelper.Hide();
+                }
+                else
+                {
+                    LoadingHelper.Hide();
+                    ToastMessageHelper.ShortMessage(Language.noti_khong_tim_thay_thong_tin_vui_long_thu_lai);
+                }
+            };
+            LoadingHelper.Hide();
         }
 
         private async void SearchBar_SearchButtonPressed(System.Object sender, System.EventArgs e)

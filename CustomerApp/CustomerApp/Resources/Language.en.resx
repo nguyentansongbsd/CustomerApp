@@ -852,4 +852,172 @@
  <data name="thoi_gian_het_han" xml:space="preserve">
     <value>Queuing expired</value>
   </data>
+<data name="quote_dat_coc" xml:space="preserve">
+    <value>Reservation</value>
+  </data>
+<data name="quote_da_thanh_ly" xml:space="preserve">
+    <value>Terminated</value>
+  </data>
+  <data name="quote_dang_cho_huy_bo_tien_gui" xml:space="preserve">
+    <value>Pending Cancel Deposit</value>
+  </data>
+  <data name="quote_tu_choi" xml:space="preserve">
+    <value>Reject</value>
+  </data>
+  <data name="quote_da_ky_rf" xml:space="preserve">
+    <value>Signed RF</value>
+  </data>
+  <data name="quote_da_het_han_ky_rf" xml:space="preserve">
+    <value>Expired of signing RF</value>
+  </data>
+  <data name="quote_chuyen_coc" xml:space="preserve">
+    <value>Collected</value>
+  </data>
+  <data name="quote_bao_gia" xml:space="preserve">
+    <value>Quotation</value>
+  </data>
+  <data name="quote_bao_gia_het_han" xml:space="preserve">
+    <value>Expired quotation</value>
+  </data>
+  <data name="quote_da_ky_phieu_coc" xml:space="preserve">
+    <value>Reservation form has been signedquote_</value>
+  </data>
+<data name="quote_het_han" xml:space="preserve">
+    <value>Expired</value>
+  </data>
+<data name="quote_nhap" xml:space="preserve">
+    <value>Draft</value>
+  </data>
+<data name="quote_dang_xu_ly" xml:space="preserve">
+    <value>In Progress</value>
+  </data>
+<data name="quote_tt_du_tien_coc" xml:space="preserve">
+    <value>Deposited</value>
+  </data>
+  <data name="quote_mat_khach_hang" xml:space="preserve">
+    <value>Lost</value>
+  </data>
+  <data name="quote_da_sua_doi" xml:space="preserve">
+    <value>Revised</value>
+  </data>
+  <data name="quote_da_trinh" xml:space="preserve">
+    <value>Submitted</value>
+  </data>
+  <data name="quote_da_duyet" xml:space="preserve">
+    <value>Approved</value>
+  </data>
+  <data name="quote_thay_doi_thong_tin" xml:space="preserve">
+    <value>Change information</value>
+  </data>
+<data name="quote_thanh_cong" xml:space="preserve">
+    <value>Won</value>
+  </data>
+<data name="quote_da_huy" xml:space="preserve">
+    <value>Cancelled</value>
+  </data>
+<data name="activity_cancelled_sts" xml:space="preserve">
+    <value>Cancelled</value>
+  </data>
+  <data name="activity_completed_sts" xml:space="preserve">
+    <value>Completed</value>
+  </data>
+  <data name="activity_open_sts" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="activity_scheduled_sts" xml:space="preserve">
+    <value>Scheduled</value>
+  </data>
+<data name="cong_viec" xml:space="preserve">
+    <value>Task</value>
+  </data>
+  <data name="cuoc_hop" xml:space="preserve">
+    <value>Meeting</value>
+  </data>
+  <data name="cuoc_goi" xml:space="preserve">
+    <value>Phone call</value>
+  </data>
+<data name="noti_khong_tim_thay_thong_tin_vui_long_thu_lai" xml:space="preserve">
+    <value>Not found. Please try again.</value>
+  </data>
+<data name="noti_khong_co_so_dien_thoai" xml:space="preserve">
+    <value>No phone number</value>
+  </data>
+<data name="ban_co_muon_huy_giu_cho_nay_khong" xml:space="preserve">
+    <value>Do you want to cancel this queue?</value>
+  </data>
+<data name="dong_y" xml:space="preserve">
+    <value>Agree</value>
+  </data>
+<data name="bang_tinh_gia_btn" xml:space="preserve">
+    <value>Quotation Final</value>
+  </data>
+<data name="huy_giu_cho" xml:space="preserve">
+    <value>Cancel Queue</value>
+  </data>
+<data name="tao_cuoc_hop" xml:space="preserve">
+    <value>Create Meeting</value>
+  </data>
+  <data name="tao_cuoc_goi" xml:space="preserve">
+    <value>Create Phone Call</value>
+  </data>
+  <data name="tao_cong_viec" xml:space="preserve">
+    <value>Create Task</value>
+  </data>
+<data name="ma_giu_cho" xml:space="preserve">
+    <value>Queue number</value>
+  </data>
+<data name="da_het_han" xml:space="preserve">
+    <value>Expired</value>
+  </data>
+<data name="giu_cho_du_an" xml:space="preserve">
+    <value>Queue for project</value>
+  </data>
+<data name="phi_giu_cho_da_thanh_toan" xml:space="preserve">
+    <value>Queuing free paid</value>
+  </data>
+<data name="nhan_tin" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="goi_dien" xml:space="preserve">
+    <value>Call</value>
+  </data>
+<data name="so_thu_tu" xml:space="preserve">
+    <value>Order number</value>
+  </data>
+  <data name="so_uu_tien" xml:space="preserve">
+    <value>Priority number</value>
+  </data>
+  <data name="do_uu_tien" xml:space="preserve">
+    <value>Priority queue</value>
+  </data>
+<data name="thoi_gian_giu_cho" xml:space="preserve">
+    <value>Created on</value>
+  </data>
+<data name="thoi_gian_bat_dau" xml:space="preserve">
+    <value>Start date</value>
+  </data>
+  <data name="thoi_gian_ket_thuc" xml:space="preserve">
+    <value>Due date</value>
+  </data>
+<data name="ngay_thu_tu" xml:space="preserve">
+    <value>Date order</value>
+  </data>
+<data name="thong_tin_san_dai_ly" xml:space="preserve">
+    <value>Sale Agent Company Information</value>
+  </data>
+<data name="nhan_vien_gioi_thieu" xml:space="preserve">
+    <value>Employee referral</value>
+  </data>
+<data name="danh_sach_bang_tinh_gia" xml:space="preserve">
+    <value>Quotation</value>
+  </data>
+<data name="tong_tien" xml:space="preserve">
+    <value>Total amount</value>
+  </data>
+<data name="cham_soc_khach_hang" xml:space="preserve">
+    <value>Customer Care</value>
+  </data>
+<data name="loai_actitivty" xml:space="preserve">
+    <value>Type</value>
+  </data>
 </root>
