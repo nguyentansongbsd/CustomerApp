@@ -29,7 +29,15 @@ namespace CustomerApp.Views
                 VisualStateManager.GoToState(lbThongTin, "Selected");
                 VisualStateManager.GoToState(radBorderPhanHoiLienQuan, "Normal");
                 VisualStateManager.GoToState(lbPhanHoiLienQuan, "Normal");
-                viewModel.ButtonCommandList.Add(new FloatButtonItem(Language.huy_phan_hoi, "FontAwesomeRegular", "\uf273", null, CancelCase));
+                if (viewModel.Case.statuscode != 1)
+                {
+                    floatingButtonGroup.IsVisible = false;
+                }
+                else
+                {
+                    viewModel.ButtonCommandList.Add(new FloatButtonItem(Language.huy_phan_hoi, "FontAwesomeRegular", "\uf273", null, CancelCase));
+                    floatingButtonGroup.IsVisible = true;
+                }
 
                 OnCompleted?.Invoke(true);
             }
@@ -82,6 +90,8 @@ namespace CustomerApp.Views
                 if (await viewModel.UpdateCase())
                 {
                     await viewModel.LoadCaseInfor();
+                    floatingButtonGroup.IsVisible = viewModel.Case.statuscode != 1 ? false : true;
+                    if (CasesPage.NeedToRefresh.HasValue) CasesPage.NeedToRefresh = true;
                     LoadingHelper.Hide();
                     ToastMessageHelper.ShortMessage(Language.thong_bao_thanh_cong);
                 }
