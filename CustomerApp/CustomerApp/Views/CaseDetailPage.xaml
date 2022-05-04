@@ -121,7 +121,7 @@
                     </Grid>
                 </StackLayout>
             </ScrollView>
-            <controls:FloatingButtonGroup x:Name="floatingButtonGroup" IsVisible="{Binding ShowFloatingButtonGroup}" ItemsSource="{Binding BindingContext.ButtonCommandList,Source={x:Reference this}}"/>
+            <controls:FloatingButtonGroup x:Name="floatingButtonGroup" ItemsSource="{Binding BindingContext.ButtonCommandList,Source={x:Reference this}}"/>
         </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>

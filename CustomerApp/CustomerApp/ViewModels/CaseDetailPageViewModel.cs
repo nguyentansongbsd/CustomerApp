@@ -31,7 +31,7 @@ namespace CustomerApp.ViewModels
         private bool _showMoreCase;
         public bool ShowMoreCase { get => _showMoreCase; set { _showMoreCase = value; OnPropertyChanged(nameof(ShowMoreCase)); } }
 
-        public bool _showFloatingButtonGroup;
+        private bool _showFloatingButtonGroup = false;
         public bool ShowFloatingButtonGroup { get => _showFloatingButtonGroup; set { _showFloatingButtonGroup = value; OnPropertyChanged(nameof(ShowFloatingButtonGroup)); } }
 
         public Guid CaseId { get; set; }
@@ -80,17 +80,6 @@ namespace CustomerApp.ViewModels
             if (result == null || result.value == null)
                 return;
             Case = result.value.FirstOrDefault();
-
-            ShowFloatingButtonGroup = Case.statuscode != 1 ? false : true;
-
-            //if (Case.accountName != null)
-            //{
-            //    CustomerName = Case.accountName;
-            //}
-            //else if (Case.contactName != null)
-            //{
-            //    CustomerName = Case.contactName;
-            //}
 
             CaseType = CaseTypeData.GetCaseById(Case.casetypecode);
             Origin = CaseOriginData.GetOriginById(Case.caseorigincode);

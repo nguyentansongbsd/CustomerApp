@@ -42,7 +42,7 @@ namespace CustomerApp.Views
         private async void NewCase_Clicked(object sender, EventArgs e)
         {
             LoadingHelper.Show();
-            //await Navigation.PushAsync(new PhanHoiForm());
+            await Navigation.PushAsync(new CaseFormPage());
             LoadingHelper.Hide();
         }
 
