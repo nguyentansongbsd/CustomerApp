@@ -48,7 +48,8 @@ namespace CustomerApp.Views
                 viewModel.LoadThongKe(),
                 viewModel.LoadThongKeGiuCho(),
                 viewModel.LoadThongKeHopDong(),
-                viewModel.LoadThongKeBangTinhGia()
+                viewModel.LoadThongKeBangTinhGia(),
+                viewModel.LoadPhasesLanch()
             );
 
             if (viewModel.Project != null)
@@ -254,12 +255,12 @@ namespace CustomerApp.Views
             {
                 await viewModel.LoadDataEvent();
             }
-           // ContentEvent.IsVisible = true;
+            ContentEvent.IsVisible = true;
         }
 
         private void CloseContentEvent_Tapped(object sender, EventArgs e)
         {
-           // ContentEvent.IsVisible = false;
+            ContentEvent.IsVisible = false;
         }
     }
 }

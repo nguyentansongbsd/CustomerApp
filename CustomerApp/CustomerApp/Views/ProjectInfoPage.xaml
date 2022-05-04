@@ -249,6 +249,35 @@
                                         <Label Text="{x:Static lang:Language.unit_sold_sts}" FontSize="15" TextColor="#808080" HorizontalTextAlignment="Center"/>
                                     </StackLayout>
                                 </Grid>
+
+                                <controls:TitleSection Text="{x:Static lang:Language.danh_sach_dot_mo_ban}" IsExpanded="False" Margin="0,20">
+                                    <controls:TitleSection.Content>
+                                        <StackLayout BindableLayout.ItemsSource="{Binding ListPhasesLanch}" BackgroundColor="#eeeeee" Spacing="1">
+                                                <BindableLayout.EmptyViewTemplate>
+                                                    <DataTemplate>
+                                                        <Label Text="{x:Static lang:Language.khong_co_du_lieu}" TextColor="#444444" HorizontalTextAlignment="Center" BackgroundColor="White" Padding="0,15"/>
+                                                    </DataTemplate>
+                                                </BindableLayout.EmptyViewTemplate>
+                                                <BindableLayout.ItemTemplate>
+                                                    <DataTemplate>
+                                                        <Grid RowDefinitions="Auto,Auto" BackgroundColor ="White" Padding="20" Margin="0,1">
+                                                        <Grid ColumnDefinitions="Auto,*" Grid.Row="0" Grid.Column="0">
+                                                            <telerikPrimitives:RadBorder CornerRadius="5" BackgroundColor="{Binding statuscode_color}" VerticalOptions="StartAndExpand">
+                                                                <Label Grid.Column="0" Text="{Binding statuscode_format}" FontSize="14" TextColor="White" FontAttributes="Bold" Margin="5"/>
+                                                            </telerikPrimitives:RadBorder>
+                                                            <Label Grid.Column="1" Text="{Binding bsd_name}" TextColor="{StaticResource Primary}" FontSize="16" FontAttributes="Bold" MaxLines="1" VerticalOptions="Center" LineBreakMode="TailTruncation" />
+                                                        </Grid>
+                                                        <Grid ColumnDefinitions="Auto,Auto,*" Grid.Row="1">
+                                                            <Label Text="{Binding Source={x:Static lang:Language.thoi_gian_het_han},StringFormat='{0}: '}" TextColor="#444444" FontSize="15" Grid.Column="0"/>
+                                                            <Label Text="{Binding bsd_enddate,StringFormat='{0:dd/MM/yyyy} - '}" TextColor="#444444" FontSize="15" Grid.Column="1" />
+                                                            <Label Text="{Binding bsd_enddate ,StringFormat='{0:HH:mm}'}" TextColor="#444444" FontSize="15" Grid.Column="2" />
+                                                        </Grid>
+                                                    </Grid>
+                                                    </DataTemplate>
+                                                </BindableLayout.ItemTemplate>
+                                            </StackLayout>
+                                    </controls:TitleSection.Content>
+                                </controls:TitleSection>
                             </StackLayout>
                         </StackLayout>
 
@@ -340,7 +369,7 @@
                 <!--<Button Text="{x:Static language:Language.giu_cho}" Clicked="GiuCho_Clicked" TextColor="White" FontAttributes="Bold" FontSize="16" HeightRequest="40" BackgroundColor="{StaticResource NavigationPrimary}" CornerRadius="10" Margin="10,5"/>-->
             </StackLayout>
 
-            <!--<ContentView x:Name="ContentEvent" IsVisible="false" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" BackgroundColor="#90000000" Padding="20">
+            <ContentView x:Name="ContentEvent" IsVisible="false" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" BackgroundColor="#90000000" Padding="20">
                 <ContentView.GestureRecognizers>
                     <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="CloseContentEvent_Tapped"/>
                 </ContentView.GestureRecognizers>
@@ -350,7 +379,7 @@
                     </telerikPrimitives:RadBorder.GestureRecognizers>
                     <Grid Grid.Row="0" Margin="0" RowDefinitions="Auto,*,Auto">
                         <Grid ColumnDefinitions="*,Auto" RowDefinitions="Auto" Grid.Row="0" Grid.Column="0">
-                            <Label Grid.Column="0" Text="{x:Static language:Language.su_kien_title}" TextColor="#666666" FontSize="16" FontAttributes="Bold" VerticalOptions="Center"/>
+                            <Label Grid.Column="0" Text="{x:Static lang:Language.su_kien}" TextColor="#666666" FontSize="16" FontAttributes="Bold" VerticalOptions="Center"/>
                             <Label Grid.Column="1" Text="&#xf057;" FontFamily="FontAwesomeSolid" VerticalOptions="Center" FontSize="17" Padding="2" TextColor="#666666">
                                 <Label.GestureRecognizers>
                                     <TapGestureRecognizer NumberOfTapsRequired="1" Tapped="CloseContentEvent_Tapped"/>
@@ -362,22 +391,22 @@
                             <Grid RowSpacing="10" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,*">
                                 <Label Text="{Binding Event.bsd_name}" FontSize="16" FontAttributes="Bold" TextColor="{StaticResource NavigationPrimary}" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Padding="0,5"/>
 
-                                <controls:FormLabel Text="{x:Static language:Language.ma_su_kien}" Grid.Column="0" FontSize="14" TextColor="#444444" Grid.Row="1" VerticalOptions="Center"/>
+                                <controls:FormLabel Text="{x:Static lang:Language.ma_su_kien}" Grid.Column="0" FontSize="14" TextColor="#444444" Grid.Row="1" VerticalOptions="Center"/>
                                 <telerikPrimitives:RadBorder Grid.Column="1" Grid.Row="1" BorderColor="#f3f3f3" Padding="5" CornerRadius="5" BorderThickness="1" Margin="10,0,0,0">
                                     <Label Text="{Binding Event.bsd_eventcode}" FontSize="14" TextColor="#444444" HorizontalTextAlignment="Center" HorizontalOptions="Center" VerticalOptions="Center"/>
                                 </telerikPrimitives:RadBorder>
 
-                                <controls:FormLabel Text="{x:Static language:Language.dot_mo_ban}" Grid.Column="0" FontSize="14" TextColor="#444444" Grid.Row="2" VerticalOptions="Center"/>
+                                <controls:FormLabel Text="{x:Static lang:Language.dot_mo_ban}" Grid.Column="0" FontSize="14" TextColor="#444444" Grid.Row="2" VerticalOptions="Center"/>
                                 <telerikPrimitives:RadBorder Grid.Column="1" Grid.Row="2" BorderColor="#f3f3f3" Padding="5" CornerRadius="5" BorderThickness="1" Margin="10,0,0,0">
                                     <Label Text="{Binding Event.bsd_phaselaunch_name}" FontSize="14" TextColor="{StaticResource NavigationPrimary}" HorizontalTextAlignment="Center" HorizontalOptions="Center" VerticalOptions="Center"/>
                                 </telerikPrimitives:RadBorder>
 
-                                <controls:FormLabel Text="{x:Static language:Language.thoi_gian_bat_dau}" Grid.Column="0" FontSize="14" TextColor="#444444" Grid.Row="3" VerticalOptions="Center"/>
+                                <controls:FormLabel Text="{x:Static lang:Language.thoi_gian_bat_dau}" Grid.Column="0" FontSize="14" TextColor="#444444" Grid.Row="3" VerticalOptions="Center"/>
                                 <telerikPrimitives:RadBorder Grid.Column="1" Grid.Row="3" BorderColor="#f3f3f3" Padding="5" CornerRadius="5" BorderThickness="1" Margin="10,0,0,0">
                                     <Label Text="{Binding Event.bsd_startdate,StringFormat='{0:dd/MM/yyyy}'}" FontSize="14" TextColor="#444444" HorizontalOptions="Center" VerticalOptions="Center"/>
                                 </telerikPrimitives:RadBorder>
 
-                                <controls:FormLabel Text="{x:Static language:Language.thoi_gian_ket_thuc}" Grid.Column="0" FontSize="14" TextColor="#444444" Grid.Row="4" VerticalOptions="Center"/>
+                                <controls:FormLabel Text="{x:Static lang:Language.thoi_gian_ket_thuc}" Grid.Column="0" FontSize="14" TextColor="#444444" Grid.Row="4" VerticalOptions="Center"/>
                                 <telerikPrimitives:RadBorder Grid.Column="1" Grid.Row="4" BorderColor="#f3f3f3" Padding="5" CornerRadius="5" BorderThickness="1" Margin="10,0,0,0">
                                     <Label Text="{Binding Event.bsd_enddate,StringFormat='{0:dd/MM/yyyy}'}" FontSize="14" TextColor="#444444" HorizontalOptions="Center" VerticalOptions="Center"/>
                                 </telerikPrimitives:RadBorder>
@@ -385,7 +414,7 @@
                         </ScrollView>
                     </Grid>
                 </telerikPrimitives:RadBorder>
-            </ContentView>-->
+            </ContentView>
         </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>

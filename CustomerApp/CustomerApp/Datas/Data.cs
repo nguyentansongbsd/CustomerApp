@@ -102,12 +102,16 @@ namespace CustomerApp.Datas
                 new StatusCodeModel("0",Language.unit_draft_sts,"#333333"), //Draft unit_draft_sts
                 new StatusCodeModel("1",Language.unit_preparing_sts,"#FDC206"),//Preparing unit_preparing_sts
                 new StatusCodeModel("100000000",Language.unit_available_sts,"#06CF79"),//Available unit_available_sts
+                new StatusCodeModel("100000007",Language.unit_booking_sts,"#00CED1"), //Booking
                 new StatusCodeModel("100000004",Language.unit_queuing_sts,"#03ACF5"),//Queuing unit_queuing_sts
                 new StatusCodeModel("100000006",Language.unit_reserve_sts,"#04A388"),//Reserve unit_reserve_sts
                 new StatusCodeModel("100000005",Language.unit_collected_sts,"#9A40AB"),//Collected unit_collected_sts
                 new StatusCodeModel("100000003",Language.unit_deposited_sts,"#FA7901"),//Deposited unit_deposited_sts
                 new StatusCodeModel("100000001",Language.unit_1st_installment_sts,"#808080"),//1st Installment unit_1st_installment_sts
                 new StatusCodeModel("100000002",Language.unit_sold_sts,"#D42A16"),//Sold unit_sold_sts
+                new StatusCodeModel("100000009",Language.unit_signedda_sts,"#A0DB8E"), //Signed D.A
+                new StatusCodeModel("100000008",Language.unit_qualified_sts,"#6897BB"),  //Qualified
+                new StatusCodeModel("100000010",Language.unit_option_sts,"#808080"), //Option
             };
         }
         #endregion
@@ -237,6 +241,63 @@ namespace CustomerApp.Datas
         public static StatusCodeModel GetQuoteStatusCodeById(string id)
         {
             return QuoteStatusData().SingleOrDefault(x => x.Id == id);
+        }
+        #endregion
+        #region Views
+        public static OptionSetFilter GetViewById(string viewId)
+        {
+            var view = ViewData().SingleOrDefault(x => x.Val == viewId);
+            return view;
+        }
+
+        public static string GetViewByIds(string ids)
+        {
+            List<string> list = new List<string>();
+            string[] Ids = ids.Split(',');
+            foreach (var item in Ids)
+            {
+                var i = GetViewById(item);
+                if (i != null)
+                    list.Add(i.Label);
+            }
+            return string.Join(", ", list);
+        }
+
+        public static List<OptionSetFilter> ViewData()
+        {
+            return new List<OptionSetFilter>() {
+                new OptionSetFilter(){ Val="100000000",Label=Language.thanh_pho},
+                new OptionSetFilter(){ Val="100000001",Label=Language.be_boi },  // hồ bơi
+                new OptionSetFilter(){ Val="100000002",Label=Language.cong_vien},
+                new OptionSetFilter(){ Val="100000003",Label=Language.mat_tien},
+                new OptionSetFilter(){ Val="100000004",Label=Language.san_vuon},
+                new OptionSetFilter(){ Val="100000006",Label=Language.xa_lo},
+                new OptionSetFilter(){ Val="100000007",Label=Language.ho}, //lake
+                new OptionSetFilter(){ Val="100000008",Label=Language.song},
+                new OptionSetFilter(){ Val="100000009",Label=Language.bien},
+                new OptionSetFilter(){ Val="100000010",Label=Language.mot_mat_thoang},
+                new OptionSetFilter(){ Val="100000011",Label=Language.hai_mat_thoang},
+                new OptionSetFilter(){ Val="100000012",Label=Language.ho_boi}, // pool
+            };
+        }
+        #endregion
+        #region PhasesLanch
+        public static StatusCodeModel GetPhasesLanchStatusCodeById(string statusCodeId)
+        {
+            return PhasesLanchStatusCodeData().SingleOrDefault(x => x.Id == statusCodeId);
+        }
+
+        public static List<StatusCodeModel> PhasesLanchStatusCodeData()
+        {
+            return new List<StatusCodeModel>()
+            {
+                new StatusCodeModel("1",Language.phaseslanch_not_launch_sts,"#FDC206"), //Not Launch
+                new StatusCodeModel("100000000",Language.phaseslanch_launched_sts,"#06CF79"),//Launched
+                new StatusCodeModel("100000004",Language.phaseslanch_approved_sts,"#03ACF5"),//Approved
+                new StatusCodeModel("100000003",Language.phaseslanch_confirm_sts,"#FA7901"),//Confirm
+                new StatusCodeModel("100000001",Language.phaseslanch_recovery_sts,"#808080"),//Recovery
+                new StatusCodeModel("100000002",Language.phaseslanch_unit_recovery_sts,"#D42A16"),//Unit Recovery
+            };
         }
         #endregion
     }

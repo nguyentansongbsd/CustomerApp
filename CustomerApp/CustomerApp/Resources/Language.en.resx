@@ -1092,6 +1092,147 @@
   <data name="thong_bao_that_bai" xml:space="preserve">
     <value>Failed.</value>
   </data>
+	<data name="thanh_pho" xml:space="preserve">
+    <value>City</value>
+  </data>
+	<data name="be_boi" xml:space="preserve">
+    <value>Swimming poll</value>
+  </data>
+	<data name="cong_vien" xml:space="preserve">
+    <value>Park</value>
+  </data>
+	<data name="mat_tien" xml:space="preserve">
+    <value>Facade</value>
+  </data>
+	<data name="san_vuon" xml:space="preserve">
+    <value>Garden</value>
+  </data>
+	<data name="xa_lo" xml:space="preserve">
+    <value>High Way</value>
+  </data>
+	<data name="ho" xml:space="preserve">
+    <value>Lake</value>
+  </data>
+	<data name="song" xml:space="preserve">
+    <value>River</value>
+  </data>
+	<data name="bien" xml:space="preserve">
+    <value>Sea</value>
+  </data>
+	<data name="mot_mat_thoang" xml:space="preserve">
+    <value>01 Side Open</value>
+  </data>
+	<data name="hai_mat_thoang" xml:space="preserve">
+    <value>02 Side Open</value>
+  </data>
+	<data name="ho_boi" xml:space="preserve">
+    <value>Pool</value>
+  </data>
+	<data name="tang" xml:space="preserve">
+    <value>Floor</value>
+  </data>
+	<data name="xem_thong_tin" xml:space="preserve">
+    <value>Information</value>
+  </data>
+	<data name="danh_sach_giu_cho" xml:space="preserve">
+    <value>Queues</value>
+  </data>
+<data name="loai_unit" xml:space="preserve">
+    <value>Unit type</value>
+  </data>
+<data name="huong_nhin" xml:space="preserve">
+    <value>View</value>
+  </data>
+<data name="da_thanh_toan_phi_giu_cho" xml:space="preserve">
+    <value>Collected queuing fee</value>
+  </data>
+<data name="giu_cho_btn" xml:space="preserve">
+    <value>Queue</value>
+  </data>
+<data name="unit_booking_sts" xml:space="preserve">
+    <value>Booking</value>
+  </data>
+<data name="unit_signedda_sts" xml:space="preserve">
+    <value>Signed D.A</value>
+  </data>
+<data name="unit_qualified_sts" xml:space="preserve">
+    <value>Qualified</value>
+  </data>
+<data name="unit_option_sts" xml:space="preserve">
+    <value>Option</value>
+  </data>
+<data name="khong_co_san_pham" xml:space="preserve">
+    <value>Not found Unit</value>
+  </data>
+	<data name="khong_tim_thay_san_pham" xml:space="preserve">
+    <value>Unit not found.</value>
+  </data>
+	<data name="thon_tin_can_ho" xml:space="preserve">
+    <value>Unit information</value>
+  </data>
+	<data name="so_can_ho" xml:space="preserve">
+    <value>Units number</value>
+  </data>
+	<data name="ma_can_ho" xml:space="preserve">
+    <value>Units code</value>
+  </data>
+	<data name="toa_nha_khu" xml:space="preserve">
+    <value>Block</value>
+  </data>
+	<data name="bien_do_chenh_lech_dien_tich" xml:space="preserve">
+    <value>Area variance</value>
+  </data>
+	<data name="ban_giao" xml:space="preserve">
+    <value>Handover</value>
+  </data>
+	<data name="thong_tin_gia_ban" xml:space="preserve">
+    <value>Price Information</value>
+  </data>
+	<data name="phi_quan_ly_thang_m2" xml:space="preserve">
+    <value>Management amount (Month)</value>
+  </data>
+	<data name="ngay_du_kien_ban_giao" xml:space="preserve">
+    <value>Estimate handover date</value>
+  </data>
+	<data name="dien_tich_xay_dung" xml:space="preserve">
+    <value>Construction area (sqm)</value>
+  </data>
+	<data name="phi_dat_coc" xml:space="preserve">
+    <value>Deposit fee</value>
+  </data>
+	<data name="tong_gia_tri_qsdd" xml:space="preserve">
+    <value>Land value deduction</value>
+  </data>
+	<data name="thue" xml:space="preserve">
+    <value>VAT</value>
+  </data>
+	<data name="dieu_kien_ban_giao" xml:space="preserve">
+    <value>Handover condition</value>
+  </data>
+	<data name="ma_su_kien" xml:space="preserve">
+    <value>Event code</value>
+  </data>
+	<data name="danh_sach_dot_mo_ban" xml:space="preserve">
+    <value>Phases Launch</value>
+  </data>
+	<data name="phaseslanch_confirm_sts" xml:space="preserve">
+<value>Confirm</value>
+</data>
+	<data name="phaseslanch_approved_sts" xml:space="preserve">
+<value>Approved</value>
+</data>
+	<data name="phaseslanch_not_launch_sts" xml:space="preserve">
+<value>Not Launch</value>
+</data>
+	<data name="phaseslanch_launched_sts" xml:space="preserve">
+<value>Launched</value>
+</data>
+	<data name="phaseslanch_recovery_sts" xml:space="preserve">
+<value>Recovery</value>
+</data>
+	<data name="phaseslanch_unit_recovery_sts" xml:space="preserve">
+<value>Unit Recovery</value>
+</data>
   <data name="tao_phan_hoi" xml:space="preserve">
     <value>Create Case</value>
   </data>

@@ -177,8 +177,8 @@ namespace CustomerApp.Views
         {
             if (ProjectInfoPage.NeedToRefreshQueue.HasValue) ProjectInfoPage.NeedToRefreshQueue = true;
             if (ProjectInfoPage.NeedToRefreshNumQueue.HasValue) ProjectInfoPage.NeedToRefreshNumQueue = true;
-            //if (DirectSaleDetail.NeedToRefreshDirectSale.HasValue) DirectSaleDetail.NeedToRefreshDirectSale = true;
-            //if (UnitInfo.NeedToRefreshQueue.HasValue) UnitInfo.NeedToRefreshQueue = true;
+            if (DirectSaleDetail.NeedToRefreshDirectSale.HasValue) DirectSaleDetail.NeedToRefreshDirectSale = true;
+            if (UnitInfoPage.NeedToRefreshQueue.HasValue) UnitInfoPage.NeedToRefreshQueue = true;
             //if (DashboardPage.NeedToRefreshQueue.HasValue) DashboardPage.NeedToRefreshQueue = true;
         }
     }
