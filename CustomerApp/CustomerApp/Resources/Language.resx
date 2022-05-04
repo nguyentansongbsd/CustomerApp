@@ -927,4 +927,40 @@
   <data name="thong_bao_that_bai" xml:space="preserve">
     <value>Thất bại.</value>
   </data>
+  <data name="tao_phan_hoi" xml:space="preserve">
+    <value>Tạo Phản hồi</value>
+  </data>
+  <data name="chon_loai" xml:space="preserve">
+    <value>Chọn loại</value>
+  </data>
+  <data name="nhap_tieu_de" xml:space="preserve">
+    <value>Nhập tiêu đề</value>
+  </data>
+  <data name="chon_chu_de" xml:space="preserve">
+    <value>Chọn chủ đề</value>
+  </data>
+  <data name="chon_phan_hoi_lien_quan" xml:space="preserve">
+    <value>Chọn phản hổi liên quan</value>
+  </data>
+  <data name="chon_nguon" xml:space="preserve">
+    <value>Chọn nguồn</value>
+  </data>
+  <data name="chon_khach_hang" xml:space="preserve">
+    <value>Chọn khách hàng</value>
+  </data>
+  <data name="chon_san_pham" xml:space="preserve">
+    <value>Chọn sản phẩm</value>
+  </data>
+  <data name="nhap_noi_dung" xml:space="preserve">
+    <value>Nhập nội dung</value>
+  </data>
+  <data name="vui_long_chon_du_an" xml:space="preserve">
+    <value>Vui lòng chọn dự án.</value>
+  </data>
+  <data name="vui_long_chon_loai_phan_hoi" xml:space="preserve">
+    <value>Vui lòng chọn loại phản hồi.</value>
+  </data>
+  <data name="vui_long_nhap_tieu_de" xml:space="preserve">
+    <value>Vui lòng nhập tiêu đề.</value>
+  </data>
 </root>
