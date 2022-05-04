@@ -7,7 +7,7 @@ using System.Text;
 
 namespace CustomerApp.Models
 {
-    public class ReservationDetailPageModel : BaseViewModel
+    public class ReservationModel : BaseViewModel
     {
         public Guid quoteid { get; set; }
 
@@ -396,5 +396,30 @@ namespace CustomerApp.Models
                     return true;
             }
         }
+        public Guid bsd_project_id { get; set; }
+        public string bsd_project_name { get; set; }
+
+        public Guid bsd_unitno_id { get; set; }
+        public string bsd_unitno_name { get; set; }
+
+        public string purchaser_accountname { get; set; }
+
+        public string purchaser_contactname { get; set; }
+
+        public string purchaser
+        {
+            get
+            {
+                if (!string.IsNullOrWhiteSpace(purchaser_accountname))
+                {
+                    return purchaser_accountname;
+                }
+                else
+                {
+                    return purchaser_contactname ?? "";
+                }
+            }
+        }
+        public string statuscode_format { get => Data.GetQuoteStatusCodeById(statuscode.ToString())?.Name; }
     }
 }

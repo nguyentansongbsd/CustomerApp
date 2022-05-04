@@ -570,7 +570,7 @@ namespace CustomerApp.ViewModels
                                     </link-entity>
                                   </entity>
                                 </fetch>";
-            var resultQuote = await CrmHelper.RetrieveMultiple<RetrieveMultipleApiResponse<ReservationDetailPageModel>>("quotes", fetchQuote);
+            var resultQuote = await CrmHelper.RetrieveMultiple<RetrieveMultipleApiResponse<ReservationModel>>("quotes", fetchQuote);
             if (resultQuote != null || resultQuote.value.Count > 0)
             {
                 if (resultQuote.value.FirstOrDefault(x => x.statuscode == 3 || x.statuscode == 861450000) != null)

@@ -202,5 +202,42 @@ namespace CustomerApp.Datas
             }
         }
         #endregion
+        #region Quote
+        public static List<StatusCodeModel> QuoteStatusData()
+        {
+            return new List<StatusCodeModel>()
+            {
+                new StatusCodeModel("100000000",Language.quote_dat_coc,"#ffc43d"), // Reservation
+                new StatusCodeModel("100000001",Language.quote_da_thanh_ly,"#F43927"), // Terminated
+                new StatusCodeModel("100000002",Language.quote_dang_cho_huy_bo_tien_gui,"#808080"),//Pending Cancel Deposit
+                new StatusCodeModel("100000003",Language.quote_tu_choi,"#808080"), // Reject
+                new StatusCodeModel("100000004",Language.quote_da_ky_rf,"#808080"),//Signed RF
+                new StatusCodeModel("100000005",Language.quote_da_het_han_ky_rf,"#808080"), // Expired of signing RF
+                new StatusCodeModel("100000006",Language.quote_chuyen_coc,"#808080"),//Collected
+                new StatusCodeModel("100000007",Language.quote_bao_gia,"#FF8F4F"), //Quotation
+                new StatusCodeModel("100000008",Language.quote_bao_gia_het_han,"#808080"), // Expired Quotation
+                new StatusCodeModel("100000009",Language.quote_het_han,"#B3B3B3"), // ~ Het han
+                new StatusCodeModel("100000010",Language.quote_da_ky_phieu_coc,"#808080"),//Đã ký phiếu cọc
+                new StatusCodeModel("100000012",Language.quote_nhap,"#808080"),
+
+                new StatusCodeModel("1",Language.quote_dang_xu_ly,"#00CF79"),//In Progress
+                new StatusCodeModel("2",Language.quote_dang_xu_ly,"#00CF79"),//In Progress
+                new StatusCodeModel("3",Language.quote_tt_du_tien_coc,"#04A8F4"),//Deposited
+                new StatusCodeModel("4",Language.quote_thanh_cong,"#8bce3d"), // Won
+                new StatusCodeModel("5",Language.quote_mat_khach_hang,"#808080"), // Lost
+                new StatusCodeModel("6",Language.quote_da_huy,"#808080"), // Canceled
+                new StatusCodeModel("7",Language.quote_da_sua_doi,"#808080"), // Revised
+
+                new StatusCodeModel("861450001",Language.quote_da_trinh,"#808080"),//Submitted
+                new StatusCodeModel("861450002",Language.quote_da_duyet,"#808080"),//Approved
+                new StatusCodeModel("861450000",Language.quote_thay_doi_thong_tin,"#808080"),//Change information
+            };
+        }
+
+        public static StatusCodeModel GetQuoteStatusCodeById(string id)
+        {
+            return QuoteStatusData().SingleOrDefault(x => x.Id == id);
+        }
+        #endregion
     }
 }

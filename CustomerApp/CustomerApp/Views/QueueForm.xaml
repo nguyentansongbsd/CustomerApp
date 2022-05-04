@@ -4,8 +4,68 @@
              xmlns:controls="clr-namespace:CustomerApp.Controls" 
              xmlns:telerikPrimitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives"
              x:Class="CustomerApp.Views.QueueForm"
-             xmlns:lang="clr-namespace:CustomerApp.Resources"
-             Title="{x:Static lang:Language.title_tao_giu_cho}">
+             xmlns:lang="clr-namespace:CustomerApp.Resources" xmlns:converters="clr-namespace:CustomerApp.Converters"
+             Title="{x:Static lang:Language.title_tao_giu_cho}"
+             x:Name="this">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="rabBorder_Tab" TargetType="telerikPrimitives:RadBorder">
+                <Setter Property="VisualStateManager.VisualStateGroups">
+                    <VisualStateGroupList>
+                        <VisualStateGroup>
+                            <VisualState x:Name="InActive">
+                                <VisualState.Setters>
+                                    <Setter Property="BorderColor" Value="#939393"/>
+                                    <Setter Property="BorderThickness" Value="0,0,0,1"/>
+                                </VisualState.Setters>
+                            </VisualState>
+                            <VisualState x:Name="Active">
+                                <VisualState.Setters>
+                                    <Setter Property="BorderColor" Value="#2196F3"/>
+                                    <Setter Property="BorderThickness" Value="0,0,0,2"/>
+                                </VisualState.Setters>
+                            </VisualState>
+                        </VisualStateGroup>
+                    </VisualStateGroupList>
+                </Setter>
+            </Style>
+            <Style x:Key="Lb_Tab" TargetType="Label">
+                <Setter Property="FontSize" Value="15"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="Padding" Value="0,10"/>
+                <Setter Property="VisualStateManager.VisualStateGroups">
+                    <VisualStateGroupList>
+                        <VisualStateGroup>
+                            <VisualState x:Name="InActive">
+                                <VisualState.Setters>
+                                    <Setter Property="TextColor" Value="#939393"/>
+                                    <Setter Property="FontAttributes" Value="None"/>
+                                </VisualState.Setters>
+                            </VisualState>
+                            <VisualState x:Name="Active">
+                                <VisualState.Setters>
+                                    <Setter Property="TextColor" Value="#2196F3"/>
+                                    <Setter Property="FontAttributes" Value="Bold"/>
+                                </VisualState.Setters>
+                            </VisualState>
+                        </VisualStateGroup>
+                    </VisualStateGroupList>
+                </Setter>
+            </Style>
+            <Style x:Key="ExpanderHeaderStyle" TargetType="telerikPrimitives:ExpanderHeader">
+                <Setter Property="IndicatorText" Value="&#xf105;"/>
+                <Setter Property="IndicatorLocation" Value="End"/>
+                <Setter Property="IndicatorFontSize" Value="18"/>
+                <Setter Property="IndicatorColor" Value="#939393"/>
+                <Setter Property="BackgroundColor" Value="#F2F2F2"/>
+                <Setter Property="BorderColor" Value="Transparent"/>
+                <Setter Property="BorderThickness" Value="0"/>
+                <Setter Property="Padding" Value="10,8"/>
+                <Setter Property="IndicatorFontFamily" Value="FontAwesomeSolid"/>
+            </Style>
+            <converters:NullToHideConverter x:Key="NullToHideConverter"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
         <AbsoluteLayout>
             <ScrollView AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All" Padding="0,10,0,60">

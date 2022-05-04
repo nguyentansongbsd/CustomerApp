@@ -1,10 +1,17 @@
-﻿using System;
+﻿using CustomerApp.Models;
+using System;
 using System.Collections;
-using CustomerApp.Models;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
 namespace CustomerApp.Controls
 {
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class FloatingButtonGroup : ContentView
     {
         public event EventHandler ClickedEvent;
@@ -12,7 +19,6 @@ namespace CustomerApp.Controls
         public IEnumerable ItemsSource { get => (IEnumerable)GetValue(ItemsSourceProperty); set { SetValue(ItemsSourceProperty, value); } }
 
         private bool IsShow = false;
-
         public FloatingButtonGroup()
         {
             InitializeComponent();

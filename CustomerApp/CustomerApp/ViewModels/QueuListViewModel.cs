@@ -87,17 +87,14 @@ namespace CustomerApp.ViewModels
                             <value>100000009</value>
                             <value>100000010</value>
                           </condition>
-                            {status}
-                            {project}
+                          '{status}'
+                          '{project}'
                         </filter>
-                        <link-entity name='contact' from='contactid' to='customerid' visible='false' link-type='outer'>
+                        <link-entity name='contact' from='contactid' to='customerid' visible='false' link-type='inner'>
                            <attribute name='fullname'  alias='contact_name'/>
-                        </link-entity>
-                        <link-entity name='account' from='accountid' to='customerid' visible='false' link-type='inner'>
-                           <attribute name='name'  alias='account_name'/>
-                        <filter type='and'>
-                            <condition attribute='contactid' operator='eq' value='{UserLogged.Id}' />
-                        </filter>
+                            <filter type='and'>
+                                 <condition attribute='contactid' operator='eq' value='{UserLogged.Id}' />
+                            </filter>
                         </link-entity>
                       </entity>
                     </fetch>";

@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:controls="clr-namespace:CustomerApp.Controls"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CustomerApp.Controls.FloatingButtonGroup"
              HorizontalOptions="End"
              BackgroundColor="Transparent"
              AbsoluteLayout.LayoutBounds="0,1,1,64"
-             AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional"
-             x:Class="CustomerApp.Controls.FloatingButtonGroup">
+             AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional">
     <StackLayout VerticalOptions="End">
         <ScrollView x:Name="MainScrollView" IsVisible="false" VerticalOptions="End">
             <StackLayout x:Name="Options" BindableLayout.ItemsSource="{Binding ItemsSource}" HorizontalOptions="End" Padding="10" Spacing="10">
