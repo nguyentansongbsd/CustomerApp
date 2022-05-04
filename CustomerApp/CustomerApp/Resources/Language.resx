@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
-  <!-- 
+	<!-- 
     Microsoft ResX Schema 
     
     Version 2.0
@@ -59,320 +59,320 @@
             : using a System.ComponentModel.TypeConverter
             : and then encoded with base64 encoding.
     -->
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
-    <xsd:element name="root" msdata:IsDataSet="true">
-      <xsd:complexType>
-        <xsd:choice maxOccurs="unbounded">
-          <xsd:element name="metadata">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" />
-              </xsd:sequence>
-              <xsd:attribute name="name" use="required" type="xsd:string" />
-              <xsd:attribute name="type" type="xsd:string" />
-              <xsd:attribute name="mimetype" type="xsd:string" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="assembly">
-            <xsd:complexType>
-              <xsd:attribute name="alias" type="xsd:string" />
-              <xsd:attribute name="name" type="xsd:string" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="data">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
-              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
-              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
-              <xsd:attribute ref="xml:space" />
-            </xsd:complexType>
-          </xsd:element>
-          <xsd:element name="resheader">
-            <xsd:complexType>
-              <xsd:sequence>
-                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-              </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" use="required" />
-            </xsd:complexType>
-          </xsd:element>
-        </xsd:choice>
-      </xsd:complexType>
-    </xsd:element>
-  </xsd:schema>
-  <resheader name="resmimetype">
-    <value>text/microsoft-resx</value>
-  </resheader>
-  <resheader name="version">
-    <value>2.0</value>
-  </resheader>
-  <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </resheader>
-  <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </resheader>
-  <data name="trang_chu" xml:space="preserve">
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="metadata">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" />
+							</xsd:sequence>
+							<xsd:attribute name="name" use="required" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="assembly">
+						<xsd:complexType>
+							<xsd:attribute name="alias" type="xsd:string" />
+							<xsd:attribute name="name" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="trang_chu" xml:space="preserve">
     <value>Trang chủ</value>
   </data>
-  <data name="nhan_de_chinh_sua" xml:space="preserve">
+	<data name="nhan_de_chinh_sua" xml:space="preserve">
     <value>Nhấn để chỉnh sửa</value>
   </data>
-  <data name="gio_hang" xml:space="preserve">
+	<data name="gio_hang" xml:space="preserve">
     <value>Giỏ hàng</value>
   </data>
-  <data name="giao_dich" xml:space="preserve">
+	<data name="giao_dich" xml:space="preserve">
     <value>Giao Dịch</value>
   </data>
-  <data name="phan_hoi" xml:space="preserve">
+	<data name="phan_hoi" xml:space="preserve">
     <value>Phản hồi</value>
   </data>
-  <data name="lich" xml:space="preserve">
+	<data name="lich" xml:space="preserve">
     <value>Lịch</value>
   </data>
-  <data name="tin_tuc" xml:space="preserve">
+	<data name="tin_tuc" xml:space="preserve">
     <value>Tin tức</value>
   </data>
-  <data name="dang_xuat" xml:space="preserve">
+	<data name="dang_xuat" xml:space="preserve">
     <value>Đăng xuất</value>
   </data>
-  <data name="ten_dang_nhap" xml:space="preserve">
+	<data name="ten_dang_nhap" xml:space="preserve">
     <value>Tên đăng nhập/Email</value>
   </data>
-  <data name="mat_khau" xml:space="preserve">
+	<data name="mat_khau" xml:space="preserve">
     <value>Mật khẩu</value>
   </data>
-  <data name="ghi_nho_dang_nhap" xml:space="preserve">
+	<data name="ghi_nho_dang_nhap" xml:space="preserve">
     <value>Ghi nhớ đăng nhập</value>
   </data>
-  <data name="dang_nhap" xml:space="preserve">
+	<data name="dang_nhap" xml:space="preserve">
     <value>Đăng nhập</value>
   </data>
-  <data name="quen_mat_khau" xml:space="preserve">
+	<data name="quen_mat_khau" xml:space="preserve">
     <value>Quên mật khẩu ?</value>
   </data>
-  <data name="ten_dang_nhap_khong_duoc_de_trong" xml:space="preserve">
+	<data name="ten_dang_nhap_khong_duoc_de_trong" xml:space="preserve">
     <value>Tên đăng nhập không được để trống.</value>
   </data>
-  <data name="mat_khau_khong_duong_de_trong" xml:space="preserve">
+	<data name="mat_khau_khong_duong_de_trong" xml:space="preserve">
     <value>Mật khẩu không được để trống.</value>
   </data>
-  <data name="ten_dang_nhap_khong_dung" xml:space="preserve">
+	<data name="ten_dang_nhap_khong_dung" xml:space="preserve">
     <value>Tên đăng nhập không đúng.</value>
   </data>
-  <data name="khong_tim_thay_user" xml:space="preserve">
+	<data name="khong_tim_thay_user" xml:space="preserve">
     <value>Không tìm thấy user.</value>
   </data>
-  <data name="xac_nhan_ma_otp" xml:space="preserve">
+	<data name="xac_nhan_ma_otp" xml:space="preserve">
     <value>Xác nhận mã OTP</value>
   </data>
-  <data name="otp_duoc_gui_ve_so_dien_thoai" xml:space="preserve">
+	<data name="otp_duoc_gui_ve_so_dien_thoai" xml:space="preserve">
     <value>OTP được gửi về số điện thoại</value>
   </data>
-  <data name="vui_long_nhap_otp_de_xac_nhan_tai_khoan" xml:space="preserve">
+	<data name="vui_long_nhap_otp_de_xac_nhan_tai_khoan" xml:space="preserve">
     <value>Vui lòng nhập OTP để xác nhận tài khoản</value>
   </data>
-  <data name="huy" xml:space="preserve">
+	<data name="huy" xml:space="preserve">
     <value>Hủy</value>
   </data>
-  <data name="xac_nhan" xml:space="preserve">
+	<data name="xac_nhan" xml:space="preserve">
     <value>Xác nhận</value>
   </data>
-  <data name="ban_chua_nhan_duoc_ma_gui_lai" xml:space="preserve">
+	<data name="ban_chua_nhan_duoc_ma_gui_lai" xml:space="preserve">
     <value>Bạn chưa nhận được mã ? Gửi lại</value>
   </data>
-  <data name="ma_xac_thuc_khong_dung" xml:space="preserve">
+	<data name="ma_xac_thuc_khong_dung" xml:space="preserve">
     <value>Mã xác thực không đúng</value>
   </data>
-  <data name="so_dien_thoai" xml:space="preserve">
+	<data name="so_dien_thoai" xml:space="preserve">
     <value>Số điện thoại</value>
   </data>
-  <data name="xac_nhan_mat_khau" xml:space="preserve">
+	<data name="xac_nhan_mat_khau" xml:space="preserve">
     <value>Xác nhận mật khẩu</value>
   </data>
-  <data name="vui_long_nhap_ho_ten_email" xml:space="preserve">
+	<data name="vui_long_nhap_ho_ten_email" xml:space="preserve">
     <value>Vui lòng nhập họ tên hoặc email</value>
   </data>
-  <data name="vui_long_nhap_so_dien_thoai" xml:space="preserve">
+	<data name="vui_long_nhap_so_dien_thoai" xml:space="preserve">
     <value>Vui lòng nhập số điện thoại.</value>
   </data>
-  <data name="user_name_khong_dung" xml:space="preserve">
+	<data name="user_name_khong_dung" xml:space="preserve">
     <value>Họ tên không đúng.</value>
   </data>
-  <data name="loi_he_thong" xml:space="preserve">
+	<data name="loi_he_thong" xml:space="preserve">
     <value>Lỗi hệ thống.</value>
   </data>
-  <data name="vui_long_nhap_mat_khau" xml:space="preserve">
+	<data name="vui_long_nhap_mat_khau" xml:space="preserve">
     <value>Vui lòng nhập mật khẩu</value>
   </data>
-  <data name="mat_khau_it_nhat_6_ky_tu" xml:space="preserve">
+	<data name="mat_khau_it_nhat_6_ky_tu" xml:space="preserve">
     <value>Mật khẩu ít nhất 6 ký tự.</value>
   </data>
-  <data name="vui_long_nhap_xac_nhan_mat_khau" xml:space="preserve">
+	<data name="vui_long_nhap_xac_nhan_mat_khau" xml:space="preserve">
     <value>Vui lòng nhập xác nhận mật khẩu.</value>
   </data>
-  <data name="mat_khau_khong_khop" xml:space="preserve">
+	<data name="mat_khau_khong_khop" xml:space="preserve">
     <value>Mật khẩu không khớp</value>
   </data>
-  <data name="doi_mat_khau_thanh_cong" xml:space="preserve">
+	<data name="doi_mat_khau_thanh_cong" xml:space="preserve">
     <value>Đổi mật khẩu thành công.</value>
   </data>
-  <data name="da_co_loi_xay_ra_vui_long_thu_lai_sau" xml:space="preserve">
+	<data name="da_co_loi_xay_ra_vui_long_thu_lai_sau" xml:space="preserve">
     <value>Đã có lỗi xảy ra. Vui lòng thử lại sau.</value>
   </data>
-  <data name="btn_dong" xml:space="preserve">
+	<data name="btn_dong" xml:space="preserve">
     <value>Đóng</value>
   </data>
-  <data name="btn_luu" xml:space="preserve">
+	<data name="btn_luu" xml:space="preserve">
     <value>Lưu</value>
   </data>
-  <data name="btn_xac_nhan" xml:space="preserve">
+	<data name="btn_xac_nhan" xml:space="preserve">
     <value>Xác nhận</value>
   </data>
-  <data name="chon_ngay_sinh" xml:space="preserve">
+	<data name="chon_ngay_sinh" xml:space="preserve">
     <value>Chọn ngày sinh</value>
   </data>
-  <data name="email" xml:space="preserve">
+	<data name="email" xml:space="preserve">
     <value>Email</value>
   </data>
-  <data name="employee" xml:space="preserve">
+	<data name="employee" xml:space="preserve">
     <value>Nhân viên</value>
   </data>
-  <data name="gender_khac" xml:space="preserve">
+	<data name="gender_khac" xml:space="preserve">
     <value>Khác</value>
   </data>
-  <data name="gender_nam" xml:space="preserve">
+	<data name="gender_nam" xml:space="preserve">
     <value>Nam</value>
   </data>
-  <data name="gender_nu" xml:space="preserve">
+	<data name="gender_nu" xml:space="preserve">
     <value>Nữ</value>
   </data>
-  <data name="ho_ten" xml:space="preserve">
+	<data name="ho_ten" xml:space="preserve">
     <value>Họ tên</value>
   </data>
-  <data name="ngay_sinh" xml:space="preserve">
+	<data name="ngay_sinh" xml:space="preserve">
     <value>Ngày sinh</value>
   </data>
-  <data name="nhap_email" xml:space="preserve">
+	<data name="nhap_email" xml:space="preserve">
     <value>Nhập email</value>
   </data>
-  <data name="nhap_so_dien_thoai" xml:space="preserve">
+	<data name="nhap_so_dien_thoai" xml:space="preserve">
     <value>Nhập số điện thoại</value>
   </data>
-  <data name="title_thong_tin_ca_nhan" xml:space="preserve">
+	<data name="title_thong_tin_ca_nhan" xml:space="preserve">
     <value>Thông Tin Cá Nhân</value>
   </data>
-  <data name="chon_dia_chi" xml:space="preserve">
+	<data name="chon_dia_chi" xml:space="preserve">
     <value>Chọn địa chỉ</value>
   </data>
-  <data name="chon_gioi_tinh" xml:space="preserve">
+	<data name="chon_gioi_tinh" xml:space="preserve">
     <value>Chọn giới tính</value>
   </data>
-  <data name="chon_quan_huyen" xml:space="preserve">
+	<data name="chon_quan_huyen" xml:space="preserve">
     <value>Chọn quận huyện</value>
   </data>
-  <data name="chon_quoc_gia" xml:space="preserve">
+	<data name="chon_quoc_gia" xml:space="preserve">
     <value>Chọn quốc gia</value>
   </data>
-  <data name="chon_tinh_thanh" xml:space="preserve">
+	<data name="chon_tinh_thanh" xml:space="preserve">
     <value>Chọn tỉnh thành</value>
   </data>
-  <data name="dia_chi" xml:space="preserve">
+	<data name="dia_chi" xml:space="preserve">
     <value>Địa chỉ</value>
   </data>
-  <data name="gioi_tinh" xml:space="preserve">
+	<data name="gioi_tinh" xml:space="preserve">
     <value>Giới tính</value>
   </data>
-  <data name="nhap_so_nha_duong_phuong" xml:space="preserve">
+	<data name="nhap_so_nha_duong_phuong" xml:space="preserve">
     <value>Nhập số nhà/đường/phường</value>
   </data>
-  <data name="noti_vui_long_nhap_so_nha_duong_phuong" xml:space="preserve">
+	<data name="noti_vui_long_nhap_so_nha_duong_phuong" xml:space="preserve">
     <value>Vui lòng nhập số nhà/đường/phường.</value>
   </data>
-  <data name="quan_huyen" xml:space="preserve">
+	<data name="quan_huyen" xml:space="preserve">
     <value>Quận huyện</value>
   </data>
-  <data name="quoc_gia" xml:space="preserve">
+	<data name="quoc_gia" xml:space="preserve">
     <value>Quốc gia</value>
   </data>
-  <data name="so_nha_duong_phuong" xml:space="preserve">
+	<data name="so_nha_duong_phuong" xml:space="preserve">
     <value>Số nhà/Đường/Phường</value>
   </data>
-  <data name="tinh_thanh" xml:space="preserve">
+	<data name="tinh_thanh" xml:space="preserve">
     <value>Tỉnh thành</value>
   </data>
-  <data name="doi_mat_khau" xml:space="preserve">
+	<data name="doi_mat_khau" xml:space="preserve">
     <value>Đổi Mật Khẩu</value>
   </data>
-  <data name="mat_khau_cu" xml:space="preserve">
+	<data name="mat_khau_cu" xml:space="preserve">
     <value>Mật khẩu cũ</value>
   </data>
-  <data name="mat_khau_moi" xml:space="preserve">
+	<data name="mat_khau_moi" xml:space="preserve">
     <value>Mật khẩu mới</value>
   </data>
-  <data name="nhap_mat_khau_cu" xml:space="preserve">
+	<data name="nhap_mat_khau_cu" xml:space="preserve">
     <value>Nhập mật khẩu cũ</value>
   </data>
-  <data name="nhap_mat_khau_moi" xml:space="preserve">
+	<data name="nhap_mat_khau_moi" xml:space="preserve">
     <value>Nhập mật khẩu mới</value>
   </data>
-  <data name="nhap_xac_nhan_mat_khau_moi" xml:space="preserve">
+	<data name="nhap_xac_nhan_mat_khau_moi" xml:space="preserve">
     <value>Nhập xác nhận mật khẩu mới</value>
   </data>
-  <data name="noti_ban_dang_su_dung_mat_khau_cu_vui_long_nhap_lai" xml:space="preserve">
+	<data name="noti_ban_dang_su_dung_mat_khau_cu_vui_long_nhap_lai" xml:space="preserve">
     <value>Bạn đang sử dụng mật khẩu cũ. Vui lòng nhập lại.</value>
   </data>
-  <data name="noti_doi_mat_khau_that_bai" xml:space="preserve">
+	<data name="noti_doi_mat_khau_that_bai" xml:space="preserve">
     <value>Đổi mật khẩu thất bại.</value>
   </data>
-  <data name="noti_mat_khau_cu_khong_dung" xml:space="preserve">
+	<data name="noti_mat_khau_cu_khong_dung" xml:space="preserve">
     <value>Mật khẩu cũ không đúng.</value>
   </data>
-  <data name="noti_mat_khau_khong_duoc_chua_ky_tu_khoan_trang" xml:space="preserve">
+	<data name="noti_mat_khau_khong_duoc_chua_ky_tu_khoan_trang" xml:space="preserve">
     <value>Password không được chứa ký tự khoảng trắng.</value>
   </data>
-  <data name="noti_vui_long_nhap_mat_khau_cu" xml:space="preserve">
+	<data name="noti_vui_long_nhap_mat_khau_cu" xml:space="preserve">
     <value>Vui lòng nhập mật khẩu cũ.</value>
   </data>
-  <data name="noti_vui_long_nhap_mat_khau_moi" xml:space="preserve">
+	<data name="noti_vui_long_nhap_mat_khau_moi" xml:space="preserve">
     <value>Vui lòng nhập mật khẩu mới.</value>
   </data>
-  <data name="noti_vui_long_nhap_xac_nhan_mat_khau_moi" xml:space="preserve">
+	<data name="noti_vui_long_nhap_xac_nhan_mat_khau_moi" xml:space="preserve">
     <value>Vui lòng nhập xác nhận mật khẩu mới.</value>
   </data>
-  <data name="noti_xac_nhan_mat_khau_khong_dung" xml:space="preserve">
+	<data name="noti_xac_nhan_mat_khau_khong_dung" xml:space="preserve">
     <value>Xác nhận mật khẩu không đúng.</value>
   </data>
-  <data name="mat_khau_khong_dung" xml:space="preserve">
+	<data name="mat_khau_khong_dung" xml:space="preserve">
     <value>Mật khẩu không đúng.</value>
   </data>
-  <data name="giu_cho_trang_chu" xml:space="preserve">
+	<data name="giu_cho_trang_chu" xml:space="preserve">
     <value>Giữ chỗ</value>
   </data>
-  <data name="dat_coc_trang_chu" xml:space="preserve">
+	<data name="dat_coc_trang_chu" xml:space="preserve">
     <value>Đặt cọc</value>
   </data>
-  <data name="hop_dong_trang_chu" xml:space="preserve">
+	<data name="hop_dong_trang_chu" xml:space="preserve">
     <value>Hợp đồng</value>
   </data>
-  <data name="da_ban_trang_chu" xml:space="preserve">
+	<data name="da_ban_trang_chu" xml:space="preserve">
     <value>Đã bán</value>
   </data>
-  <data name="loyalty" xml:space="preserve">
+	<data name="loyalty" xml:space="preserve">
     <value>Loyalty</value>
   </data>
-  <data name="chup_hinh" xml:space="preserve">
+	<data name="chup_hinh" xml:space="preserve">
     <value>Chụp hình</value>
   </data>
-  <data name="thu_vien" xml:space="preserve">
+	<data name="thu_vien" xml:space="preserve">
     <value>Thư viện</value>
   </data>
-  <data name="tuy_chon" xml:space="preserve">
+	<data name="tuy_chon" xml:space="preserve">
     <value>Tuỳ chọn</value>
   </data>
 	<data name="noti_doi_hinh_dai_dien_thanh_cong" xml:space="preserve">
@@ -393,31 +393,31 @@
 	<data name="noti_vui_long_chon_gioi_tinh" xml:space="preserve">
     <value>Vui lòng chọn giới tính.</value>
   </data>
-<data name="xac_nhan_mat_khau_moi" >
+	<data name="xac_nhan_mat_khau_moi">
 		<value>Xác nhận mật khẩu mới</value>
 	</data>
-	<data name="direction_north" >
+	<data name="direction_north">
 		<value>Bắc</value>
 	</data>
-	<data name="direction_south" >
+	<data name="direction_south">
 		<value>Nam</value>
 	</data>
-	<data name="direction_east" >
+	<data name="direction_east">
 		<value>Đông</value>
 	</data>
-	<data name="direction_west" >
+	<data name="direction_west">
 		<value>Tây</value>
 	</data>
-	<data name="direction_north_east" >
+	<data name="direction_north_east">
 		<value>Đông bắc</value>
 	</data>
-	<data name="direction_north_west" >
+	<data name="direction_north_west">
 		<value>Tây bắc</value>
 	</data>
-	<data name="direction_south_east" >
+	<data name="direction_south_east">
 		<value>Đông nam</value>
 	</data>
-	<data name="direction_south_west" >
+	<data name="direction_south_west">
 		<value>Tây nam</value>
 	</data>
 	<data name="title_thong_tin_gia_chu" xml:space="preserve">
@@ -444,100 +444,100 @@
 	<data name="khong_co_du_lieu" xml:space="preserve">
     <value>Không có dữ liệu</value>
   </data>
- <data name="btn_xoa" xml:space="preserve">
+	<data name="btn_xoa" xml:space="preserve">
     <value>Xóa</value>
   </data>
-<data name="string_under" xml:space="preserve">
+	<data name="string_under" xml:space="preserve">
     <value>Dưới</value>
   </data>
-<data name="sqm" xml:space="preserve">
+	<data name="sqm" xml:space="preserve">
     <value>m²</value>
   </data>
-<data name="string_more_than" xml:space="preserve">
+	<data name="string_more_than" xml:space="preserve">
     <value>Trên</value>
   </data>
-<data name="currency_billion" xml:space="preserve">
+	<data name="currency_billion" xml:space="preserve">
     <value>tỷ</value>
   </data>
-<data name="unit_1st_installment_sts" xml:space="preserve">
+	<data name="unit_1st_installment_sts" xml:space="preserve">
     <value>Thanh toán đợt 1</value>
   </data>
-  <data name="unit_available_sts" xml:space="preserve">
+	<data name="unit_available_sts" xml:space="preserve">
     <value>Sẵn sàng</value>
   </data>
-  <data name="unit_collected_sts" xml:space="preserve">
+	<data name="unit_collected_sts" xml:space="preserve">
     <value>Đồng ý chuyển cọc</value>
   </data>
-  <data name="unit_deposited_sts" xml:space="preserve">
+	<data name="unit_deposited_sts" xml:space="preserve">
     <value>Đã đủ tiền cọc</value>
   </data>
-  <data name="unit_draft_sts" xml:space="preserve">
+	<data name="unit_draft_sts" xml:space="preserve">
     <value>Nháp</value>
   </data>
-  <data name="unit_preparing_sts" xml:space="preserve">
+	<data name="unit_preparing_sts" xml:space="preserve">
     <value>Chuẩn bị</value>
   </data>
-  <data name="unit_queuing_sts" xml:space="preserve">
+	<data name="unit_queuing_sts" xml:space="preserve">
     <value>Giữ chỗ</value>
   </data>
-  <data name="unit_reserve_sts" xml:space="preserve">
+	<data name="unit_reserve_sts" xml:space="preserve">
     <value>Đặt cọc</value>
   </data>
-  <data name="unit_sold_sts" xml:space="preserve">
+	<data name="unit_sold_sts" xml:space="preserve">
     <value>Đã bán</value>
   </data>
-<data name="noti_vui_long_chon_du_an" xml:space="preserve">
+	<data name="noti_vui_long_chon_du_an" xml:space="preserve">
     <value>Vui lòng chọn Dự án.</value>
   </data>
-<data name="du_an" xml:space="preserve">
+	<data name="du_an" xml:space="preserve">
     <value>Dự án</value>
   </data>
-<data name="chon_du_an" xml:space="preserve">
+	<data name="chon_du_an" xml:space="preserve">
     <value>Chọn dự án</value>
   </data>
-<data name="dot_mo_ban" xml:space="preserve">
+	<data name="dot_mo_ban" xml:space="preserve">
     <value>Đợt mở bán</value>
   </data>
-<data name="chon_dot_mo_ban" xml:space="preserve">
+	<data name="chon_dot_mo_ban" xml:space="preserve">
     <value>Chọn đợt mở bán</value>
   </data>
- <data name="su_kien" xml:space="preserve">
+	<data name="su_kien" xml:space="preserve">
     <value>Sự kiện</value>
   </data>
-<data name="ma_san_pham" xml:space="preserve">
+	<data name="ma_san_pham" xml:space="preserve">
     <value>Mã sản phẩm</value>
   </data>
-<data name="nhap_ma_san_pham" xml:space="preserve">
+	<data name="nhap_ma_san_pham" xml:space="preserve">
     <value>Nhập mã sản phẩm</value>
   </data>
-<data name="huong" xml:space="preserve">
+	<data name="huong" xml:space="preserve">
     <value>Hướng</value>
   </data>
- <data name="chon_huong" xml:space="preserve">
+	<data name="chon_huong" xml:space="preserve">
     <value>Chọn hướng</value>
   </data>
-<data name="tinh_trang_san_pham" xml:space="preserve">
+	<data name="tinh_trang_san_pham" xml:space="preserve">
     <value>Tình trạng sản phẩm</value>
   </data>
- <data name="chon_tinh_trang_san_pham" xml:space="preserve">
+	<data name="chon_tinh_trang_san_pham" xml:space="preserve">
     <value>Chọn tình trạng sản phẩm</value>
   </data>
-<data name="dien_tich_su_dung" xml:space="preserve">
+	<data name="dien_tich_su_dung" xml:space="preserve">
     <value>Diện tích sử dụng (m²)</value>
   </data>
-<data name="chon_dien_tich_su_dung" xml:space="preserve">
+	<data name="chon_dien_tich_su_dung" xml:space="preserve">
     <value>Chọn diện tích sử dụng</value>
   </data>
-<data name="gia_ban_vnd" xml:space="preserve">
+	<data name="gia_ban_vnd" xml:space="preserve">
     <value>Giá bán (VNĐ)</value>
   </data>
-<data name="chon_gia_ban" xml:space="preserve">
+	<data name="chon_gia_ban" xml:space="preserve">
     <value>Chọn giá bán</value>
   </data>
-<data name="thong_tin_du_an" xml:space="preserve">
+	<data name="thong_tin_du_an" xml:space="preserve">
     <value>Thông tin dự án</value>
   </data>
-<data name="tim_kiem" xml:space="preserve">
+	<data name="tim_kiem" xml:space="preserve">
     <value>Tìm kiếm</value>
   </data>
 	<data name="title_thong_tin_du_an" xml:space="preserve">
@@ -684,46 +684,46 @@
 	<data name="oe_1st_installment_sts" xml:space="preserve">
     <value>1st Installment</value>
   </data>
-  <data name="oe_being_payment_sts" xml:space="preserve">
+	<data name="oe_being_payment_sts" xml:space="preserve">
     <value>Being Payment</value>
   </data>
-  <data name="oe_canceled_sts" xml:space="preserve">
+	<data name="oe_canceled_sts" xml:space="preserve">
     <value>Canceled</value>
   </data>
-  <data name="oe_complete_payment_sts" xml:space="preserve">
+	<data name="oe_complete_payment_sts" xml:space="preserve">
     <value>Complete Payment</value>
   </data>
-  <data name="oe_complete_sts" xml:space="preserve">
+	<data name="oe_complete_sts" xml:space="preserve">
     <value>Complete</value>
   </data>
-  <data name="oe_converted_sts" xml:space="preserve">
+	<data name="oe_converted_sts" xml:space="preserve">
     <value>Đủ điều kiện</value>
   </data>
-  <data name="oe_handover_sts" xml:space="preserve">
+	<data name="oe_handover_sts" xml:space="preserve">
     <value>Handover</value>
   </data>
-  <data name="oe_invoiced_sts" xml:space="preserve">
+	<data name="oe_invoiced_sts" xml:space="preserve">
     <value>Invoiced</value>
   </data>
-  <data name="oe_open_sts" xml:space="preserve">
+	<data name="oe_open_sts" xml:space="preserve">
     <value>Open</value>
   </data>
-  <data name="oe_option_sts" xml:space="preserve">
+	<data name="oe_option_sts" xml:space="preserve">
     <value>Option</value>
   </data>
-  <data name="oe_partial_sts" xml:space="preserve">
+	<data name="oe_partial_sts" xml:space="preserve">
     <value>Partial</value>
   </data>
-  <data name="oe_pending_sts" xml:space="preserve">
+	<data name="oe_pending_sts" xml:space="preserve">
     <value>Pending</value>
   </data>
-  <data name="oe_signed_contract_sts" xml:space="preserve">
+	<data name="oe_signed_contract_sts" xml:space="preserve">
     <value>Signed Contract</value>
   </data>
-  <data name="oe_submitted_in_progress_sts" xml:space="preserve">
+	<data name="oe_submitted_in_progress_sts" xml:space="preserve">
     <value>Submitted - In Progress</value>
   </data>
-  <data name="oe_terminated_sts" xml:space="preserve">
+	<data name="oe_terminated_sts" xml:space="preserve">
     <value>Terminated</value>
   </data>
 	<data name="project_apartment_usagetype" xml:space="preserve">
@@ -791,9 +791,6 @@
   </data>
 	<data name="dot_mo_ban" xml:space="preserve">
     <value>Đợt mở bán</value>
-  </data>
-	<data name="san_pham" xml:space="preserve">
-    <value>Sản phẩm</value>
   </data>
 	<data name="phi_giu_cho" xml:space="preserve">
     <value>Phí giữ chỗ</value>
@@ -936,9 +933,6 @@
 	<data name="cuoc_goi" xml:space="preserve">
     <value>Cuộc gọi</value>
   </data>
-	<data name="noti_khong_tim_thay_thong_tin_vui_long_thu_lai" xml:space="preserve">
-    <value>Không tìm thấy thông tin. Vui lòng thử lại.</value>
-  </data>
 	<data name="noti_khong_co_so_dien_thoai" xml:space="preserve">
     <value>Không có số điện thoại.</value>
   </data>
@@ -1019,5 +1013,83 @@
   </data>
 	<data name="thoi_gian_ket_thuc" xml:space="preserve">
     <value>Thời gian kết thúc</value>
+</data>
+  <data name="phan_hoi" xml:space="preserve">
+    <value>Phản hồi</value>
+  </data>
+  <data name="loai" xml:space="preserve">
+    <value>Loại</value>
+  </data>
+  <data name="nguon" xml:space="preserve">
+    <value>Nguồn</value>
+  </data>
+  <data name="noti_khong_tim_thay_thong_tin_vui_long_thu_lai" xml:space="preserve">
+    <value>Không tìm thấy thông tin. Vui lòng thử lại.</value>
+  </data>
+  <data name="dang_xu_ly_case_sts" xml:space="preserve">
+    <value>Đang xử lý</value>
+  </data>
+  <data name="dang_cho_case_sts" xml:space="preserve">
+    <value>Đang chờ</value>
+  </data>
+  <data name="dang_cho_thong_tin_chi_tiet_case_sts" xml:space="preserve">
+    <value>Đang chờ thông tin chi tiết</value>
+  </data>
+  <data name="nghien_cuu_case_sts" xml:space="preserve">
+    <value>Nghiên cứu</value>
+  </data>
+  <data name="van_de_da_duoc_giai_quyet_case_sts" xml:space="preserve">
+    <value>Vấn đề đã được giải quyết</value>
+  </data>
+  <data name="cung_cap_thong_tin_case_sts" xml:space="preserve">
+    <value>Cung cấp thông tin</value>
+  </data>
+	<data name="da_huy_case_sts" xml:space="preserve">
+    <value>Đã hủy</value>
+  </data>
+  <data name="hop_nhat_case_sts" xml:space="preserve">
+    <value>Hợp nhất</value>
+  </data>
+  <data name="cau_hoi" xml:space="preserve">
+    <value>Câu hỏi</value>
+  </data>
+	<data name="van_de" xml:space="preserve">
+    <value>Vấn đề</value>
+  </data>
+	<data name="yeu_cau" xml:space="preserve">
+    <value>Yêu cầu</value>
+  </data>
+  <data name="chi_tiet_phan_hoi" xml:space="preserve">
+    <value>Chi Tiết Phản Hồi</value>
+  </data>
+  <data name="doi_tuong" xml:space="preserve">
+    <value>Đối tượng</value>
+  </data>
+  <data name="thong_tin" xml:space="preserve">
+    <value>Thông Tin</value>
+  </data>
+  <data name="phan_hoi_lien_quan" xml:space="preserve">
+    <value>Phản Hồi Liên Quan</value>
+  </data>
+  <data name="chu_de" xml:space="preserve">
+    <value>Chủ đề</value>
+  </data>
+  <data name="phan_hoi_chinh" xml:space="preserve">
+    <value>Phản hồi chính</value>
+  </data>
+  <data name="noi_dung" xml:space="preserve">
+    <value>Nội dung</value>
+  </data>
+  <data name="huy_phan_hoi" xml:space="preserve">
+    <value>Hủy phản hồi</value>
+  </data>
+  <data name="xac_nhan_huy_phan_hoi" xml:space="preserve">
+    <value>Xác nhận hủy phản hồi</value>
+  </data>
+  <data name="thong_bao_thanh_cong" xml:space="preserve">
+    <value>Thành công.</value>
+  </data>
+  <data name="thong_bao_that_bai" xml:space="preserve">
+    <value>Thất bại.</value>
   </data>
 </root>

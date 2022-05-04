@@ -19,7 +19,6 @@ namespace CustomerApp.Controls
         public IEnumerable ItemsSource { get => (IEnumerable)GetValue(ItemsSourceProperty); set { SetValue(ItemsSourceProperty, value); } }
 
         private bool IsShow = false;
-
         public FloatingButtonGroup()
         {
             InitializeComponent();
