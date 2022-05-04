@@ -1269,4 +1269,7 @@
   <data name="vui_long_nhap_tieu_de" xml:space="preserve">
     <value>Vui lòng nhập tiêu đề.</value>
   </data>
+  <data name="tin_tuc_khuyen_mai" xml:space="preserve">
+    <value>Tin tức/Khuyến mãi</value>
+  </data>
 </root>
