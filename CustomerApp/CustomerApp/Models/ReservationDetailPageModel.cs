@@ -421,5 +421,6 @@ namespace CustomerApp.Models
             }
         }
         public string statuscode_format { get => Data.GetQuoteStatusCodeById(statuscode.ToString())?.Name; }
+        public string statuscode_color { get => Data.GetQuoteStatusCodeById(statuscode.ToString())?.Background; }
     }
 }

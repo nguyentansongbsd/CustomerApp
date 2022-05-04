@@ -33,6 +33,9 @@ namespace CustomerApp.ViewModels
         private ObservableCollection<QueuesModel> _listGiuCho;
         public ObservableCollection<QueuesModel> ListGiuCho { get => _listGiuCho; set { _listGiuCho = value; OnPropertyChanged(nameof(ListGiuCho)); } }
 
+        private ObservableCollection<PhasesLanchModel> _listPhasesLanch;
+        public ObservableCollection<PhasesLanchModel> ListPhasesLanch { get => _listPhasesLanch; set { _listPhasesLanch = value; OnPropertyChanged(nameof(ListPhasesLanch)); } }
+
         private EventModel _event;
         public EventModel Event { get => _event; set { _event = value; OnPropertyChanged(nameof(Event)); } }
 
@@ -106,6 +109,7 @@ namespace CustomerApp.ViewModels
         public ProjectInfoPageViewModel()
         {
             ListGiuCho = new ObservableCollection<QueuesModel>();
+            ListPhasesLanch = new ObservableCollection<PhasesLanchModel>();
         }
 
         public async Task LoadData()
@@ -479,6 +483,34 @@ namespace CustomerApp.ViewModels
             {
                 Event.bsd_startdate = Event.bsd_startdate.Value.ToLocalTime();
                 Event.bsd_enddate = Event.bsd_enddate.Value.ToLocalTime();
+            }
+        }
+        public async Task LoadPhasesLanch()
+        {
+            string fetchXml = $@"<fetch version='1.0' output-format='xml-platform' mapping='logical' distinct='false'>
+                                    <entity name='bsd_phaseslaunch'>
+                                        <attribute name='bsd_name' />
+                                        <attribute name='createdon' />
+                                        <attribute name='statuscode' />
+                                        <attribute name='bsd_projectid' />
+                                        <attribute name='bsd_startdate' />
+                                        <attribute name='bsd_pricelistid' />
+                                        <attribute name='bsd_enddate' />
+                                        <attribute name='bsd_phaseslaunchid' />
+                                        <order attribute='createdon' descending='true' />
+                                        <filter type='and'>
+                                            <condition attribute='bsd_projectid' operator='eq' value='{ProjectId}' />
+                                        </filter>
+                                    </entity>
+                                </fetch>";
+
+            var result = await CrmHelper.RetrieveMultiple<RetrieveMultipleApiResponse<PhasesLanchModel>>("bsd_phaseslaunchs", fetchXml);
+            if (result == null || result.value.Any() == false) return;
+
+            List<PhasesLanchModel> data = result.value;
+            foreach (var item in data)
+            {
+                ListPhasesLanch.Add(item);
             }
         }
     }
