@@ -13,8 +13,14 @@ namespace CustomerApp.Controls
     public partial class StatusBox : RadBorder
     {
         // text
-        public static readonly BindableProperty TextProperty = BindableProperty.Create(nameof(Text), typeof(string), typeof(StatusBox), null, BindingMode.TwoWay);
+        public static readonly BindableProperty TextProperty = BindableProperty.Create(nameof(Text), typeof(string), typeof(StatusBox), null, BindingMode.TwoWay, propertyChanged: TextChange);
         public string Text { get => (string)GetValue(TextProperty); set => SetValue(TextProperty, value); }
+        private static void TextChange(BindableObject bindable, object oldValue, object newValue)
+        {
+            StatusBox control = (StatusBox)bindable;
+            if (newValue != null)
+                control.lb_text.Text = (string)newValue;
+        }
         // color
         public static readonly BindableProperty ColorStatusProperty = BindableProperty.Create(nameof(ColorStatus), typeof(Color), typeof(StatusBox), null, BindingMode.TwoWay, propertyChanged: ColorStatusChange);
         public Color ColorStatus { get => (Color)GetValue(ColorStatusProperty); set => SetValue(ColorStatusProperty, value); }
@@ -24,7 +30,7 @@ namespace CustomerApp.Controls
             if (newValue != null)
                 control.BackgroundColor = (Color)newValue;
             else
-                control.BackgroundColor = (Color)App.Current.Resources["EnableColor"];
+                control.BackgroundColor = (Color)App.Current.Resources["TextColor"];
         }
         // icon
         public static readonly BindableProperty IconProperty = BindableProperty.Create(nameof(Icon), typeof(string), typeof(StatusBox), null, BindingMode.TwoWay, propertyChanged: IconChange);
@@ -48,7 +54,6 @@ namespace CustomerApp.Controls
         public StatusBox()
         {
             InitializeComponent();
-            this.BindingContext = this;
         }
         private void SetFont()
         {
