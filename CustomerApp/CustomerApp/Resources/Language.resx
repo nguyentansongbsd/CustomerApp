@@ -1272,4 +1272,55 @@
   <data name="tin_tuc_khuyen_mai" xml:space="preserve">
     <value>Tin tức/Khuyến mãi</value>
   </data>
+	<data name="title_dot_mo_ban" xml:space="preserve">
+    <value>Đợt Mở Bán</value>
+  </data>
+	<data name="so_dot_mo_ban" xml:space="preserve">
+    <value>Số đợt mở bán</value>
+  </data>
+	<data name="hinh_thuc_phan_phoi" xml:space="preserve">
+    <value>Hình thức phân phối</value>
+  </data>
+	<data name="phaseslanch_one_system_fod" xml:space="preserve">
+    <value>One system</value>
+  </data>
+	<data name="phaseslanch_many_system_fod" xml:space="preserve">
+    <value>Many system</value>
+  </data>
+	<data name="title_thong_tin_bat_buoc" xml:space="preserve">
+    <value>Thông Tin Bắt Buộc</value>
+  </data>
+	<data name="bang_gia" xml:space="preserve">
+    <value>Bảng giá</value>
+  </data>
+	<data name="so_tien_dat_coc" xml:space="preserve">
+    <value>Số tiền đặt cọc</value>
+  </data>
+	<data name="thoi_gian_ngan_han" xml:space="preserve">
+    <value>Thời gian ngắn hạn</value>
+  </data>
+	<data name="loai_phat_hanh" xml:space="preserve">
+    <value>Loại phát hành</value>
+  </data>
+	<data name="thoi_gian" xml:space="preserve">
+    <value>Thời gian</value>
+  </data>
+	<data name="ngay_mo_ban" xml:space="preserve">
+    <value>Ngày mở bán</value>
+  </data>
+	<data name="mo_ban_boi" xml:space="preserve">
+    <value>Mở bản bởi</value>
+  </data>
+	<data name="khoi_phuc_vao" xml:space="preserve">
+    <value>Khôi phục vào</value>
+  </data>
+	<data name="khoi_phuc_boi" xml:space="preserve">
+    <value>Khôi phục bởi</value>
+  </data>
+	<data name="phaseslanch_release_again_release" xml:space="preserve">
+    <value>Release again</value>
+  </data>
+	<data name="phaseslanch_release_new_release" xml:space="preserve">
+    <value>Release new</value>
+  </data>
 </root>

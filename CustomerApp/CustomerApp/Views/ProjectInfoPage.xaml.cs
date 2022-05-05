@@ -262,5 +262,25 @@ namespace CustomerApp.Views
         {
             ContentEvent.IsVisible = false;
         }
+
+        private void PhasesLanch_Tapped(object sender, EventArgs e)
+        {
+            LoadingHelper.Show();
+            var itemId = (Guid)((sender as Grid).GestureRecognizers[0] as TapGestureRecognizer).CommandParameter;
+            PhasesLanchDetailPage phasesLanchDetailPage = new PhasesLanchDetailPage(itemId);
+            phasesLanchDetailPage.OnCompleted = async (IsSuccess) =>
+            {
+                if (IsSuccess)
+                {
+                    await Navigation.PushAsync(phasesLanchDetailPage);
+                    LoadingHelper.Hide();
+                }
+                else
+                {
+                    LoadingHelper.Hide();
+                    ToastMessageHelper.ShortMessage(Language.noti_khong_tim_thay_thong_tin_vui_long_thu_lai);
+                }
+            };
+        }
     }
 }

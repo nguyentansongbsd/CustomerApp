@@ -300,5 +300,35 @@ namespace CustomerApp.Datas
             };
         }
         #endregion
+        #region PhasesLanch Form of distribution
+        public static StatusCodeModel GetPhasesLanchFODById(string statusCodeId)
+        {
+            return PhasesLanchFODData().SingleOrDefault(x => x.Id == statusCodeId);
+        }
+
+        public static List<StatusCodeModel> PhasesLanchFODData()
+        {
+            return new List<StatusCodeModel>()
+            {
+                new StatusCodeModel("100000000",Language.phaseslanch_one_system_fod,"#06CF79"),//One system
+                new StatusCodeModel("100000001",Language.phaseslanch_many_system_fod,"#808080"),//Many system
+            };
+        }
+        #endregion
+        #region PhasesLanch Release
+        public static StatusCodeModel GetPhasesLanchReleaseById(string statusCodeId)
+        {
+            return PhasesLanchReleaseData().SingleOrDefault(x => x.Id == statusCodeId);
+        }
+
+        public static List<StatusCodeModel> PhasesLanchReleaseData()
+        {
+            return new List<StatusCodeModel>()
+            {
+                new StatusCodeModel("100000000",Language.phaseslanch_release_again_release,"#06CF79"),//Release again
+                new StatusCodeModel("100000001",Language.phaseslanch_release_new_release,"#808080"),//Release new
+            };
+        }
+        #endregion
     }
 }
