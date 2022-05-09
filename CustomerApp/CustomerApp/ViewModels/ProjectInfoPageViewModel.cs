@@ -380,14 +380,11 @@ namespace CustomerApp.ViewModels
                                     <condition attribute='bsd_projectid' operator='eq' value='{ProjectId}'/>
                                   </filter>
                                 </link-entity>
-                                <link-entity name='account' from='accountid' to='customerid' visible='false' link-type='outer' alias='a_434f5ec290d1eb11bacc000d3a80021e'>
-                                  <attribute name='name' alias='account_name'/>
-                                </link-entity>
-                                <link-entity name='contact' from='contactid' to='customerid' visible='false' link-type='outer' alias='a_884f5ec290d1eb11bacc000d3a80021e'>
-                                  <attribute name='bsd_fullname' alias='contact_name'/>
-                                  <filter type='and'>
-                                    <condition attribute='contactid' operator='eq' value='{UserLogged.Id}' />
-                                  </filter>
+                                <link-entity name='contact' from='contactid' to='customerid' visible='false' link-type='inner'>
+                                   <attribute name='fullname'  alias='contact_name'/>
+                                    <filter type='and'>
+                                         <condition attribute='contactid' operator='eq' value='{UserLogged.Id}' />
+                                    </filter>
                                 </link-entity>
                               </entity>
                             </fetch>";

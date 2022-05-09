@@ -26,5 +26,22 @@ namespace CustomerApp.Models
         public string statuscode { get; set; }
         public string statuscode_format { get => Data.GetPhasesLanchStatusCodeById(statuscode)?.Name; }
         public string statuscode_color { get => Data.GetPhasesLanchStatusCodeById(statuscode)?.Background; }
+        public Guid bsd_projectid { get; set; }
+        public DateTime bsd_startdate { get; set; }
+        public string bsd_times { get; set; }
+        public string bsd_shorttimeminute { get; set; }
+        public string bsd_releasetype { get; set; }
+        public string bsd_releasetype_format { get => Data.GetPhasesLanchReleaseById(bsd_releasetype)?.Name; }
+        public DateTime bsd_recoveryon { get; set; }
+        public string bsd_recoveryby { get; set; }
+        public string bsd_phaselaunchnumber { get; set; }
+        public DateTime bsd_launchedon { get; set; }
+        public string bsd_formofdistribution { get; set; }
+        public string bsd_formofdistribution_format { get => Data.GetPhasesLanchFODById(bsd_formofdistribution)?.Name; }
+        public decimal bsd_depositamount { get; set; }
+        public string bsd_launchedfrom { get; set; }
+        public string pricelist_name { get; set; }
+        public string recoveryby_name { get; set; }
+        public string launche_name { get; set; }
     }
 }

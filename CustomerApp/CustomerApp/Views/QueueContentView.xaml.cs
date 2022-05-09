@@ -14,14 +14,15 @@ using Xamarin.Forms.Xaml;
 namespace CustomerApp.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class QueueList : ContentPage
+    public partial class QueueContentView : ContentView
     {
-        private readonly QueuListViewModel viewModel;
-        public QueueList()
+        public Action<bool> OnCompleted;
+        public QueueContentViewViewModel viewModel;
+        public QueueContentView()
         {
             InitializeComponent();
             LoadingHelper.Show();
-            BindingContext = viewModel = new QueuListViewModel();
+            BindingContext = viewModel = new QueueContentViewViewModel();
             Init();
         }
         public async void Init()
@@ -30,6 +31,14 @@ namespace CustomerApp.Views
                   viewModel.LoadData(),
                   viewModel.LoadProject());
             viewModel.LoadStatus();
+            if (viewModel.Data.Count > 0)
+            {
+                OnCompleted?.Invoke(true);
+            }
+            else
+            {
+                OnCompleted?.Invoke(false);
+            }
             LoadingHelper.Hide();
         }
 

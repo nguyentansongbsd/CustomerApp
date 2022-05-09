@@ -12,7 +12,7 @@ using Xamarin.Forms;
 
 namespace CustomerApp.ViewModels
 {
-    public class QueuListViewModel : ListViewBaseViewModel2<QueuesModel>
+    public class QueueContentViewViewModel : ListViewBaseViewModel2<QueuesModel>
     {
         public ObservableCollection<OptionSet> _filtersStatus;
         public ObservableCollection<OptionSet> FiltersStatus { get => _filtersStatus; set { _filtersStatus = value; OnPropertyChanged(nameof(FiltersStatus)); } }
@@ -24,7 +24,7 @@ namespace CustomerApp.ViewModels
         public OptionSet _filterProject;
         public OptionSet FilterProject { get => _filterProject; set { _filterProject = value; OnPropertyChanged(nameof(FilterProject)); } }
         public string Keyword { get; set; }
-        public QueuListViewModel()
+        public QueueContentViewViewModel()
         {
             FiltersStatus = new ObservableCollection<OptionSet>();
             PreLoadData = new Command(() =>
@@ -109,7 +109,7 @@ namespace CustomerApp.ViewModels
                 var list = Datas.Data.GetQueuesByIds("4,100000000,100000002,100000003,100000004");
                 foreach (var item in list)
                 {
-                    FiltersStatus.Add(new OptionSet { Val = item.Id, Label = item.Name});
+                    FiltersStatus.Add(new OptionSet { Val = item.Id, Label = item.Name });
                 }
             }
         }

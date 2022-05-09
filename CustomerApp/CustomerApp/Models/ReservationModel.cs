@@ -212,9 +212,9 @@ namespace CustomerApp.Models
         }
 
         // thông tin đặt cọc
-        //làm sau
-        //public int bsd_reservationformstatus { get; set; } // trạng thái pđc
-        //public string bsd_reservationformstatus_format { get => Data.GetQuoteStatusCodeById(bsd_reservationformstatus.ToString())?.Name; }
+
+        public int bsd_reservationformstatus { get; set; } // trạng thái pđc
+        public string bsd_reservationformstatus_format { get => Data.GetQuoteStatusCodeById(bsd_reservationformstatus.ToString())?.Name; }
 
         public DateTime? _bsd_reservationprinteddate; // ngày in
         public DateTime? bsd_reservationprinteddate
