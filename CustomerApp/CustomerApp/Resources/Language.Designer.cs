@@ -8,2249 +8,2994 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CustomerApp.Resources {
+namespace CustomerApp.Resources
+{
     using System;
     using System.Reflection;
-    
-    
+
+
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Language {
-        
+    internal class Language
+    {
+
         private static System.Resources.ResourceManager resourceMan;
-        
+
         private static System.Globalization.CultureInfo resourceCulture;
-        
+
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Language() {
+        internal Language()
+        {
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static System.Resources.ResourceManager ResourceManager {
-            get {
-                if (object.Equals(null, resourceMan)) {
+        internal static System.Resources.ResourceManager ResourceManager
+        {
+            get
+            {
+                if (object.Equals(null, resourceMan))
+                {
                     System.Resources.ResourceManager temp = new System.Resources.ResourceManager("CustomerApp.Resources.Language", typeof(Language).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
             }
         }
-        
+
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static System.Globalization.CultureInfo Culture {
-            get {
+        internal static System.Globalization.CultureInfo Culture
+        {
+            get
+            {
                 return resourceCulture;
             }
-            set {
+            set
+            {
                 resourceCulture = value;
             }
         }
-        
-        internal static string trang_chu {
-            get {
+
+        internal static string trang_chu
+        {
+            get
+            {
                 return ResourceManager.GetString("trang_chu", resourceCulture);
             }
         }
-        
-        internal static string nhan_de_chinh_sua {
-            get {
+
+        internal static string nhan_de_chinh_sua
+        {
+            get
+            {
                 return ResourceManager.GetString("nhan_de_chinh_sua", resourceCulture);
             }
         }
-        
-        internal static string gio_hang {
-            get {
+
+        internal static string gio_hang
+        {
+            get
+            {
                 return ResourceManager.GetString("gio_hang", resourceCulture);
             }
         }
-        
-        internal static string giao_dich {
-            get {
+
+        internal static string giao_dich
+        {
+            get
+            {
                 return ResourceManager.GetString("giao_dich", resourceCulture);
             }
         }
-        
-        internal static string phan_hoi {
-            get {
+
+        internal static string phan_hoi
+        {
+            get
+            {
                 return ResourceManager.GetString("phan_hoi", resourceCulture);
             }
         }
-        
-        internal static string lich {
-            get {
+
+        internal static string lich
+        {
+            get
+            {
                 return ResourceManager.GetString("lich", resourceCulture);
             }
         }
-        
-        internal static string tin_tuc {
-            get {
+
+        internal static string tin_tuc
+        {
+            get
+            {
                 return ResourceManager.GetString("tin_tuc", resourceCulture);
             }
         }
-        
-        internal static string dang_xuat {
-            get {
+
+        internal static string dang_xuat
+        {
+            get
+            {
                 return ResourceManager.GetString("dang_xuat", resourceCulture);
             }
         }
-        
-        internal static string ten_dang_nhap {
-            get {
+
+        internal static string ten_dang_nhap
+        {
+            get
+            {
                 return ResourceManager.GetString("ten_dang_nhap", resourceCulture);
             }
         }
-        
-        internal static string mat_khau {
-            get {
+
+        internal static string mat_khau
+        {
+            get
+            {
                 return ResourceManager.GetString("mat_khau", resourceCulture);
             }
         }
-        
-        internal static string ghi_nho_dang_nhap {
-            get {
+
+        internal static string ghi_nho_dang_nhap
+        {
+            get
+            {
                 return ResourceManager.GetString("ghi_nho_dang_nhap", resourceCulture);
             }
         }
-        
-        internal static string dang_nhap {
-            get {
+
+        internal static string dang_nhap
+        {
+            get
+            {
                 return ResourceManager.GetString("dang_nhap", resourceCulture);
             }
         }
-        
-        internal static string quen_mat_khau {
-            get {
+
+        internal static string quen_mat_khau
+        {
+            get
+            {
                 return ResourceManager.GetString("quen_mat_khau", resourceCulture);
             }
         }
-        
-        internal static string ten_dang_nhap_khong_duoc_de_trong {
-            get {
+
+        internal static string ten_dang_nhap_khong_duoc_de_trong
+        {
+            get
+            {
                 return ResourceManager.GetString("ten_dang_nhap_khong_duoc_de_trong", resourceCulture);
             }
         }
-        
-        internal static string mat_khau_khong_duong_de_trong {
-            get {
+
+        internal static string mat_khau_khong_duong_de_trong
+        {
+            get
+            {
                 return ResourceManager.GetString("mat_khau_khong_duong_de_trong", resourceCulture);
             }
         }
-        
-        internal static string ten_dang_nhap_khong_dung {
-            get {
+
+        internal static string ten_dang_nhap_khong_dung
+        {
+            get
+            {
                 return ResourceManager.GetString("ten_dang_nhap_khong_dung", resourceCulture);
             }
         }
-        
-        internal static string khong_tim_thay_user {
-            get {
+
+        internal static string khong_tim_thay_user
+        {
+            get
+            {
                 return ResourceManager.GetString("khong_tim_thay_user", resourceCulture);
             }
         }
-        
-        internal static string xac_nhan_ma_otp {
-            get {
+
+        internal static string xac_nhan_ma_otp
+        {
+            get
+            {
                 return ResourceManager.GetString("xac_nhan_ma_otp", resourceCulture);
             }
         }
-        
-        internal static string otp_duoc_gui_ve_so_dien_thoai {
-            get {
+
+        internal static string otp_duoc_gui_ve_so_dien_thoai
+        {
+            get
+            {
                 return ResourceManager.GetString("otp_duoc_gui_ve_so_dien_thoai", resourceCulture);
             }
         }
-        
-        internal static string vui_long_nhap_otp_de_xac_nhan_tai_khoan {
-            get {
+
+        internal static string vui_long_nhap_otp_de_xac_nhan_tai_khoan
+        {
+            get
+            {
                 return ResourceManager.GetString("vui_long_nhap_otp_de_xac_nhan_tai_khoan", resourceCulture);
             }
         }
-        
-        internal static string huy {
-            get {
+
+        internal static string huy
+        {
+            get
+            {
                 return ResourceManager.GetString("huy", resourceCulture);
             }
         }
-        
-        internal static string xac_nhan {
-            get {
+
+        internal static string xac_nhan
+        {
+            get
+            {
                 return ResourceManager.GetString("xac_nhan", resourceCulture);
             }
         }
-        
-        internal static string ban_chua_nhan_duoc_ma_gui_lai {
-            get {
+
+        internal static string ban_chua_nhan_duoc_ma_gui_lai
+        {
+            get
+            {
                 return ResourceManager.GetString("ban_chua_nhan_duoc_ma_gui_lai", resourceCulture);
             }
         }
-        
-        internal static string ma_xac_thuc_khong_dung {
-            get {
+
+        internal static string ma_xac_thuc_khong_dung
+        {
+            get
+            {
                 return ResourceManager.GetString("ma_xac_thuc_khong_dung", resourceCulture);
             }
         }
-        
-        internal static string so_dien_thoai {
-            get {
+
+        internal static string so_dien_thoai
+        {
+            get
+            {
                 return ResourceManager.GetString("so_dien_thoai", resourceCulture);
             }
         }
-        
-        internal static string xac_nhan_mat_khau {
-            get {
+
+        internal static string xac_nhan_mat_khau
+        {
+            get
+            {
                 return ResourceManager.GetString("xac_nhan_mat_khau", resourceCulture);
             }
         }
-        
-        internal static string vui_long_nhap_ho_ten_email {
-            get {
+
+        internal static string vui_long_nhap_ho_ten_email
+        {
+            get
+            {
                 return ResourceManager.GetString("vui_long_nhap_ho_ten_email", resourceCulture);
             }
         }
-        
-        internal static string vui_long_nhap_so_dien_thoai {
-            get {
+
+        internal static string vui_long_nhap_so_dien_thoai
+        {
+            get
+            {
                 return ResourceManager.GetString("vui_long_nhap_so_dien_thoai", resourceCulture);
             }
         }
-        
-        internal static string user_name_khong_dung {
-            get {
+
+        internal static string user_name_khong_dung
+        {
+            get
+            {
                 return ResourceManager.GetString("user_name_khong_dung", resourceCulture);
             }
         }
-        
-        internal static string loi_he_thong {
-            get {
+
+        internal static string loi_he_thong
+        {
+            get
+            {
                 return ResourceManager.GetString("loi_he_thong", resourceCulture);
             }
         }
-        
-        internal static string vui_long_nhap_mat_khau {
-            get {
+
+        internal static string vui_long_nhap_mat_khau
+        {
+            get
+            {
                 return ResourceManager.GetString("vui_long_nhap_mat_khau", resourceCulture);
             }
         }
-        
-        internal static string mat_khau_it_nhat_6_ky_tu {
-            get {
+
+        internal static string mat_khau_it_nhat_6_ky_tu
+        {
+            get
+            {
                 return ResourceManager.GetString("mat_khau_it_nhat_6_ky_tu", resourceCulture);
             }
         }
-        
-        internal static string vui_long_nhap_xac_nhan_mat_khau {
-            get {
+
+        internal static string vui_long_nhap_xac_nhan_mat_khau
+        {
+            get
+            {
                 return ResourceManager.GetString("vui_long_nhap_xac_nhan_mat_khau", resourceCulture);
             }
         }
-        
-        internal static string mat_khau_khong_khop {
-            get {
+
+        internal static string mat_khau_khong_khop
+        {
+            get
+            {
                 return ResourceManager.GetString("mat_khau_khong_khop", resourceCulture);
             }
         }
-        
-        internal static string doi_mat_khau_thanh_cong {
-            get {
+
+        internal static string doi_mat_khau_thanh_cong
+        {
+            get
+            {
                 return ResourceManager.GetString("doi_mat_khau_thanh_cong", resourceCulture);
             }
         }
-        
-        internal static string da_co_loi_xay_ra_vui_long_thu_lai_sau {
-            get {
+
+        internal static string da_co_loi_xay_ra_vui_long_thu_lai_sau
+        {
+            get
+            {
                 return ResourceManager.GetString("da_co_loi_xay_ra_vui_long_thu_lai_sau", resourceCulture);
             }
         }
-        
-        internal static string btn_dong {
-            get {
+
+        internal static string btn_dong
+        {
+            get
+            {
                 return ResourceManager.GetString("btn_dong", resourceCulture);
             }
         }
-        
-        internal static string btn_luu {
-            get {
+
+        internal static string btn_luu
+        {
+            get
+            {
                 return ResourceManager.GetString("btn_luu", resourceCulture);
             }
         }
-        
-        internal static string btn_xac_nhan {
-            get {
+
+        internal static string btn_xac_nhan
+        {
+            get
+            {
                 return ResourceManager.GetString("btn_xac_nhan", resourceCulture);
             }
         }
-        
-        internal static string chon_ngay_sinh {
-            get {
+
+        internal static string chon_ngay_sinh
+        {
+            get
+            {
                 return ResourceManager.GetString("chon_ngay_sinh", resourceCulture);
             }
         }
-        
-        internal static string email {
-            get {
+
+        internal static string email
+        {
+            get
+            {
                 return ResourceManager.GetString("email", resourceCulture);
             }
         }
-        
-        internal static string employee {
-            get {
+
+        internal static string employee
+        {
+            get
+            {
                 return ResourceManager.GetString("employee", resourceCulture);
             }
         }
-        
-        internal static string gender_khac {
-            get {
+
+        internal static string gender_khac
+        {
+            get
+            {
                 return ResourceManager.GetString("gender_khac", resourceCulture);
             }
         }
-        
-        internal static string gender_nam {
-            get {
+
+        internal static string gender_nam
+        {
+            get
+            {
                 return ResourceManager.GetString("gender_nam", resourceCulture);
             }
         }
-        
-        internal static string gender_nu {
-            get {
+
+        internal static string gender_nu
+        {
+            get
+            {
                 return ResourceManager.GetString("gender_nu", resourceCulture);
             }
         }
-        
-        internal static string ho_ten {
-            get {
+
+        internal static string ho_ten
+        {
+            get
+            {
                 return ResourceManager.GetString("ho_ten", resourceCulture);
             }
         }
-        
-        internal static string ngay_sinh {
-            get {
+
+        internal static string ngay_sinh
+        {
+            get
+            {
                 return ResourceManager.GetString("ngay_sinh", resourceCulture);
             }
         }
-        
-        internal static string nhap_email {
-            get {
+
+        internal static string nhap_email
+        {
+            get
+            {
                 return ResourceManager.GetString("nhap_email", resourceCulture);
             }
         }
-        
-        internal static string nhap_so_dien_thoai {
-            get {
+
+        internal static string nhap_so_dien_thoai
+        {
+            get
+            {
                 return ResourceManager.GetString("nhap_so_dien_thoai", resourceCulture);
             }
         }
-        
-        internal static string title_thong_tin_ca_nhan {
-            get {
+
+        internal static string title_thong_tin_ca_nhan
+        {
+            get
+            {
                 return ResourceManager.GetString("title_thong_tin_ca_nhan", resourceCulture);
             }
         }
-        
-        internal static string chon_dia_chi {
-            get {
+
+        internal static string chon_dia_chi
+        {
+            get
+            {
                 return ResourceManager.GetString("chon_dia_chi", resourceCulture);
             }
         }
-        
-        internal static string chon_gioi_tinh {
-            get {
+
+        internal static string chon_gioi_tinh
+        {
+            get
+            {
                 return ResourceManager.GetString("chon_gioi_tinh", resourceCulture);
             }
         }
-        
-        internal static string chon_quan_huyen {
-            get {
+
+        internal static string chon_quan_huyen
+        {
+            get
+            {
                 return ResourceManager.GetString("chon_quan_huyen", resourceCulture);
             }
         }
-        
-        internal static string chon_quoc_gia {
-            get {
+
+        internal static string chon_quoc_gia
+        {
+            get
+            {
                 return ResourceManager.GetString("chon_quoc_gia", resourceCulture);
             }
         }
-        
-        internal static string chon_tinh_thanh {
-            get {
+
+        internal static string chon_tinh_thanh
+        {
+            get
+            {
                 return ResourceManager.GetString("chon_tinh_thanh", resourceCulture);
             }
         }
-        
-        internal static string dia_chi {
-            get {
+
+        internal static string dia_chi
+        {
+            get
+            {
                 return ResourceManager.GetString("dia_chi", resourceCulture);
             }
         }
-        
-        internal static string gioi_tinh {
-            get {
+
+        internal static string gioi_tinh
+        {
+            get
+            {
                 return ResourceManager.GetString("gioi_tinh", resourceCulture);
             }
         }
-        
-        internal static string nhap_so_nha_duong_phuong {
-            get {
+
+        internal static string nhap_so_nha_duong_phuong
+        {
+            get
+            {
                 return ResourceManager.GetString("nhap_so_nha_duong_phuong", resourceCulture);
             }
         }
-        
-        internal static string noti_vui_long_nhap_so_nha_duong_phuong {
-            get {
+
+        internal static string noti_vui_long_nhap_so_nha_duong_phuong
+        {
+            get
+            {
                 return ResourceManager.GetString("noti_vui_long_nhap_so_nha_duong_phuong", resourceCulture);
             }
         }
-        
-        internal static string quan_huyen {
-            get {
+
+        internal static string quan_huyen
+        {
+            get
+            {
                 return ResourceManager.GetString("quan_huyen", resourceCulture);
             }
         }
-        
-        internal static string quoc_gia {
-            get {
+
+        internal static string quoc_gia
+        {
+            get
+            {
                 return ResourceManager.GetString("quoc_gia", resourceCulture);
             }
         }
-        
-        internal static string so_nha_duong_phuong {
-            get {
+
+        internal static string so_nha_duong_phuong
+        {
+            get
+            {
                 return ResourceManager.GetString("so_nha_duong_phuong", resourceCulture);
             }
         }
-        
-        internal static string tinh_thanh {
-            get {
+
+        internal static string tinh_thanh
+        {
+            get
+            {
                 return ResourceManager.GetString("tinh_thanh", resourceCulture);
             }
         }
-        
-        internal static string doi_mat_khau {
-            get {
+
+        internal static string doi_mat_khau
+        {
+            get
+            {
                 return ResourceManager.GetString("doi_mat_khau", resourceCulture);
             }
         }
-        
-        internal static string mat_khau_cu {
-            get {
+
+        internal static string mat_khau_cu
+        {
+            get
+            {
                 return ResourceManager.GetString("mat_khau_cu", resourceCulture);
             }
         }
-        
-        internal static string mat_khau_moi {
-            get {
+
+        internal static string mat_khau_moi
+        {
+            get
+            {
                 return ResourceManager.GetString("mat_khau_moi", resourceCulture);
             }
         }
-        
-        internal static string nhap_mat_khau_cu {
-            get {
+
+        internal static string nhap_mat_khau_cu
+        {
+            get
+            {
                 return ResourceManager.GetString("nhap_mat_khau_cu", resourceCulture);
             }
         }
-        
-        internal static string nhap_mat_khau_moi {
-            get {
+
+        internal static string nhap_mat_khau_moi
+        {
+            get
+            {
                 return ResourceManager.GetString("nhap_mat_khau_moi", resourceCulture);
             }
         }
-        
-        internal static string nhap_xac_nhan_mat_khau_moi {
-            get {
+
+        internal static string nhap_xac_nhan_mat_khau_moi
+        {
+            get
+            {
                 return ResourceManager.GetString("nhap_xac_nhan_mat_khau_moi", resourceCulture);
             }
         }
-        
-        internal static string noti_ban_dang_su_dung_mat_khau_cu_vui_long_nhap_lai {
-            get {
+
+        internal static string noti_ban_dang_su_dung_mat_khau_cu_vui_long_nhap_lai
+        {
+            get
+            {
                 return ResourceManager.GetString("noti_ban_dang_su_dung_mat_khau_cu_vui_long_nhap_lai", resourceCulture);
             }
         }
-        
-        internal static string noti_doi_mat_khau_that_bai {
-            get {
+
+        internal static string noti_doi_mat_khau_that_bai
+        {
+            get
+            {
                 return ResourceManager.GetString("noti_doi_mat_khau_that_bai", resourceCulture);
             }
         }
-        
-        internal static string noti_mat_khau_cu_khong_dung {
-            get {
+
+        internal static string noti_mat_khau_cu_khong_dung
+        {
+            get
+            {
                 return ResourceManager.GetString("noti_mat_khau_cu_khong_dung", resourceCulture);
             }
         }
-        
-        internal static string noti_mat_khau_khong_duoc_chua_ky_tu_khoan_trang {
-            get {
+
+        internal static string noti_mat_khau_khong_duoc_chua_ky_tu_khoan_trang
+        {
+            get
+            {
                 return ResourceManager.GetString("noti_mat_khau_khong_duoc_chua_ky_tu_khoan_trang", resourceCulture);
             }
         }
-        
-        internal static string noti_vui_long_nhap_mat_khau_cu {
-            get {
+
+        internal static string noti_vui_long_nhap_mat_khau_cu
+        {
+            get
+            {
                 return ResourceManager.GetString("noti_vui_long_nhap_mat_khau_cu", resourceCulture);
             }
         }
-        
-        internal static string noti_vui_long_nhap_mat_khau_moi {
-            get {
+
+        internal static string noti_vui_long_nhap_mat_khau_moi
+        {
+            get
+            {
                 return ResourceManager.GetString("noti_vui_long_nhap_mat_khau_moi", resourceCulture);
             }
         }
-        
-        internal static string noti_vui_long_nhap_xac_nhan_mat_khau_moi {
-            get {
+
+        internal static string noti_vui_long_nhap_xac_nhan_mat_khau_moi
+        {
+            get
+            {
                 return ResourceManager.GetString("noti_vui_long_nhap_xac_nhan_mat_khau_moi", resourceCulture);
             }
         }
-        
-        internal static string noti_xac_nhan_mat_khau_khong_dung {
-            get {
+
+        internal static string noti_xac_nhan_mat_khau_khong_dung
+        {
+            get
+            {
                 return ResourceManager.GetString("noti_xac_nhan_mat_khau_khong_dung", resourceCulture);
             }
         }
-        
-        internal static string mat_khau_khong_dung {
-            get {
+
+        internal static string mat_khau_khong_dung
+        {
+            get
+            {
                 return ResourceManager.GetString("mat_khau_khong_dung", resourceCulture);
             }
         }
-        
-        internal static string giu_cho_trang_chu {
-            get {
+
+        internal static string giu_cho_trang_chu
+        {
+            get
+            {
                 return ResourceManager.GetString("giu_cho_trang_chu", resourceCulture);
             }
         }
-        
-        internal static string dat_coc_trang_chu {
-            get {
+
+        internal static string dat_coc_trang_chu
+        {
+            get
+            {
                 return ResourceManager.GetString("dat_coc_trang_chu", resourceCulture);
             }
         }
-        
-        internal static string hop_dong_trang_chu {
-            get {
+
+        internal static string hop_dong_trang_chu
+        {
+            get
+            {
                 return ResourceManager.GetString("hop_dong_trang_chu", resourceCulture);
             }
         }
-        
-        internal static string da_ban_trang_chu {
-            get {
+
+        internal static string da_ban_trang_chu
+        {
+            get
+            {
                 return ResourceManager.GetString("da_ban_trang_chu", resourceCulture);
             }
         }
-        
-        internal static string loyalty {
-            get {
+
+        internal static string loyalty
+        {
+            get
+            {
                 return ResourceManager.GetString("loyalty", resourceCulture);
             }
         }
-        
-        internal static string chup_hinh {
-            get {
+
+        internal static string chup_hinh
+        {
+            get
+            {
                 return ResourceManager.GetString("chup_hinh", resourceCulture);
             }
         }
-        
-        internal static string thu_vien {
-            get {
+
+        internal static string thu_vien
+        {
+            get
+            {
                 return ResourceManager.GetString("thu_vien", resourceCulture);
             }
         }
-        
-        internal static string tuy_chon {
-            get {
+
+        internal static string tuy_chon
+        {
+            get
+            {
                 return ResourceManager.GetString("tuy_chon", resourceCulture);
             }
         }
-        
-        internal static string noti_doi_hinh_dai_dien_thanh_cong {
-            get {
+
+        internal static string noti_doi_hinh_dai_dien_thanh_cong
+        {
+            get
+            {
                 return ResourceManager.GetString("noti_doi_hinh_dai_dien_thanh_cong", resourceCulture);
             }
         }
-        
-        internal static string noti_doi_hinh_dai_dien_that_bai {
-            get {
+
+        internal static string noti_doi_hinh_dai_dien_that_bai
+        {
+            get
+            {
                 return ResourceManager.GetString("noti_doi_hinh_dai_dien_that_bai", resourceCulture);
             }
         }
-        
-        internal static string noti_cap_nhat_thanh_cong {
-            get {
+
+        internal static string noti_cap_nhat_thanh_cong
+        {
+            get
+            {
                 return ResourceManager.GetString("noti_cap_nhat_thanh_cong", resourceCulture);
             }
         }
-        
-        internal static string noti_cap_nhat_that_bai {
-            get {
+
+        internal static string noti_cap_nhat_that_bai
+        {
+            get
+            {
                 return ResourceManager.GetString("noti_cap_nhat_that_bai", resourceCulture);
             }
         }
-        
-        internal static string noti_vui_long_chon_ngay_sinh {
-            get {
+
+        internal static string noti_vui_long_chon_ngay_sinh
+        {
+            get
+            {
                 return ResourceManager.GetString("noti_vui_long_chon_ngay_sinh", resourceCulture);
             }
         }
-        
-        internal static string noti_vui_long_chon_gioi_tinh {
-            get {
+
+        internal static string noti_vui_long_chon_gioi_tinh
+        {
+            get
+            {
                 return ResourceManager.GetString("noti_vui_long_chon_gioi_tinh", resourceCulture);
             }
         }
-        
-        internal static string xac_nhan_mat_khau_moi {
-            get {
+
+        internal static string xac_nhan_mat_khau_moi
+        {
+            get
+            {
                 return ResourceManager.GetString("xac_nhan_mat_khau_moi", resourceCulture);
             }
         }
-        
-        internal static string direction_north {
-            get {
+
+        internal static string direction_north
+        {
+            get
+            {
                 return ResourceManager.GetString("direction_north", resourceCulture);
             }
         }
-        
-        internal static string direction_south {
-            get {
+
+        internal static string direction_south
+        {
+            get
+            {
                 return ResourceManager.GetString("direction_south", resourceCulture);
             }
         }
-        
-        internal static string direction_east {
-            get {
+
+        internal static string direction_east
+        {
+            get
+            {
                 return ResourceManager.GetString("direction_east", resourceCulture);
             }
         }
-        
-        internal static string direction_west {
-            get {
+
+        internal static string direction_west
+        {
+            get
+            {
                 return ResourceManager.GetString("direction_west", resourceCulture);
             }
         }
-        
-        internal static string direction_north_east {
-            get {
+
+        internal static string direction_north_east
+        {
+            get
+            {
                 return ResourceManager.GetString("direction_north_east", resourceCulture);
             }
         }
-        
-        internal static string direction_north_west {
-            get {
+
+        internal static string direction_north_west
+        {
+            get
+            {
                 return ResourceManager.GetString("direction_north_west", resourceCulture);
             }
         }
-        
-        internal static string direction_south_east {
-            get {
+
+        internal static string direction_south_east
+        {
+            get
+            {
                 return ResourceManager.GetString("direction_south_east", resourceCulture);
             }
         }
-        
-        internal static string direction_south_west {
-            get {
+
+        internal static string direction_south_west
+        {
+            get
+            {
                 return ResourceManager.GetString("direction_south_west", resourceCulture);
             }
         }
-        
-        internal static string title_thong_tin_gia_chu {
-            get {
+
+        internal static string title_thong_tin_gia_chu
+        {
+            get
+            {
                 return ResourceManager.GetString("title_thong_tin_gia_chu", resourceCulture);
             }
         }
-        
-        internal static string nam_sinh_am_lich {
-            get {
+
+        internal static string nam_sinh_am_lich
+        {
+            get
+            {
                 return ResourceManager.GetString("nam_sinh_am_lich", resourceCulture);
             }
         }
-        
-        internal static string que_menh {
-            get {
+
+        internal static string que_menh
+        {
+            get
+            {
                 return ResourceManager.GetString("que_menh", resourceCulture);
             }
         }
-        
-        internal static string ngu_hanh {
-            get {
+
+        internal static string ngu_hanh
+        {
+            get
+            {
                 return ResourceManager.GetString("ngu_hanh", resourceCulture);
             }
         }
-        
-        internal static string title_la_ban_phong_thuy {
-            get {
+
+        internal static string title_la_ban_phong_thuy
+        {
+            get
+            {
                 return ResourceManager.GetString("title_la_ban_phong_thuy", resourceCulture);
             }
         }
-        
-        internal static string huong_tot {
-            get {
+
+        internal static string huong_tot
+        {
+            get
+            {
                 return ResourceManager.GetString("huong_tot", resourceCulture);
             }
         }
-        
-        internal static string huong_xau {
-            get {
+
+        internal static string huong_xau
+        {
+            get
+            {
                 return ResourceManager.GetString("huong_xau", resourceCulture);
             }
         }
-        
-        internal static string khong_co_du_lieu {
-            get {
+
+        internal static string khong_co_du_lieu
+        {
+            get
+            {
                 return ResourceManager.GetString("khong_co_du_lieu", resourceCulture);
             }
         }
-        
-        internal static string btn_xoa {
-            get {
+
+        internal static string btn_xoa
+        {
+            get
+            {
                 return ResourceManager.GetString("btn_xoa", resourceCulture);
             }
         }
-        
-        internal static string string_under {
-            get {
+
+        internal static string string_under
+        {
+            get
+            {
                 return ResourceManager.GetString("string_under", resourceCulture);
             }
         }
-        
-        internal static string sqm {
-            get {
+
+        internal static string sqm
+        {
+            get
+            {
                 return ResourceManager.GetString("sqm", resourceCulture);
             }
         }
-        
-        internal static string string_more_than {
-            get {
+
+        internal static string string_more_than
+        {
+            get
+            {
                 return ResourceManager.GetString("string_more_than", resourceCulture);
             }
         }
-        
-        internal static string currency_billion {
-            get {
+
+        internal static string currency_billion
+        {
+            get
+            {
                 return ResourceManager.GetString("currency_billion", resourceCulture);
             }
         }
-        
-        internal static string unit_1st_installment_sts {
-            get {
+
+        internal static string unit_1st_installment_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("unit_1st_installment_sts", resourceCulture);
             }
         }
-        
-        internal static string unit_available_sts {
-            get {
+
+        internal static string unit_available_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("unit_available_sts", resourceCulture);
             }
         }
-        
-        internal static string unit_collected_sts {
-            get {
+
+        internal static string unit_collected_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("unit_collected_sts", resourceCulture);
             }
         }
-        
-        internal static string unit_deposited_sts {
-            get {
+
+        internal static string unit_deposited_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("unit_deposited_sts", resourceCulture);
             }
         }
-        
-        internal static string unit_draft_sts {
-            get {
+
+        internal static string unit_draft_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("unit_draft_sts", resourceCulture);
             }
         }
-        
-        internal static string unit_preparing_sts {
-            get {
+
+        internal static string unit_preparing_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("unit_preparing_sts", resourceCulture);
             }
         }
-        
-        internal static string unit_queuing_sts {
-            get {
+
+        internal static string unit_queuing_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("unit_queuing_sts", resourceCulture);
             }
         }
-        
-        internal static string unit_reserve_sts {
-            get {
+
+        internal static string unit_reserve_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("unit_reserve_sts", resourceCulture);
             }
         }
-        
-        internal static string unit_sold_sts {
-            get {
+
+        internal static string unit_sold_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("unit_sold_sts", resourceCulture);
             }
         }
-        
-        internal static string noti_vui_long_chon_du_an {
-            get {
+
+        internal static string noti_vui_long_chon_du_an
+        {
+            get
+            {
                 return ResourceManager.GetString("noti_vui_long_chon_du_an", resourceCulture);
             }
         }
-        
-        internal static string du_an {
-            get {
+
+        internal static string du_an
+        {
+            get
+            {
                 return ResourceManager.GetString("du_an", resourceCulture);
             }
         }
-        
-        internal static string chon_du_an {
-            get {
+
+        internal static string chon_du_an
+        {
+            get
+            {
                 return ResourceManager.GetString("chon_du_an", resourceCulture);
             }
         }
-        
-        internal static string dot_mo_ban {
-            get {
+
+        internal static string dot_mo_ban
+        {
+            get
+            {
                 return ResourceManager.GetString("dot_mo_ban", resourceCulture);
             }
         }
-        
-        internal static string chon_dot_mo_ban {
-            get {
+
+        internal static string chon_dot_mo_ban
+        {
+            get
+            {
                 return ResourceManager.GetString("chon_dot_mo_ban", resourceCulture);
             }
         }
-        
-        internal static string su_kien {
-            get {
+
+        internal static string su_kien
+        {
+            get
+            {
                 return ResourceManager.GetString("su_kien", resourceCulture);
             }
         }
-        
-        internal static string ma_san_pham {
-            get {
+
+        internal static string ma_san_pham
+        {
+            get
+            {
                 return ResourceManager.GetString("ma_san_pham", resourceCulture);
             }
         }
-        
-        internal static string nhap_ma_san_pham {
-            get {
+
+        internal static string nhap_ma_san_pham
+        {
+            get
+            {
                 return ResourceManager.GetString("nhap_ma_san_pham", resourceCulture);
             }
         }
-        
-        internal static string huong {
-            get {
+
+        internal static string huong
+        {
+            get
+            {
                 return ResourceManager.GetString("huong", resourceCulture);
             }
         }
-        
-        internal static string chon_huong {
-            get {
+
+        internal static string chon_huong
+        {
+            get
+            {
                 return ResourceManager.GetString("chon_huong", resourceCulture);
             }
         }
-        
-        internal static string tinh_trang_san_pham {
-            get {
+
+        internal static string tinh_trang_san_pham
+        {
+            get
+            {
                 return ResourceManager.GetString("tinh_trang_san_pham", resourceCulture);
             }
         }
-        
-        internal static string chon_tinh_trang_san_pham {
-            get {
+
+        internal static string chon_tinh_trang_san_pham
+        {
+            get
+            {
                 return ResourceManager.GetString("chon_tinh_trang_san_pham", resourceCulture);
             }
         }
-        
-        internal static string dien_tich_su_dung {
-            get {
+
+        internal static string dien_tich_su_dung
+        {
+            get
+            {
                 return ResourceManager.GetString("dien_tich_su_dung", resourceCulture);
             }
         }
-        
-        internal static string chon_dien_tich_su_dung {
-            get {
+
+        internal static string chon_dien_tich_su_dung
+        {
+            get
+            {
                 return ResourceManager.GetString("chon_dien_tich_su_dung", resourceCulture);
             }
         }
-        
-        internal static string gia_ban_vnd {
-            get {
+
+        internal static string gia_ban_vnd
+        {
+            get
+            {
                 return ResourceManager.GetString("gia_ban_vnd", resourceCulture);
             }
         }
-        
-        internal static string chon_gia_ban {
-            get {
+
+        internal static string chon_gia_ban
+        {
+            get
+            {
                 return ResourceManager.GetString("chon_gia_ban", resourceCulture);
             }
         }
-        
-        internal static string thong_tin_du_an {
-            get {
+
+        internal static string thong_tin_du_an
+        {
+            get
+            {
                 return ResourceManager.GetString("thong_tin_du_an", resourceCulture);
             }
         }
-        
-        internal static string tim_kiem {
-            get {
+
+        internal static string tim_kiem
+        {
+            get
+            {
                 return ResourceManager.GetString("tim_kiem", resourceCulture);
             }
         }
-        
-        internal static string title_thong_tin_du_an {
-            get {
+
+        internal static string title_thong_tin_du_an
+        {
+            get
+            {
                 return ResourceManager.GetString("title_thong_tin_du_an", resourceCulture);
             }
         }
-        
-        internal static string title_thong_ke {
-            get {
+
+        internal static string title_thong_ke
+        {
+            get
+            {
                 return ResourceManager.GetString("title_thong_ke", resourceCulture);
             }
         }
-        
-        internal static string title_thong_tin {
-            get {
+
+        internal static string title_thong_tin
+        {
+            get
+            {
                 return ResourceManager.GetString("title_thong_tin", resourceCulture);
             }
         }
-        
-        internal static string title_giu_cho {
-            get {
+
+        internal static string title_giu_cho
+        {
+            get
+            {
                 return ResourceManager.GetString("title_giu_cho", resourceCulture);
             }
         }
-        
-        internal static string giu_cho {
-            get {
+
+        internal static string giu_cho
+        {
+            get
+            {
                 return ResourceManager.GetString("giu_cho", resourceCulture);
             }
         }
-        
-        internal static string bang_tinh_gia {
-            get {
+
+        internal static string bang_tinh_gia
+        {
+            get
+            {
                 return ResourceManager.GetString("bang_tinh_gia", resourceCulture);
             }
         }
-        
-        internal static string san_pham {
-            get {
+
+        internal static string san_pham
+        {
+            get
+            {
                 return ResourceManager.GetString("san_pham", resourceCulture);
             }
         }
-        
-        internal static string hop_dong {
-            get {
+
+        internal static string hop_dong
+        {
+            get
+            {
                 return ResourceManager.GetString("hop_dong", resourceCulture);
             }
         }
-        
-        internal static string dat_coc {
-            get {
+
+        internal static string dat_coc
+        {
+            get
+            {
                 return ResourceManager.GetString("dat_coc", resourceCulture);
             }
         }
-        
-        internal static string title_thong_tin_chung {
-            get {
+
+        internal static string title_thong_tin_chung
+        {
+            get
+            {
                 return ResourceManager.GetString("title_thong_tin_chung", resourceCulture);
             }
         }
-        
-        internal static string chu_dau_tu {
-            get {
+
+        internal static string chu_dau_tu
+        {
+            get
+            {
                 return ResourceManager.GetString("chu_dau_tu", resourceCulture);
             }
         }
-        
-        internal static string phan_tram_coc_ {
-            get {
+
+        internal static string phan_tram_coc_
+        {
+            get
+            {
                 return ResourceManager.GetString("phan_tram_coc_", resourceCulture);
             }
         }
-        
-        internal static string ngay_du_kien_ban_giao {
-            get {
+
+        internal static string ngay_du_kien_ban_giao
+        {
+            get
+            {
                 return ResourceManager.GetString("ngay_du_kien_ban_giao", resourceCulture);
             }
         }
-        
-        internal static string gia_tri_qsdd_m {
-            get {
+
+        internal static string gia_tri_qsdd_m
+        {
+            get
+            {
                 return ResourceManager.GetString("gia_tri_qsdd_m", resourceCulture);
             }
         }
-        
-        internal static string phi_bao_tri {
-            get {
+
+        internal static string phi_bao_tri
+        {
+            get
+            {
                 return ResourceManager.GetString("phi_bao_tri", resourceCulture);
             }
         }
-        
-        internal static string so_thang_tinh_phi_quan_ly {
-            get {
+
+        internal static string so_thang_tinh_phi_quan_ly
+        {
+            get
+            {
                 return ResourceManager.GetString("so_thang_tinh_phi_quan_ly", resourceCulture);
             }
         }
-        
-        internal static string don_gia_phi_quan_ly_thang {
-            get {
+
+        internal static string don_gia_phi_quan_ly_thang
+        {
+            get
+            {
                 return ResourceManager.GetString("don_gia_phi_quan_ly_thang", resourceCulture);
             }
         }
-        
-        internal static string title_quy_trinh_ban {
-            get {
+
+        internal static string title_quy_trinh_ban
+        {
+            get
+            {
                 return ResourceManager.GetString("title_quy_trinh_ban", resourceCulture);
             }
         }
-        
-        internal static string unit_cho_moi_nhan_vien {
-            get {
+
+        internal static string unit_cho_moi_nhan_vien
+        {
+            get
+            {
                 return ResourceManager.GetString("unit_cho_moi_nhan_vien", resourceCulture);
             }
         }
-        
-        internal static string giu_cho_cho_moi_unit {
-            get {
+
+        internal static string giu_cho_cho_moi_unit
+        {
+            get
+            {
                 return ResourceManager.GetString("giu_cho_cho_moi_unit", resourceCulture);
             }
         }
-        
-        internal static string thoi_gian_giu_cho_dai_han {
-            get {
+
+        internal static string thoi_gian_giu_cho_dai_han
+        {
+            get
+            {
                 return ResourceManager.GetString("thoi_gian_giu_cho_dai_han", resourceCulture);
             }
         }
-        
-        internal static string thoi_gian_giu_cho_ngan_han {
-            get {
+
+        internal static string thoi_gian_giu_cho_ngan_han
+        {
+            get
+            {
                 return ResourceManager.GetString("thoi_gian_giu_cho_ngan_han", resourceCulture);
             }
         }
-        
-        internal static string tien_giu_cho {
-            get {
+
+        internal static string tien_giu_cho
+        {
+            get
+            {
                 return ResourceManager.GetString("tien_giu_cho", resourceCulture);
             }
         }
-        
-        internal static string tien_dat_coc {
-            get {
+
+        internal static string tien_dat_coc
+        {
+            get
+            {
                 return ResourceManager.GetString("tien_dat_coc", resourceCulture);
             }
         }
-        
-        internal static string khach_hang {
-            get {
+
+        internal static string khach_hang
+        {
+            get
+            {
                 return ResourceManager.GetString("khach_hang", resourceCulture);
             }
         }
-        
-        internal static string thoi_gian_het_han {
-            get {
+
+        internal static string thoi_gian_het_han
+        {
+            get
+            {
                 return ResourceManager.GetString("thoi_gian_het_han", resourceCulture);
             }
         }
-        
-        internal static string xem_them {
-            get {
+
+        internal static string xem_them
+        {
+            get
+            {
                 return ResourceManager.GetString("xem_them", resourceCulture);
             }
         }
-        
-        internal static string queue_canceled_sts {
-            get {
+
+        internal static string queue_canceled_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("queue_canceled_sts", resourceCulture);
             }
         }
-        
-        internal static string queue_collected_queuing_fee_sts {
-            get {
+
+        internal static string queue_collected_queuing_fee_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("queue_collected_queuing_fee_sts", resourceCulture);
             }
         }
-        
-        internal static string queue_completed_sts {
-            get {
+
+        internal static string queue_completed_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("queue_completed_sts", resourceCulture);
             }
         }
-        
-        internal static string queue_draft_sts {
-            get {
+
+        internal static string queue_draft_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("queue_draft_sts", resourceCulture);
             }
         }
-        
-        internal static string queue_expired_sts {
-            get {
+
+        internal static string queue_expired_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("queue_expired_sts", resourceCulture);
             }
         }
-        
-        internal static string queue_on_hold_sts {
-            get {
+
+        internal static string queue_on_hold_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("queue_on_hold_sts", resourceCulture);
             }
         }
-        
-        internal static string queue_out_sold_sts {
-            get {
+
+        internal static string queue_out_sold_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("queue_out_sold_sts", resourceCulture);
             }
         }
-        
-        internal static string queue_queuing_sts {
-            get {
+
+        internal static string queue_queuing_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("queue_queuing_sts", resourceCulture);
             }
         }
-        
-        internal static string queue_waiting_sts {
-            get {
+
+        internal static string queue_waiting_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("queue_waiting_sts", resourceCulture);
             }
         }
-        
-        internal static string queue_won_sts {
-            get {
+
+        internal static string queue_won_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("queue_won_sts", resourceCulture);
             }
         }
-        
-        internal static string oe_1st_installment_sts {
-            get {
+
+        internal static string oe_1st_installment_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("oe_1st_installment_sts", resourceCulture);
             }
         }
-        
-        internal static string oe_being_payment_sts {
-            get {
+
+        internal static string oe_being_payment_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("oe_being_payment_sts", resourceCulture);
             }
         }
-        
-        internal static string oe_canceled_sts {
-            get {
+
+        internal static string oe_canceled_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("oe_canceled_sts", resourceCulture);
             }
         }
-        
-        internal static string oe_complete_payment_sts {
-            get {
+
+        internal static string oe_complete_payment_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("oe_complete_payment_sts", resourceCulture);
             }
         }
-        
-        internal static string oe_complete_sts {
-            get {
+
+        internal static string oe_complete_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("oe_complete_sts", resourceCulture);
             }
         }
-        
-        internal static string oe_converted_sts {
-            get {
+
+        internal static string oe_converted_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("oe_converted_sts", resourceCulture);
             }
         }
-        
-        internal static string oe_handover_sts {
-            get {
+
+        internal static string oe_handover_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("oe_handover_sts", resourceCulture);
             }
         }
-        
-        internal static string oe_invoiced_sts {
-            get {
+
+        internal static string oe_invoiced_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("oe_invoiced_sts", resourceCulture);
             }
         }
-        
-        internal static string oe_open_sts {
-            get {
+
+        internal static string oe_open_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("oe_open_sts", resourceCulture);
             }
         }
-        
-        internal static string oe_option_sts {
-            get {
+
+        internal static string oe_option_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("oe_option_sts", resourceCulture);
             }
         }
-        
-        internal static string oe_partial_sts {
-            get {
+
+        internal static string oe_partial_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("oe_partial_sts", resourceCulture);
             }
         }
-        
-        internal static string oe_pending_sts {
-            get {
+
+        internal static string oe_pending_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("oe_pending_sts", resourceCulture);
             }
         }
-        
-        internal static string oe_signed_contract_sts {
-            get {
+
+        internal static string oe_signed_contract_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("oe_signed_contract_sts", resourceCulture);
             }
         }
-        
-        internal static string oe_submitted_in_progress_sts {
-            get {
+
+        internal static string oe_submitted_in_progress_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("oe_submitted_in_progress_sts", resourceCulture);
             }
         }
-        
-        internal static string oe_terminated_sts {
-            get {
+
+        internal static string oe_terminated_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("oe_terminated_sts", resourceCulture);
             }
         }
-        
-        internal static string project_apartment_usagetype {
-            get {
+
+        internal static string project_apartment_usagetype
+        {
+            get
+            {
                 return ResourceManager.GetString("project_apartment_usagetype", resourceCulture);
             }
         }
-        
-        internal static string project_commercial_type {
-            get {
+
+        internal static string project_commercial_type
+        {
+            get
+            {
                 return ResourceManager.GetString("project_commercial_type", resourceCulture);
             }
         }
-        
-        internal static string project_condo_usagetype {
-            get {
+
+        internal static string project_condo_usagetype
+        {
+            get
+            {
                 return ResourceManager.GetString("project_condo_usagetype", resourceCulture);
             }
         }
-        
-        internal static string project_residential_type {
-            get {
+
+        internal static string project_residential_type
+        {
+            get
+            {
                 return ResourceManager.GetString("project_residential_type", resourceCulture);
             }
         }
-        
-        internal static string project_townhouse_usagetype {
-            get {
+
+        internal static string project_townhouse_usagetype
+        {
+            get
+            {
                 return ResourceManager.GetString("project_townhouse_usagetype", resourceCulture);
             }
         }
-        
-        internal static string noti_khong_tim_thay_du_an {
-            get {
+
+        internal static string noti_khong_tim_thay_du_an
+        {
+            get
+            {
                 return ResourceManager.GetString("noti_khong_tim_thay_du_an", resourceCulture);
             }
         }
-        
-        internal static string co {
-            get {
+
+        internal static string co
+        {
+            get
+            {
                 return ResourceManager.GetString("co", resourceCulture);
             }
         }
-        
-        internal static string khong {
-            get {
+
+        internal static string khong
+        {
+            get
+            {
                 return ResourceManager.GetString("khong", resourceCulture);
             }
         }
-        
-        internal static string btn_tao_giu_cho {
-            get {
+
+        internal static string btn_tao_giu_cho
+        {
+            get
+            {
                 return ResourceManager.GetString("btn_tao_giu_cho", resourceCulture);
             }
         }
-        
-        internal static string noti_vui_long_nhap_tieu_de_giu_cho {
-            get {
+
+        internal static string noti_vui_long_nhap_tieu_de_giu_cho
+        {
+            get
+            {
                 return ResourceManager.GetString("noti_vui_long_nhap_tieu_de_giu_cho", resourceCulture);
             }
         }
-        
-        internal static string noti_vui_long_chon_khach_hang {
-            get {
+
+        internal static string noti_vui_long_chon_khach_hang
+        {
+            get
+            {
                 return ResourceManager.GetString("noti_vui_long_chon_khach_hang", resourceCulture);
             }
         }
-        
-        internal static string noti_thanh_cong {
-            get {
+
+        internal static string noti_thanh_cong
+        {
+            get
+            {
                 return ResourceManager.GetString("noti_thanh_cong", resourceCulture);
             }
         }
-        
-        internal static string noti_that_bai {
-            get {
+
+        internal static string noti_that_bai
+        {
+            get
+            {
                 return ResourceManager.GetString("noti_that_bai", resourceCulture);
             }
         }
-        
-        internal static string noti_khach_hang_da_tham_gia_giu_cho_cho_du_an_nay {
-            get {
+
+        internal static string noti_khach_hang_da_tham_gia_giu_cho_cho_du_an_nay
+        {
+            get
+            {
                 return ResourceManager.GetString("noti_khach_hang_da_tham_gia_giu_cho_cho_du_an_nay", resourceCulture);
             }
         }
-        
-        internal static string noti_khach_hang_phai_khac_dai_ly_ban_hang {
-            get {
+
+        internal static string noti_khach_hang_phai_khac_dai_ly_ban_hang
+        {
+            get
+            {
                 return ResourceManager.GetString("noti_khach_hang_phai_khac_dai_ly_ban_hang", resourceCulture);
             }
         }
-        
-        internal static string noti_khach_hang_phai_khac_cong_tac_vien {
-            get {
+
+        internal static string noti_khach_hang_phai_khac_cong_tac_vien
+        {
+            get
+            {
                 return ResourceManager.GetString("noti_khach_hang_phai_khac_cong_tac_vien", resourceCulture);
             }
         }
-        
-        internal static string noti_khach_hang_phai_khac_khach_hang_gioi_thieu {
-            get {
+
+        internal static string noti_khach_hang_phai_khac_khach_hang_gioi_thieu
+        {
+            get
+            {
                 return ResourceManager.GetString("noti_khach_hang_phai_khac_khach_hang_gioi_thieu", resourceCulture);
             }
         }
-        
-        internal static string title_tao_giu_cho {
-            get {
+
+        internal static string title_tao_giu_cho
+        {
+            get
+            {
                 return ResourceManager.GetString("title_tao_giu_cho", resourceCulture);
             }
         }
-        
-        internal static string thong_tin_san_pham {
-            get {
+
+        internal static string thong_tin_san_pham
+        {
+            get
+            {
                 return ResourceManager.GetString("thong_tin_san_pham", resourceCulture);
             }
         }
-        
-        internal static string phi_giu_cho {
-            get {
+
+        internal static string phi_giu_cho
+        {
+            get
+            {
                 return ResourceManager.GetString("phi_giu_cho", resourceCulture);
             }
         }
-        
-        internal static string thong_tin_giu_cho {
-            get {
+
+        internal static string thong_tin_giu_cho
+        {
+            get
+            {
                 return ResourceManager.GetString("thong_tin_giu_cho", resourceCulture);
             }
         }
-        
-        internal static string tieu_de {
-            get {
+
+        internal static string tieu_de
+        {
+            get
+            {
                 return ResourceManager.GetString("tieu_de", resourceCulture);
             }
         }
-        
-        internal static string nhap_tieu_de_cua_giu_cho {
-            get {
+
+        internal static string nhap_tieu_de_cua_giu_cho
+        {
+            get
+            {
                 return ResourceManager.GetString("nhap_tieu_de_cua_giu_cho", resourceCulture);
             }
         }
-        
-        internal static string mo_ta {
-            get {
+
+        internal static string mo_ta
+        {
+            get
+            {
                 return ResourceManager.GetString("mo_ta", resourceCulture);
             }
         }
-        
-        internal static string nhap_mo_ta {
-            get {
+
+        internal static string nhap_mo_ta
+        {
+            get
+            {
                 return ResourceManager.GetString("nhap_mo_ta", resourceCulture);
             }
         }
-        
-        internal static string dai_ly_san_giao_dich {
-            get {
+
+        internal static string dai_ly_san_giao_dich
+        {
+            get
+            {
                 return ResourceManager.GetString("dai_ly_san_giao_dich", resourceCulture);
             }
         }
-        
-        internal static string chon_dai_ly {
-            get {
+
+        internal static string chon_dai_ly
+        {
+            get
+            {
                 return ResourceManager.GetString("chon_dai_ly", resourceCulture);
             }
         }
-        
-        internal static string nhan_vien_dai_ly_san {
-            get {
+
+        internal static string nhan_vien_dai_ly_san
+        {
+            get
+            {
                 return ResourceManager.GetString("nhan_vien_dai_ly_san", resourceCulture);
             }
         }
-        
-        internal static string nhap_nhan_vien_dao_ly {
-            get {
+
+        internal static string nhap_nhan_vien_dao_ly
+        {
+            get
+            {
                 return ResourceManager.GetString("nhap_nhan_vien_dao_ly", resourceCulture);
             }
         }
-        
-        internal static string cong_tac_vien {
-            get {
+
+        internal static string cong_tac_vien
+        {
+            get
+            {
                 return ResourceManager.GetString("cong_tac_vien", resourceCulture);
             }
         }
-        
-        internal static string chon_cong_tac_vien {
-            get {
+
+        internal static string chon_cong_tac_vien
+        {
+            get
+            {
                 return ResourceManager.GetString("chon_cong_tac_vien", resourceCulture);
             }
         }
-        
-        internal static string chon_khach_hang_gioi_thieu {
-            get {
+
+        internal static string chon_khach_hang_gioi_thieu
+        {
+            get
+            {
                 return ResourceManager.GetString("chon_khach_hang_gioi_thieu", resourceCulture);
             }
         }
-        
-        internal static string khach_hang_gioi_thieu {
-            get {
+
+        internal static string khach_hang_gioi_thieu
+        {
+            get
+            {
                 return ResourceManager.GetString("khach_hang_gioi_thieu", resourceCulture);
             }
         }
-        
-        internal static string tat_ca {
-            get {
+
+        internal static string tat_ca
+        {
+            get
+            {
                 return ResourceManager.GetString("tat_ca", resourceCulture);
             }
         }
-        
-        internal static string tinh_trang {
-            get {
+
+        internal static string tinh_trang
+        {
+            get
+            {
                 return ResourceManager.GetString("tinh_trang", resourceCulture);
             }
         }
-        
-        internal static string ma {
-            get {
+
+        internal static string ma
+        {
+            get
+            {
                 return ResourceManager.GetString("ma", resourceCulture);
             }
         }
-        
-        internal static string quote_dat_coc {
-            get {
+
+        internal static string quote_dat_coc
+        {
+            get
+            {
                 return ResourceManager.GetString("quote_dat_coc", resourceCulture);
             }
         }
-        
-        internal static string quote_da_thanh_ly {
-            get {
+
+        internal static string quote_da_thanh_ly
+        {
+            get
+            {
                 return ResourceManager.GetString("quote_da_thanh_ly", resourceCulture);
             }
         }
-        
-        internal static string quote_dang_cho_huy_bo_tien_gui {
-            get {
+
+        internal static string quote_dang_cho_huy_bo_tien_gui
+        {
+            get
+            {
                 return ResourceManager.GetString("quote_dang_cho_huy_bo_tien_gui", resourceCulture);
             }
         }
-        
-        internal static string quote_tu_choi {
-            get {
+
+        internal static string quote_tu_choi
+        {
+            get
+            {
                 return ResourceManager.GetString("quote_tu_choi", resourceCulture);
             }
         }
-        
-        internal static string quote_da_ky_rf {
-            get {
+
+        internal static string quote_da_ky_rf
+        {
+            get
+            {
                 return ResourceManager.GetString("quote_da_ky_rf", resourceCulture);
             }
         }
-        
-        internal static string quote_da_het_han_ky_rf {
-            get {
+
+        internal static string quote_da_het_han_ky_rf
+        {
+            get
+            {
                 return ResourceManager.GetString("quote_da_het_han_ky_rf", resourceCulture);
             }
         }
-        
-        internal static string quote_chuyen_coc {
-            get {
+
+        internal static string quote_chuyen_coc
+        {
+            get
+            {
                 return ResourceManager.GetString("quote_chuyen_coc", resourceCulture);
             }
         }
-        
-        internal static string quote_bao_gia {
-            get {
+
+        internal static string quote_bao_gia
+        {
+            get
+            {
                 return ResourceManager.GetString("quote_bao_gia", resourceCulture);
             }
         }
-        
-        internal static string quote_bao_gia_het_han {
-            get {
+
+        internal static string quote_bao_gia_het_han
+        {
+            get
+            {
                 return ResourceManager.GetString("quote_bao_gia_het_han", resourceCulture);
             }
         }
-        
-        internal static string quote_da_ky_phieu_coc {
-            get {
+
+        internal static string quote_da_ky_phieu_coc
+        {
+            get
+            {
                 return ResourceManager.GetString("quote_da_ky_phieu_coc", resourceCulture);
             }
         }
-        
-        internal static string quote_het_han {
-            get {
+
+        internal static string quote_het_han
+        {
+            get
+            {
                 return ResourceManager.GetString("quote_het_han", resourceCulture);
             }
         }
-        
-        internal static string quote_nhap {
-            get {
+
+        internal static string quote_nhap
+        {
+            get
+            {
                 return ResourceManager.GetString("quote_nhap", resourceCulture);
             }
         }
-        
-        internal static string quote_dang_xu_ly {
-            get {
+
+        internal static string quote_dang_xu_ly
+        {
+            get
+            {
                 return ResourceManager.GetString("quote_dang_xu_ly", resourceCulture);
             }
         }
-        
-        internal static string quote_tt_du_tien_coc {
-            get {
+
+        internal static string quote_tt_du_tien_coc
+        {
+            get
+            {
                 return ResourceManager.GetString("quote_tt_du_tien_coc", resourceCulture);
             }
         }
-        
-        internal static string quote_mat_khach_hang {
-            get {
+
+        internal static string quote_mat_khach_hang
+        {
+            get
+            {
                 return ResourceManager.GetString("quote_mat_khach_hang", resourceCulture);
             }
         }
-        
-        internal static string quote_da_sua_doi {
-            get {
+
+        internal static string quote_da_sua_doi
+        {
+            get
+            {
                 return ResourceManager.GetString("quote_da_sua_doi", resourceCulture);
             }
         }
-        
-        internal static string quote_da_trinh {
-            get {
+
+        internal static string quote_da_trinh
+        {
+            get
+            {
                 return ResourceManager.GetString("quote_da_trinh", resourceCulture);
             }
         }
-        
-        internal static string quote_da_duyet {
-            get {
+
+        internal static string quote_da_duyet
+        {
+            get
+            {
                 return ResourceManager.GetString("quote_da_duyet", resourceCulture);
             }
         }
-        
-        internal static string quote_thay_doi_thong_tin {
-            get {
+
+        internal static string quote_thay_doi_thong_tin
+        {
+            get
+            {
                 return ResourceManager.GetString("quote_thay_doi_thong_tin", resourceCulture);
             }
         }
-        
-        internal static string quote_thanh_cong {
-            get {
+
+        internal static string quote_thanh_cong
+        {
+            get
+            {
                 return ResourceManager.GetString("quote_thanh_cong", resourceCulture);
             }
         }
-        
-        internal static string quote_da_huy {
-            get {
+
+        internal static string quote_da_huy
+        {
+            get
+            {
                 return ResourceManager.GetString("quote_da_huy", resourceCulture);
             }
         }
-        
-        internal static string activity_cancelled_sts {
-            get {
+
+        internal static string activity_cancelled_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("activity_cancelled_sts", resourceCulture);
             }
         }
-        
-        internal static string activity_completed_sts {
-            get {
+
+        internal static string activity_completed_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("activity_completed_sts", resourceCulture);
             }
         }
-        
-        internal static string activity_open_sts {
-            get {
+
+        internal static string activity_open_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("activity_open_sts", resourceCulture);
             }
         }
-        
-        internal static string activity_scheduled_sts {
-            get {
+
+        internal static string activity_scheduled_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("activity_scheduled_sts", resourceCulture);
             }
         }
-        
-        internal static string cong_viec {
-            get {
+
+        internal static string cong_viec
+        {
+            get
+            {
                 return ResourceManager.GetString("cong_viec", resourceCulture);
             }
         }
-        
-        internal static string cuoc_hop {
-            get {
+
+        internal static string cuoc_hop
+        {
+            get
+            {
                 return ResourceManager.GetString("cuoc_hop", resourceCulture);
             }
         }
-        
-        internal static string cuoc_goi {
-            get {
+
+        internal static string cuoc_goi
+        {
+            get
+            {
                 return ResourceManager.GetString("cuoc_goi", resourceCulture);
             }
         }
-        
-        internal static string noti_khong_co_so_dien_thoai {
-            get {
+
+        internal static string noti_khong_co_so_dien_thoai
+        {
+            get
+            {
                 return ResourceManager.GetString("noti_khong_co_so_dien_thoai", resourceCulture);
             }
         }
-        
-        internal static string ban_co_muon_huy_giu_cho_nay_khong {
-            get {
+
+        internal static string ban_co_muon_huy_giu_cho_nay_khong
+        {
+            get
+            {
                 return ResourceManager.GetString("ban_co_muon_huy_giu_cho_nay_khong", resourceCulture);
             }
         }
-        
-        internal static string dong_y {
-            get {
+
+        internal static string dong_y
+        {
+            get
+            {
                 return ResourceManager.GetString("dong_y", resourceCulture);
             }
         }
-        
-        internal static string bang_tinh_gia_btn {
-            get {
+
+        internal static string bang_tinh_gia_btn
+        {
+            get
+            {
                 return ResourceManager.GetString("bang_tinh_gia_btn", resourceCulture);
             }
         }
-        
-        internal static string huy_giu_cho {
-            get {
+
+        internal static string huy_giu_cho
+        {
+            get
+            {
                 return ResourceManager.GetString("huy_giu_cho", resourceCulture);
             }
         }
-        
-        internal static string tao_cuoc_hop {
-            get {
+
+        internal static string tao_cuoc_hop
+        {
+            get
+            {
                 return ResourceManager.GetString("tao_cuoc_hop", resourceCulture);
             }
         }
-        
-        internal static string tao_cuoc_goi {
-            get {
+
+        internal static string tao_cuoc_goi
+        {
+            get
+            {
                 return ResourceManager.GetString("tao_cuoc_goi", resourceCulture);
             }
         }
-        
-        internal static string tao_cong_viec {
-            get {
+
+        internal static string tao_cong_viec
+        {
+            get
+            {
                 return ResourceManager.GetString("tao_cong_viec", resourceCulture);
             }
         }
-        
-        internal static string ma_giu_cho {
-            get {
+
+        internal static string ma_giu_cho
+        {
+            get
+            {
                 return ResourceManager.GetString("ma_giu_cho", resourceCulture);
             }
         }
-        
-        internal static string da_het_han {
-            get {
+
+        internal static string da_het_han
+        {
+            get
+            {
                 return ResourceManager.GetString("da_het_han", resourceCulture);
             }
         }
-        
-        internal static string giu_cho_du_an {
-            get {
+
+        internal static string giu_cho_du_an
+        {
+            get
+            {
                 return ResourceManager.GetString("giu_cho_du_an", resourceCulture);
             }
         }
-        
-        internal static string phi_giu_cho_da_thanh_toan {
-            get {
+
+        internal static string phi_giu_cho_da_thanh_toan
+        {
+            get
+            {
                 return ResourceManager.GetString("phi_giu_cho_da_thanh_toan", resourceCulture);
             }
         }
-        
-        internal static string nhan_tin {
-            get {
+
+        internal static string nhan_tin
+        {
+            get
+            {
                 return ResourceManager.GetString("nhan_tin", resourceCulture);
             }
         }
-        
-        internal static string goi_dien {
-            get {
+
+        internal static string goi_dien
+        {
+            get
+            {
                 return ResourceManager.GetString("goi_dien", resourceCulture);
             }
         }
-        
-        internal static string so_thu_tu {
-            get {
+
+        internal static string so_thu_tu
+        {
+            get
+            {
                 return ResourceManager.GetString("so_thu_tu", resourceCulture);
             }
         }
-        
-        internal static string so_uu_tien {
-            get {
+
+        internal static string so_uu_tien
+        {
+            get
+            {
                 return ResourceManager.GetString("so_uu_tien", resourceCulture);
             }
         }
-        
-        internal static string do_uu_tien {
-            get {
+
+        internal static string do_uu_tien
+        {
+            get
+            {
                 return ResourceManager.GetString("do_uu_tien", resourceCulture);
             }
         }
-        
-        internal static string thoi_gian_giu_cho {
-            get {
+
+        internal static string thoi_gian_giu_cho
+        {
+            get
+            {
                 return ResourceManager.GetString("thoi_gian_giu_cho", resourceCulture);
             }
         }
-        
-        internal static string thoi_gian_bat_dau {
-            get {
+
+        internal static string thoi_gian_bat_dau
+        {
+            get
+            {
                 return ResourceManager.GetString("thoi_gian_bat_dau", resourceCulture);
             }
         }
-        
-        internal static string ngay_thu_tu {
-            get {
+
+        internal static string ngay_thu_tu
+        {
+            get
+            {
                 return ResourceManager.GetString("ngay_thu_tu", resourceCulture);
             }
         }
-        
-        internal static string thong_tin_san_dai_ly {
-            get {
+
+        internal static string thong_tin_san_dai_ly
+        {
+            get
+            {
                 return ResourceManager.GetString("thong_tin_san_dai_ly", resourceCulture);
             }
         }
-        
-        internal static string nhan_vien_gioi_thieu {
-            get {
+
+        internal static string nhan_vien_gioi_thieu
+        {
+            get
+            {
                 return ResourceManager.GetString("nhan_vien_gioi_thieu", resourceCulture);
             }
         }
-        
-        internal static string danh_sach_bang_tinh_gia {
-            get {
+
+        internal static string danh_sach_bang_tinh_gia
+        {
+            get
+            {
                 return ResourceManager.GetString("danh_sach_bang_tinh_gia", resourceCulture);
             }
         }
-        
-        internal static string tong_tien {
-            get {
+
+        internal static string tong_tien
+        {
+            get
+            {
                 return ResourceManager.GetString("tong_tien", resourceCulture);
             }
         }
-        
-        internal static string cham_soc_khach_hang {
-            get {
+
+        internal static string cham_soc_khach_hang
+        {
+            get
+            {
                 return ResourceManager.GetString("cham_soc_khach_hang", resourceCulture);
             }
         }
-        
-        internal static string loai_actitivty {
-            get {
+
+        internal static string loai_actitivty
+        {
+            get
+            {
                 return ResourceManager.GetString("loai_actitivty", resourceCulture);
             }
         }
-        
-        internal static string thoi_gian_ket_thuc {
-            get {
+
+        internal static string thoi_gian_ket_thuc
+        {
+            get
+            {
                 return ResourceManager.GetString("thoi_gian_ket_thuc", resourceCulture);
             }
         }
-        
-        internal static string loai {
-            get {
+
+        internal static string loai
+        {
+            get
+            {
                 return ResourceManager.GetString("loai", resourceCulture);
             }
         }
-        
-        internal static string nguon {
-            get {
+
+        internal static string nguon
+        {
+            get
+            {
                 return ResourceManager.GetString("nguon", resourceCulture);
             }
         }
-        
-        internal static string noti_khong_tim_thay_thong_tin_vui_long_thu_lai {
-            get {
+
+        internal static string noti_khong_tim_thay_thong_tin_vui_long_thu_lai
+        {
+            get
+            {
                 return ResourceManager.GetString("noti_khong_tim_thay_thong_tin_vui_long_thu_lai", resourceCulture);
             }
         }
-        
-        internal static string dang_xu_ly_case_sts {
-            get {
+
+        internal static string dang_xu_ly_case_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("dang_xu_ly_case_sts", resourceCulture);
             }
         }
-        
-        internal static string dang_cho_case_sts {
-            get {
+
+        internal static string dang_cho_case_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("dang_cho_case_sts", resourceCulture);
             }
         }
-        
-        internal static string dang_cho_thong_tin_chi_tiet_case_sts {
-            get {
+
+        internal static string dang_cho_thong_tin_chi_tiet_case_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("dang_cho_thong_tin_chi_tiet_case_sts", resourceCulture);
             }
         }
-        
-        internal static string nghien_cuu_case_sts {
-            get {
+
+        internal static string nghien_cuu_case_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("nghien_cuu_case_sts", resourceCulture);
             }
         }
-        
-        internal static string van_de_da_duoc_giai_quyet_case_sts {
-            get {
+
+        internal static string van_de_da_duoc_giai_quyet_case_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("van_de_da_duoc_giai_quyet_case_sts", resourceCulture);
             }
         }
-        
-        internal static string cung_cap_thong_tin_case_sts {
-            get {
+
+        internal static string cung_cap_thong_tin_case_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("cung_cap_thong_tin_case_sts", resourceCulture);
             }
         }
-        
-        internal static string da_huy_case_sts {
-            get {
+
+        internal static string da_huy_case_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("da_huy_case_sts", resourceCulture);
             }
         }
-        
-        internal static string hop_nhat_case_sts {
-            get {
+
+        internal static string hop_nhat_case_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("hop_nhat_case_sts", resourceCulture);
             }
         }
-        
-        internal static string cau_hoi {
-            get {
+
+        internal static string cau_hoi
+        {
+            get
+            {
                 return ResourceManager.GetString("cau_hoi", resourceCulture);
             }
         }
-        
-        internal static string van_de {
-            get {
+
+        internal static string van_de
+        {
+            get
+            {
                 return ResourceManager.GetString("van_de", resourceCulture);
             }
         }
-        
-        internal static string yeu_cau {
-            get {
+
+        internal static string yeu_cau
+        {
+            get
+            {
                 return ResourceManager.GetString("yeu_cau", resourceCulture);
             }
         }
-        
-        internal static string chi_tiet_phan_hoi {
-            get {
+
+        internal static string chi_tiet_phan_hoi
+        {
+            get
+            {
                 return ResourceManager.GetString("chi_tiet_phan_hoi", resourceCulture);
             }
         }
-        
-        internal static string doi_tuong {
-            get {
+
+        internal static string doi_tuong
+        {
+            get
+            {
                 return ResourceManager.GetString("doi_tuong", resourceCulture);
             }
         }
-        
-        internal static string thong_tin {
-            get {
+
+        internal static string thong_tin
+        {
+            get
+            {
                 return ResourceManager.GetString("thong_tin", resourceCulture);
             }
         }
-        
-        internal static string phan_hoi_lien_quan {
-            get {
+
+        internal static string phan_hoi_lien_quan
+        {
+            get
+            {
                 return ResourceManager.GetString("phan_hoi_lien_quan", resourceCulture);
             }
         }
-        
-        internal static string chu_de {
-            get {
+
+        internal static string chu_de
+        {
+            get
+            {
                 return ResourceManager.GetString("chu_de", resourceCulture);
             }
         }
-        
-        internal static string phan_hoi_chinh {
-            get {
+
+        internal static string phan_hoi_chinh
+        {
+            get
+            {
                 return ResourceManager.GetString("phan_hoi_chinh", resourceCulture);
             }
         }
-        
-        internal static string noi_dung {
-            get {
+
+        internal static string noi_dung
+        {
+            get
+            {
                 return ResourceManager.GetString("noi_dung", resourceCulture);
             }
         }
-        
-        internal static string huy_phan_hoi {
-            get {
+
+        internal static string huy_phan_hoi
+        {
+            get
+            {
                 return ResourceManager.GetString("huy_phan_hoi", resourceCulture);
             }
         }
-        
-        internal static string xac_nhan_huy_phan_hoi {
-            get {
+
+        internal static string xac_nhan_huy_phan_hoi
+        {
+            get
+            {
                 return ResourceManager.GetString("xac_nhan_huy_phan_hoi", resourceCulture);
             }
         }
-        
-        internal static string thong_bao_thanh_cong {
-            get {
+
+        internal static string thong_bao_thanh_cong
+        {
+            get
+            {
                 return ResourceManager.GetString("thong_bao_thanh_cong", resourceCulture);
             }
         }
-        
-        internal static string thong_bao_that_bai {
-            get {
+
+        internal static string thong_bao_that_bai
+        {
+            get
+            {
                 return ResourceManager.GetString("thong_bao_that_bai", resourceCulture);
             }
         }
-        
-        internal static string thanh_pho {
-            get {
+
+        internal static string thanh_pho
+        {
+            get
+            {
                 return ResourceManager.GetString("thanh_pho", resourceCulture);
             }
         }
-        
-        internal static string be_boi {
-            get {
+
+        internal static string be_boi
+        {
+            get
+            {
                 return ResourceManager.GetString("be_boi", resourceCulture);
             }
         }
-        
-        internal static string cong_vien {
-            get {
+
+        internal static string cong_vien
+        {
+            get
+            {
                 return ResourceManager.GetString("cong_vien", resourceCulture);
             }
         }
-        
-        internal static string mat_tien {
-            get {
+
+        internal static string mat_tien
+        {
+            get
+            {
                 return ResourceManager.GetString("mat_tien", resourceCulture);
             }
         }
-        
-        internal static string san_vuon {
-            get {
+
+        internal static string san_vuon
+        {
+            get
+            {
                 return ResourceManager.GetString("san_vuon", resourceCulture);
             }
         }
-        
-        internal static string xa_lo {
-            get {
+
+        internal static string xa_lo
+        {
+            get
+            {
                 return ResourceManager.GetString("xa_lo", resourceCulture);
             }
         }
-        
-        internal static string ho {
-            get {
+
+        internal static string ho
+        {
+            get
+            {
                 return ResourceManager.GetString("ho", resourceCulture);
             }
         }
-        
-        internal static string song {
-            get {
+
+        internal static string song
+        {
+            get
+            {
                 return ResourceManager.GetString("song", resourceCulture);
             }
         }
-        
-        internal static string bien {
-            get {
+
+        internal static string bien
+        {
+            get
+            {
                 return ResourceManager.GetString("bien", resourceCulture);
             }
         }
-        
-        internal static string mot_mat_thoang {
-            get {
+
+        internal static string mot_mat_thoang
+        {
+            get
+            {
                 return ResourceManager.GetString("mot_mat_thoang", resourceCulture);
             }
         }
-        
-        internal static string hai_mat_thoang {
-            get {
+
+        internal static string hai_mat_thoang
+        {
+            get
+            {
                 return ResourceManager.GetString("hai_mat_thoang", resourceCulture);
             }
         }
-        
-        internal static string ho_boi {
-            get {
+
+        internal static string ho_boi
+        {
+            get
+            {
                 return ResourceManager.GetString("ho_boi", resourceCulture);
             }
         }
-        
-        internal static string tang {
-            get {
+
+        internal static string tang
+        {
+            get
+            {
                 return ResourceManager.GetString("tang", resourceCulture);
             }
         }
-        
-        internal static string xem_thong_tin {
-            get {
+
+        internal static string xem_thong_tin
+        {
+            get
+            {
                 return ResourceManager.GetString("xem_thong_tin", resourceCulture);
             }
         }
-        
-        internal static string danh_sach_giu_cho {
-            get {
+
+        internal static string danh_sach_giu_cho
+        {
+            get
+            {
                 return ResourceManager.GetString("danh_sach_giu_cho", resourceCulture);
             }
         }
-        
-        internal static string loai_unit {
-            get {
+
+        internal static string loai_unit
+        {
+            get
+            {
                 return ResourceManager.GetString("loai_unit", resourceCulture);
             }
         }
-        
-        internal static string huong_nhin {
-            get {
+
+        internal static string huong_nhin
+        {
+            get
+            {
                 return ResourceManager.GetString("huong_nhin", resourceCulture);
             }
         }
-        
-        internal static string da_thanh_toan_phi_giu_cho {
-            get {
+
+        internal static string da_thanh_toan_phi_giu_cho
+        {
+            get
+            {
                 return ResourceManager.GetString("da_thanh_toan_phi_giu_cho", resourceCulture);
             }
         }
-        
-        internal static string giu_cho_btn {
-            get {
+
+        internal static string giu_cho_btn
+        {
+            get
+            {
                 return ResourceManager.GetString("giu_cho_btn", resourceCulture);
             }
         }
-        
-        internal static string unit_booking_sts {
-            get {
+
+        internal static string unit_booking_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("unit_booking_sts", resourceCulture);
             }
         }
-        
-        internal static string unit_signedda_sts {
-            get {
+
+        internal static string unit_signedda_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("unit_signedda_sts", resourceCulture);
             }
         }
-        
-        internal static string unit_qualified_sts {
-            get {
+
+        internal static string unit_qualified_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("unit_qualified_sts", resourceCulture);
             }
         }
-        
-        internal static string unit_option_sts {
-            get {
+
+        internal static string unit_option_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("unit_option_sts", resourceCulture);
             }
         }
-        
-        internal static string khong_co_san_pham {
-            get {
+
+        internal static string khong_co_san_pham
+        {
+            get
+            {
                 return ResourceManager.GetString("khong_co_san_pham", resourceCulture);
             }
         }
-        
-        internal static string khong_tim_thay_san_pham {
-            get {
+
+        internal static string khong_tim_thay_san_pham
+        {
+            get
+            {
                 return ResourceManager.GetString("khong_tim_thay_san_pham", resourceCulture);
             }
         }
-        
-        internal static string thon_tin_can_ho {
-            get {
+
+        internal static string thon_tin_can_ho
+        {
+            get
+            {
                 return ResourceManager.GetString("thon_tin_can_ho", resourceCulture);
             }
         }
-        
-        internal static string so_can_ho {
-            get {
+
+        internal static string so_can_ho
+        {
+            get
+            {
                 return ResourceManager.GetString("so_can_ho", resourceCulture);
             }
         }
-        
-        internal static string ma_can_ho {
-            get {
+
+        internal static string ma_can_ho
+        {
+            get
+            {
                 return ResourceManager.GetString("ma_can_ho", resourceCulture);
             }
         }
-        
-        internal static string toa_nha_khu {
-            get {
+
+        internal static string toa_nha_khu
+        {
+            get
+            {
                 return ResourceManager.GetString("toa_nha_khu", resourceCulture);
             }
         }
-        
-        internal static string bien_do_chenh_lech_dien_tich {
-            get {
+
+        internal static string bien_do_chenh_lech_dien_tich
+        {
+            get
+            {
                 return ResourceManager.GetString("bien_do_chenh_lech_dien_tich", resourceCulture);
             }
         }
-        
-        internal static string ban_giao {
-            get {
+
+        internal static string ban_giao
+        {
+            get
+            {
                 return ResourceManager.GetString("ban_giao", resourceCulture);
             }
         }
-        
-        internal static string thong_tin_gia_ban {
-            get {
+
+        internal static string thong_tin_gia_ban
+        {
+            get
+            {
                 return ResourceManager.GetString("thong_tin_gia_ban", resourceCulture);
             }
         }
-        
-        internal static string phi_quan_ly_thang_m2 {
-            get {
+
+        internal static string phi_quan_ly_thang_m2
+        {
+            get
+            {
                 return ResourceManager.GetString("phi_quan_ly_thang_m2", resourceCulture);
             }
         }
-        
-        internal static string dien_tich_xay_dung {
-            get {
+
+        internal static string dien_tich_xay_dung
+        {
+            get
+            {
                 return ResourceManager.GetString("dien_tich_xay_dung", resourceCulture);
             }
         }
-        
-        internal static string phi_dat_coc {
-            get {
+
+        internal static string phi_dat_coc
+        {
+            get
+            {
                 return ResourceManager.GetString("phi_dat_coc", resourceCulture);
             }
         }
-        
-        internal static string tong_gia_tri_qsdd {
-            get {
+
+        internal static string tong_gia_tri_qsdd
+        {
+            get
+            {
                 return ResourceManager.GetString("tong_gia_tri_qsdd", resourceCulture);
             }
         }
-        
-        internal static string thue {
-            get {
+
+        internal static string thue
+        {
+            get
+            {
                 return ResourceManager.GetString("thue", resourceCulture);
             }
         }
-        
-        internal static string dieu_kien_ban_giao {
-            get {
+
+        internal static string dieu_kien_ban_giao
+        {
+            get
+            {
                 return ResourceManager.GetString("dieu_kien_ban_giao", resourceCulture);
             }
         }
-        
-        internal static string ma_su_kien {
-            get {
+
+        internal static string ma_su_kien
+        {
+            get
+            {
                 return ResourceManager.GetString("ma_su_kien", resourceCulture);
             }
         }
-        
-        internal static string danh_sach_dot_mo_ban {
-            get {
+
+        internal static string danh_sach_dot_mo_ban
+        {
+            get
+            {
                 return ResourceManager.GetString("danh_sach_dot_mo_ban", resourceCulture);
             }
         }
-        
-        internal static string phaseslanch_confirm_sts {
-            get {
+
+        internal static string phaseslanch_confirm_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("phaseslanch_confirm_sts", resourceCulture);
             }
         }
-        
-        internal static string phaseslanch_approved_sts {
-            get {
+
+        internal static string phaseslanch_approved_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("phaseslanch_approved_sts", resourceCulture);
             }
         }
-        
-        internal static string phaseslanch_not_launch_sts {
-            get {
+
+        internal static string phaseslanch_not_launch_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("phaseslanch_not_launch_sts", resourceCulture);
             }
         }
-        
-        internal static string phaseslanch_launched_sts {
-            get {
+
+        internal static string phaseslanch_launched_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("phaseslanch_launched_sts", resourceCulture);
             }
         }
-        
-        internal static string phaseslanch_recovery_sts {
-            get {
+
+        internal static string phaseslanch_recovery_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("phaseslanch_recovery_sts", resourceCulture);
             }
         }
-        
-        internal static string phaseslanch_unit_recovery_sts {
-            get {
+
+        internal static string phaseslanch_unit_recovery_sts
+        {
+            get
+            {
                 return ResourceManager.GetString("phaseslanch_unit_recovery_sts", resourceCulture);
             }
         }
-        
-        internal static string tao_phan_hoi {
-            get {
+
+        internal static string tao_phan_hoi
+        {
+            get
+            {
                 return ResourceManager.GetString("tao_phan_hoi", resourceCulture);
             }
         }
-        
-        internal static string chon_loai {
-            get {
+
+        internal static string chon_loai
+        {
+            get
+            {
                 return ResourceManager.GetString("chon_loai", resourceCulture);
             }
         }
-        
-        internal static string nhap_tieu_de {
-            get {
+
+        internal static string nhap_tieu_de
+        {
+            get
+            {
                 return ResourceManager.GetString("nhap_tieu_de", resourceCulture);
             }
         }
-        
-        internal static string chon_chu_de {
-            get {
+
+        internal static string chon_chu_de
+        {
+            get
+            {
                 return ResourceManager.GetString("chon_chu_de", resourceCulture);
             }
         }
-        
-        internal static string chon_phan_hoi_lien_quan {
-            get {
+
+        internal static string chon_phan_hoi_lien_quan
+        {
+            get
+            {
                 return ResourceManager.GetString("chon_phan_hoi_lien_quan", resourceCulture);
             }
         }
-        
-        internal static string chon_nguon {
-            get {
+
+        internal static string chon_nguon
+        {
+            get
+            {
                 return ResourceManager.GetString("chon_nguon", resourceCulture);
             }
         }
-        
-        internal static string chon_khach_hang {
-            get {
+
+        internal static string chon_khach_hang
+        {
+            get
+            {
                 return ResourceManager.GetString("chon_khach_hang", resourceCulture);
             }
         }
-        
-        internal static string chon_san_pham {
-            get {
+
+        internal static string chon_san_pham
+        {
+            get
+            {
                 return ResourceManager.GetString("chon_san_pham", resourceCulture);
             }
         }
-        
-        internal static string nhap_noi_dung {
-            get {
+
+        internal static string nhap_noi_dung
+        {
+            get
+            {
                 return ResourceManager.GetString("nhap_noi_dung", resourceCulture);
             }
         }
-        
-        internal static string vui_long_chon_du_an {
-            get {
+
+        internal static string vui_long_chon_du_an
+        {
+            get
+            {
                 return ResourceManager.GetString("vui_long_chon_du_an", resourceCulture);
             }
         }
-        
-        internal static string vui_long_chon_loai_phan_hoi {
-            get {
+
+        internal static string vui_long_chon_loai_phan_hoi
+        {
+            get
+            {
                 return ResourceManager.GetString("vui_long_chon_loai_phan_hoi", resourceCulture);
             }
         }
-        
-        internal static string vui_long_nhap_tieu_de {
-            get {
+
+        internal static string vui_long_nhap_tieu_de
+        {
+            get
+            {
                 return ResourceManager.GetString("vui_long_nhap_tieu_de", resourceCulture);
             }
         }
-        
-        internal static string tin_tuc_khuyen_mai {
-            get {
+
+        internal static string tin_tuc_khuyen_mai
+        {
+            get
+            {
                 return ResourceManager.GetString("tin_tuc_khuyen_mai", resourceCulture);
             }
         }
