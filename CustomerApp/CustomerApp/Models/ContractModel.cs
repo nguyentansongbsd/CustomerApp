@@ -21,10 +21,9 @@ namespace CustomerApp.Models
         public decimal totalamount { get; set; } // tổng tiền
         public string totalamount_format { get => StringFormatHelper.FormatCurrency(totalamount); }
         public int statuscode { get; set; }
-
-        // làm sau
-        //public string statuscode_format { get { return statuscode != 0 ? Data.GetContractStatusCodeById(statuscode.ToString())?.Name : null; } }
-        //public string statuscode_color { get { return statuscode != 0 ? Data.GetContractStatusCodeById(statuscode.ToString())?.Background : "#808080"; } }
+        
+        public string statuscode_format { get { return statuscode != 0 ? Data.GetContractStatusCodeById(statuscode.ToString())?.Name : null; } }
+        public string statuscode_color { get { return statuscode != 0 ? Data.GetContractStatusCodeById(statuscode.ToString())?.Background : "#808080"; } }
         public Guid customerid { get; set; } // id khách hàng
         public string customer_name // tên khách hàng 
         {

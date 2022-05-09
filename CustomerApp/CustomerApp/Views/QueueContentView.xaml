@@ -1,12 +1,11 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:lang="clr-namespace:CustomerApp.Resources" 
              xmlns:telerikPrimitives="clr-namespace:Telerik.XamarinForms.Primitives;assembly=Telerik.XamarinForms.Primitives" 
              xmlns:controls="clr-namespace:CustomerApp.Controls"
-             x:Class="CustomerApp.Views.QueueList"
-             xmlns:lang="clr-namespace:CustomerApp.Resources"
-             Title="{x:Static lang:Language.title_giu_cho}">
-    <ContentPage.Content>
+             x:Class="CustomerApp.Views.QueueContentView">
+    <ContentView.Content>
         <AbsoluteLayout>
             <Grid RowDefinitions="Auto,Auto,*" RowSpacing="0" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All">
                 <controls:SearchBarFrame  Grid.Row="0" Margin="10,5">
@@ -53,5 +52,5 @@
             </Grid>
             <controls:BottomModal x:Name="BottomModal"/>
         </AbsoluteLayout>
-    </ContentPage.Content>
-</ContentPage>
+    </ContentView.Content>
+</ContentView>
