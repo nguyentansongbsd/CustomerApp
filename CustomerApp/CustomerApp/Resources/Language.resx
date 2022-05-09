@@ -1725,4 +1725,181 @@
 	<data name="phuong_thuc_thanh_toan" xml:space="preserve">
     <value>Phương thức thanh toán</value>
   </data>
+	<data name="kh_ca_nhan" xml:space="preserve">
+    <value>KH Cá Nhân</value>
+  </data>
+	<data name="kh_doanh_nghiep" xml:space="preserve">
+    <value>KH Doanh Nghiệp</value>
+  </data>
+	<data name="kh_tiem_nang" xml:space="preserve">
+    <value>KH Tiềm Năng</value>
+  </data>
+	<data name="giu_nguyen" xml:space="preserve">
+    <value>Giữ nguyên</value>
+  </data>
+	<data name="gop_dau" xml:space="preserve">
+    <value>Gộp đầu</value>
+  </data>
+	<data name="gop_cuoi" xml:space="preserve">
+    <value>Gộp cuối</value>
+  </data>
+	<data name="da_co_lich_thanh_toan_khong_duoc_chinh_sua" xml:space="preserve">
+    <value>Đã có lịch thanh toán, không được chỉnh sửa.</value>
+  </data>
+	<data name="khong_co_chiet_khau" xml:space="preserve">
+    <value>Không có chiết khấu.</value>
+  </data>
+	<data name="dieu_kien_ban_giao_khong_phu_hop_voi_unit_type" xml:space="preserve">
+    <value>Điều kiện bàn giao đã chọn không phù hợp với Loại sản phẩm đang thực hiện giao dịch. Vui lòng kiểm tra lại thông tin hoặc chọn điều kiện bàn giao khác.</value>
+  </data>
+	<data name="ban_co_chan_chan_muon_thay_doi_pttt" xml:space="preserve">
+    <value>Bạn có chắc chắn muốn thay đổi PTTT?</value>
+  </data>
+	<data name="ban_dang_tich_chon_chieu_khau_theo_pttt_ban_co_chac_chan_muon_thay_doi_pttt_nay" xml:space="preserve">
+    <value>Bạn đang tích chọn chiết khấu theo PTTT, bạn có chắc chắn muốn thay đổi PTTT này?</value>
+  </data>
+	<data name="them_khuyen_mai_thanh_cong" xml:space="preserve">
+    <value>Thêm khuyến mãi thành công.</value>
+  </data>
+	<data name="ban_co_muon_xoa_khuyen_mai_khong" xml:space="preserve">
+    <value>Bạn có muốn xóa khuyến mãi không ?</value>
+  </data>
+	<data name="xao_khuyen_mai_thanh_cong" xml:space="preserve">
+    <value>Xoá khuyếnmãi thành công.</value>
+  </data>
+	<data name="ban_co_muon_xoa_nguoi_dong_so_huu_nay_khong" xml:space="preserve">
+    <value>Bạn có muốn xóa người đồng sở hữu này không ?</value>
+  </data>
+	<data name="xoa_nguou_dong_so_huu_thanh_cong" xml:space="preserve">
+    <value>Xóa người đồng sở hữu thành công.</value>
+  </data>
+	<data name="cap_nhat_dong_so_huu" xml:space="preserve">
+    <value>Cập Nhật Đồng Sở Hữu</value>
+  </data>
+	<data name="vui_long_chon_quan_he" xml:space="preserve">
+    <value>Vui lòng chọn quan hệ.</value>
+  </data>
+	<data name="khach_hang_khong_duoc_trung_voi_nguoi_mua" xml:space="preserve">
+    <value>Khách hàng không được trùng với người mua.</value>
+  </data>
+	<data name="khach_hang_da_duoc_chon" xml:space="preserve">
+    <value>Khách hàng đã được chọn.</value>
+  </data>
+	<data name="them_dong_so_huu_thanh_cong" xml:space="preserve">
+    <value>Thêm đồng sở hữu thành công.</value>
+  </data>
+	<data name="cap_nhat_dong_so_huu_thanh_cong" xml:space="preserve">
+    <value>Cập nhật đồng sở hữu thành công.</value>
+  </data>
+	<data name="vui_long_chon_khach_hang" xml:space="preserve">
+    <value>Vui lòng chọn khách hàng.</value>
+  </data>
+	<data name="nguoi_mua_khong_duoc_trung_voi_dai_ly_san_giao_dich_vui_long_chon_lai" xml:space="preserve">
+    <value>Người mua không được trùng với Đại lý/Sàn giao dịch. Vui lòng chọn lại.</value>
+  </data>
+	<data name="khach_hang_coower_va_khach_hang_khong_duoc_trung" xml:space="preserve">
+    <value>Khách hàng Co-Owner và khách hàng không được trùng.</value>
+  </data>
+	<data name="dai_ly_san_giao_dich_khong_duoc_trung_voi_nguoi_mua_vui_long_chon_lai" xml:space="preserve">
+    <value>Đại lý/Sàn giao dịch không được trùng với Người mua. Vui lòng chọn lại.</value>
+  </data>
+	<data name="cong_tac_vien_khong_duoc_trung_voi_nguoi_mua_vui_long_chon_lai" xml:space="preserve">
+    <value>Cộng tác viên không được trùng với Người mua. Vui lòng chọn lại.</value>
+  </data>
+	<data name="khach_hang_gioi_thieu_khong_duoc_trung_voi_nguoi_mua_vui_long_chon_lai" xml:space="preserve">
+    <value>Khách hàng giới thiệu không được trùng với Người mua. Vui lòng chọn lại.</value>
+  </data>
+	<data name="vui_long_chon_dieu_kien_ban_giao" xml:space="preserve">
+    <value>Vui lòng chọn điều kiện bàn giao.</value>
+  </data>
+	<data name="vui_long_chon_phuong_thuc_thanh_toan" xml:space="preserve">
+    <value>Vui lòng chọn phương thức thanh toán.</value>
+  </data>
+	<data name="vui_long_chon_ngay_bat_dau_tinh_ltt" xml:space="preserve">
+    <value>Vui lòng chọn ngày bắt đầu tính LTT.</value>
+  </data>
+	<data name="cap_nhat_thanh_cong" xml:space="preserve">
+    <value>Cập nhật thành công.</value>
+  </data>
+	<data name="cap_nhat_that_bai" xml:space="preserve">
+    <value>Cập nhật thất bại.</value>
+  </data>
+	<data name="tao_bang_tinh_gia" xml:space="preserve">
+    <value>Tạo Bảng tính giá</value>
+  </data>
+	<data name="them_nguoi_dong_so_huu" xml:space="preserve">
+    <value>Thêm người đồng sở hữu</value>
+  </data>
+	<data name="chon_dieu_kien_ban_giao" xml:space="preserve">
+    <value>Chọn điều kiện bàn giao</value>
+  </data>
+	<data name="chon_phuong_thuc_thanh_toan" xml:space="preserve">
+    <value>Chọn phương thức thanh toán</value>
+  </data>
+	<data name="loai_gop_dot" xml:space="preserve">
+    <value>Loại gộp đợt</value>
+  </data>
+	<data name="chon_loai_gop_dot" xml:space="preserve">
+    <value>Chọn loại Gộp Đợt</value>
+  </data>
+	<data name="ngay_bat_dau_tinh_ltt" xml:space="preserve">
+    <value>Ngày bắt đầu tính LTT</value>
+  </data>
+	<data name="khong_ap_dung" xml:space="preserve">
+    <value>Không áp dụng</value>
+  </data>
+	<data name="chon_quan_he" xml:space="preserve">
+    <value>Chọn quan hệ</value>
+  </data>
+	<data name="thong_tin_phi_quan_ly" xml:space="preserve">
+    <value>Thông Tin Phí Quản lý</value>
+  </data>
+	<data name="gia_ban_sau_thue" xml:space="preserve">
+    <value>Giá bán sau thuế</value>
+  </data>
+	<data name="tong_tien_thue_vat" xml:space="preserve">
+    <value>Tổng tiền thuế VAT</value>
+  </data>
+	<data name="tong_tien_dkbg" xml:space="preserve">
+    <value>Tổng tiền ĐKBG</value>
+  </data>
+	<data name="gia_ban_goc" xml:space="preserve">
+    <value>Giá bán gốc</value>
+  </data>
+	<data name="chon_dai_ly_san_giao_dich" xml:space="preserve">
+    <value>Chọn Đại lý/Sàn giao dịch</value>
+  </data>
+	<data name="chon_ngay_bat_dau_tinh_ltt" xml:space="preserve">
+    <value>Chọn ngày bắt đầu tính LTT</value>
+  </data>
+	<data name="het_han" xml:space="preserve">
+    <value>Hết hạn</value>
+  </data>
+	<data name="chon_chiet_khau_chung" xml:space="preserve">
+    <value>Chọn chiếu khấu chung</value>
+  </data>
+	<data name="chon_chiet_khau_noi_bo" xml:space="preserve">
+    <value>Chọn Chiết khấu nội bộ</value>
+  </data>
+	<data name="them_khuyen_mai" xml:space="preserve">
+    <value>Thêm khuyến mãi</value>
+  </data>
+	<data name="chon_chiet_khau_quy_doi" xml:space="preserve">
+    <value>Chọn chiết khấu quy đổi</value>
+  </data>
+	<data name="chon_giu_cho" xml:space="preserve">
+    <value>Chọn giữ chỗ</value>
+  </data>
+	<data name="thong_tin_bao_gia" xml:space="preserve">
+    <value>Thông Tin Báo Giá</value>
+  </data>
+	<data name="chon_khuyen_mai" xml:space="preserve">
+    <value>Chọn khuyến mãi</value>
+  </data>
+	<data name="them_dong_so_huu" xml:space="preserve">
+    <value>Thêm đồng sở hữu</value>
+  </data>
+	<data name="san_pham_khong_the_tao_bang_tinh_gia" xml:space="preserve">
+    <value>Sản phẩm không thể tạo bảng tính giá.</value>
+  </data>
 </root>
