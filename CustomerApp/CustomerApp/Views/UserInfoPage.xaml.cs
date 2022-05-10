@@ -29,7 +29,9 @@ namespace CustomerApp.Views
             LoadingHelper.Show();
             this.BindingContext = viewModel = new UserInfoPageViewModel();
             centerModelPassword.Body.BindingContext = viewModel;
-            await viewModel.LoadContact();
+            await Task.WhenAll(
+                viewModel.LoadContact(),
+                viewModel.LoadLoyalty());
             LoadingHelper.Hide();
         }
         private async void Save_Clicked(object sender, EventArgs e)

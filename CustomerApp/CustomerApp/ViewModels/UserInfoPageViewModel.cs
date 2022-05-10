@@ -48,6 +48,9 @@ namespace CustomerApp.ViewModels
         public PhongThuyModel PhongThuy { get => _phongThuy; set { _phongThuy = value; OnPropertyChanged(nameof(PhongThuy)); } }
         public ObservableCollection<HuongPhongThuy> list_HuongTot { set; get; }
         public ObservableCollection<HuongPhongThuy> list_HuongXau { set; get; }
+
+        private LoyaltyModel _loyalty;
+        public LoyaltyModel Loyalty { get => _loyalty; set { _loyalty = value; OnPropertyChanged(nameof(Loyalty)); } }
         public UserInfoPageViewModel()
         {
             PhongThuy = new PhongThuyModel();
@@ -253,6 +256,36 @@ namespace CustomerApp.ViewModels
                     PhongThuy.nam_sinh = 0;
                 }
             }
+        }
+        // loyaty
+        public async Task LoadLoyalty()
+        {
+            string fetchXml = $@"<fetch version='1.0' output-format='xml-platform' mapping='logical' distinct='false'>
+                                  <entity name='contact'>
+                                    <attribute name='contactid' />
+                                    <attribute name='bsd_totalamountofownership' />
+                                    <attribute name='bsd_loyaltydate' />
+                                    <attribute name='bsd_transacted' />
+                                    <attribute name='bsd_totaltransaction' />
+                                    <attribute name='bsd_membershiptier' />
+                                    <attribute name='bsd_totalpointsofownership' />
+                                    <attribute name='bsd_totalpointsincludecondition' />
+                                    <attribute name='bsd_rankup' />
+                                    <attribute name='bsd_rankupspecial' />
+                                    <attribute name='bsd_totalpointsofcondition' />
+                                    <order attribute='createdon' descending='true' />
+                                    <filter type='and'>
+                                      <condition attribute='contactid' operator='eq' value='{UserLogged.Id}'/>
+                                    </filter>
+                                    <link-entity name='bsd_membershiptier' from='bsd_membershiptierid' to='bsd_membershiptier' link-type='inner' alias='ad' >
+                                        <attribute name='bsd_name' alias='membershiptier_name'/>
+                                        <attribute name='bsd_membershiptierid' alias='membershiptier_id'/>
+                                    </link-entity>
+                                  </entity>
+                                </fetch>";
+            var result = await CrmHelper.RetrieveMultiple<RetrieveMultipleApiResponse<LoyaltyModel>>("contacts", fetchXml);
+            if (result == null && result.value == null) return;
+            this.Loyalty = (result.value as List<LoyaltyModel>).SingleOrDefault();
         }
     }
 }
