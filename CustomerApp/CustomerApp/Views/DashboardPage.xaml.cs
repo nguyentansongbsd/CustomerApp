@@ -23,7 +23,14 @@ namespace CustomerApp.Views
                 viewModel.LoadQueueFourMonths(),
                 viewModel.LoadQuoteFourMonths(),
                 viewModel.LoadOptionEntryFourMonths(),
-                viewModel.LoadUnitFourMonths()
+                viewModel.LoadUnitFourMonths(),
+                viewModel.LoadMeetings(),
+                viewModel.LoadQueues(),
+                viewModel.LoadDeposits(),
+                viewModel.LoadInstallments(),
+                viewModel.LoadDepositsSigning(),
+                viewModel.LoadDepositsSigning(),
+                viewModel.LoadContracts()
                 ) ;
         }
     }

@@ -1014,43 +1014,43 @@
 	<data name="thoi_gian_ket_thuc" xml:space="preserve">
     <value>Thời gian kết thúc</value>
 </data>
-  <data name="phan_hoi" xml:space="preserve">
+	<data name="phan_hoi" xml:space="preserve">
     <value>Phản hồi</value>
   </data>
-  <data name="loai" xml:space="preserve">
+	<data name="loai" xml:space="preserve">
     <value>Loại</value>
   </data>
-  <data name="nguon" xml:space="preserve">
+	<data name="nguon" xml:space="preserve">
     <value>Nguồn</value>
   </data>
-  <data name="noti_khong_tim_thay_thong_tin_vui_long_thu_lai" xml:space="preserve">
+	<data name="noti_khong_tim_thay_thong_tin_vui_long_thu_lai" xml:space="preserve">
     <value>Không tìm thấy thông tin. Vui lòng thử lại.</value>
   </data>
-  <data name="dang_xu_ly_case_sts" xml:space="preserve">
+	<data name="dang_xu_ly_case_sts" xml:space="preserve">
     <value>Đang xử lý</value>
   </data>
-  <data name="dang_cho_case_sts" xml:space="preserve">
+	<data name="dang_cho_case_sts" xml:space="preserve">
     <value>Đang chờ</value>
   </data>
-  <data name="dang_cho_thong_tin_chi_tiet_case_sts" xml:space="preserve">
+	<data name="dang_cho_thong_tin_chi_tiet_case_sts" xml:space="preserve">
     <value>Đang chờ thông tin chi tiết</value>
   </data>
-  <data name="nghien_cuu_case_sts" xml:space="preserve">
+	<data name="nghien_cuu_case_sts" xml:space="preserve">
     <value>Nghiên cứu</value>
   </data>
-  <data name="van_de_da_duoc_giai_quyet_case_sts" xml:space="preserve">
+	<data name="van_de_da_duoc_giai_quyet_case_sts" xml:space="preserve">
     <value>Vấn đề đã được giải quyết</value>
   </data>
-  <data name="cung_cap_thong_tin_case_sts" xml:space="preserve">
+	<data name="cung_cap_thong_tin_case_sts" xml:space="preserve">
     <value>Cung cấp thông tin</value>
   </data>
 	<data name="da_huy_case_sts" xml:space="preserve">
     <value>Đã hủy</value>
   </data>
-  <data name="hop_nhat_case_sts" xml:space="preserve">
+	<data name="hop_nhat_case_sts" xml:space="preserve">
     <value>Hợp nhất</value>
   </data>
-  <data name="cau_hoi" xml:space="preserve">
+	<data name="cau_hoi" xml:space="preserve">
     <value>Câu hỏi</value>
   </data>
 	<data name="van_de" xml:space="preserve">
@@ -1059,37 +1059,37 @@
 	<data name="yeu_cau" xml:space="preserve">
     <value>Yêu cầu</value>
   </data>
-  <data name="chi_tiet_phan_hoi" xml:space="preserve">
+	<data name="chi_tiet_phan_hoi" xml:space="preserve">
     <value>Chi Tiết Phản Hồi</value>
   </data>
-  <data name="doi_tuong" xml:space="preserve">
+	<data name="doi_tuong" xml:space="preserve">
     <value>Đối tượng</value>
   </data>
-  <data name="thong_tin" xml:space="preserve">
+	<data name="thong_tin" xml:space="preserve">
     <value>Thông Tin</value>
   </data>
-  <data name="phan_hoi_lien_quan" xml:space="preserve">
+	<data name="phan_hoi_lien_quan" xml:space="preserve">
     <value>Phản Hồi Liên Quan</value>
   </data>
-  <data name="chu_de" xml:space="preserve">
+	<data name="chu_de" xml:space="preserve">
     <value>Chủ đề</value>
   </data>
-  <data name="phan_hoi_chinh" xml:space="preserve">
+	<data name="phan_hoi_chinh" xml:space="preserve">
     <value>Phản hồi chính</value>
   </data>
-  <data name="noi_dung" xml:space="preserve">
+	<data name="noi_dung" xml:space="preserve">
     <value>Nội dung</value>
   </data>
-  <data name="huy_phan_hoi" xml:space="preserve">
+	<data name="huy_phan_hoi" xml:space="preserve">
     <value>Hủy phản hồi</value>
   </data>
-  <data name="xac_nhan_huy_phan_hoi" xml:space="preserve">
+	<data name="xac_nhan_huy_phan_hoi" xml:space="preserve">
     <value>Xác nhận hủy phản hồi</value>
   </data>
-  <data name="thong_bao_thanh_cong" xml:space="preserve">
+	<data name="thong_bao_thanh_cong" xml:space="preserve">
     <value>Thành công.</value>
   </data>
-  <data name="thong_bao_that_bai" xml:space="preserve">
+	<data name="thong_bao_that_bai" xml:space="preserve">
     <value>Thất bại.</value>
   </data>
 	<data name="thanh_pho" xml:space="preserve">
@@ -1233,43 +1233,43 @@
 	<data name="phaseslanch_unit_recovery_sts" xml:space="preserve">
 <value>Unit Recovery</value>
 </data>
-  <data name="tao_phan_hoi" xml:space="preserve">
+	<data name="tao_phan_hoi" xml:space="preserve">
     <value>Tạo Phản hồi</value>
   </data>
-  <data name="chon_loai" xml:space="preserve">
+	<data name="chon_loai" xml:space="preserve">
     <value>Chọn loại</value>
   </data>
-  <data name="nhap_tieu_de" xml:space="preserve">
+	<data name="nhap_tieu_de" xml:space="preserve">
     <value>Nhập tiêu đề</value>
   </data>
-  <data name="chon_chu_de" xml:space="preserve">
+	<data name="chon_chu_de" xml:space="preserve">
     <value>Chọn chủ đề</value>
   </data>
-  <data name="chon_phan_hoi_lien_quan" xml:space="preserve">
+	<data name="chon_phan_hoi_lien_quan" xml:space="preserve">
     <value>Chọn phản hổi liên quan</value>
   </data>
-  <data name="chon_nguon" xml:space="preserve">
+	<data name="chon_nguon" xml:space="preserve">
     <value>Chọn nguồn</value>
   </data>
-  <data name="chon_khach_hang" xml:space="preserve">
+	<data name="chon_khach_hang" xml:space="preserve">
     <value>Chọn khách hàng</value>
   </data>
-  <data name="chon_san_pham" xml:space="preserve">
+	<data name="chon_san_pham" xml:space="preserve">
     <value>Chọn sản phẩm</value>
   </data>
-  <data name="nhap_noi_dung" xml:space="preserve">
+	<data name="nhap_noi_dung" xml:space="preserve">
     <value>Nhập nội dung</value>
   </data>
-  <data name="vui_long_chon_du_an" xml:space="preserve">
+	<data name="vui_long_chon_du_an" xml:space="preserve">
     <value>Vui lòng chọn dự án.</value>
   </data>
-  <data name="vui_long_chon_loai_phan_hoi" xml:space="preserve">
+	<data name="vui_long_chon_loai_phan_hoi" xml:space="preserve">
     <value>Vui lòng chọn loại phản hồi.</value>
   </data>
-  <data name="vui_long_nhap_tieu_de" xml:space="preserve">
+	<data name="vui_long_nhap_tieu_de" xml:space="preserve">
     <value>Vui lòng nhập tiêu đề.</value>
   </data>
-  <data name="tin_tuc_khuyen_mai" xml:space="preserve">
+	<data name="tin_tuc_khuyen_mai" xml:space="preserve">
     <value>Tin tức/Khuyến mãi</value>
   </data>
 	<data name="title_dot_mo_ban" xml:space="preserve">
@@ -1724,6 +1724,54 @@
   </data>
 	<data name="phuong_thuc_thanh_toan" xml:space="preserve">
     <value>Phương thức thanh toán</value>
+    </data>
+	<data name="lich_lam_viec" xml:space="preserve">
+    <value>Lịch Làm Việc</value>
+  </data>
+	<data name="lich_lam_viec_theo_thang" xml:space="preserve">
+    <value>Lịch làm việc theo tháng</value>
+  </data>
+	<data name="lich_lam_viec_theo_tuan" xml:space="preserve">
+    <value>Lịch làm việc theo tuần</value>
+  </data>
+	<data name="lich_lam_viec_theo_ngay" xml:space="preserve">
+    <value>Lịch làm việc theo ngày</value>
+  </data>
+	<data name="khong_tim_thay_lich_lam_viec" xml:space="preserve">
+    <value>Không tìm thấy lịch làm việc.</value>
+  </data>
+	<data name="vui_long_chon_thoi_gian_ket_thuc_lon_hon_thoi_gian_bat_dau" xml:space="preserve">
+    <value>Vui lòng chọn thời gian kết thúc lớn hơn thời gian bắt đầu.</value>
+  </data>
+	<data name="vui_long_chon_thoi_gian_bat_dau" xml:space="preserve">
+    <value>Vui lòng chọn thời gian bắt đầu.</value>
+  </data>
+	<data name="nguoi_tham_du_bat_buoc" xml:space="preserve">
+    <value>Người tham dự bắt buộc</value>
+  </data>
+	<data name="nguoi_tham_khong_du_bat_buoc" xml:space="preserve">
+    <value>Người tham dự không bắt buộc</value>
+  </data>
+	<data name="nguoi_lien_quan" xml:space="preserve">
+    <value>Người liên quan</value>
+  </data>
+	<data name="dia_diem" xml:space="preserve">
+    <value>Địa điểm</value>
+  </data>
+	<data name="su_kien_ca_ngay" xml:space="preserve">
+    <value>Sự kiện cả ngày</value>
+  </data>
+	<data name="chon_thoi_gian_bat_dau" xml:space="preserve">
+    <value>Chọn thời gian bắt đầu</value>
+  </data>
+	<data name="chon_thoi_gian_ket_thuc" xml:space="preserve">
+    <value>Chọn thời gian kết thúc</value>
+  </data>
+  <data name="cong_viec_hom_nay" xml:space="preserve">
+    <value>CÔNG VIỆC HÔM NAY</value>
+  </data>
+  <data name="hom_nay_khong_co_cong_vec" xml:space="preserve">
+    <value>Hôm nay không có công việc</value>
   </data>
 	<data name="kh_ca_nhan" xml:space="preserve">
     <value>KH Cá Nhân</value>
