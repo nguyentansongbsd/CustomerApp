@@ -97,6 +97,15 @@ namespace CustomerApp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Bậc thành viên.
+        /// </summary>
+        internal static string bac_thanh_vien {
+            get {
+                return ResourceManager.GetString("bac_thanh_vien", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Bạn.
         /// </summary>
         internal static string ban {
@@ -1123,6 +1132,15 @@ namespace CustomerApp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Đã giao dịch.
+        /// </summary>
+        internal static string da_giao_dich {
+            get {
+                return ResourceManager.GetString("da_giao_dich", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Đã hết hạn.
         /// </summary>
         internal static string da_het_han {
@@ -1888,6 +1906,24 @@ namespace CustomerApp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Hạng.
+        /// </summary>
+        internal static string hang {
+            get {
+                return ResourceManager.GetString("hang", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hạng (Dặc biệt).
+        /// </summary>
+        internal static string hang_dac_biet {
+            get {
+                return ResourceManager.GetString("hang_dac_biet", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Hết hạn.
         /// </summary>
         internal static string het_han {
@@ -2212,6 +2248,15 @@ namespace CustomerApp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Không có thông tin bảng tính giá..
+        /// </summary>
+        internal static string khong_co_thong_tin_bang_tinh_gia {
+            get {
+                return ResourceManager.GetString("khong_co_thong_tin_bang_tinh_gia", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Không tìm thấy sản phẩm..
         /// </summary>
         internal static string khong_tim_thay_san_pham {
@@ -2280,6 +2325,15 @@ namespace CustomerApp.Resources {
         internal static string ky_phieu_dat_coc_that_bai_vui_long_thu_lai {
             get {
                 return ResourceManager.GetString("ky_phieu_dat_coc_that_bai_vui_long_thu_lai", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Loyalty date.
+        /// </summary>
+        internal static string layalty_date {
+            get {
+                return ResourceManager.GetString("layalty_date", resourceCulture);
             }
         }
         
@@ -3904,6 +3958,15 @@ namespace CustomerApp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Sản phẩm đang ở trạng thái Reserve không thể tạo bảng tính giá..
+        /// </summary>
+        internal static string san_pham_dang_o_trang_thai_reserve_khong_the_tao_bang_tinh_gia {
+            get {
+                return ResourceManager.GetString("san_pham_dang_o_trang_thai_reserve_khong_the_tao_bang_tinh_gia", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Sản phẩm không thể tạo bảng tính giá..
         /// </summary>
         internal static string san_pham_khong_the_tao_bang_tinh_gia {
@@ -4696,6 +4759,33 @@ namespace CustomerApp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Tổng điểm bao gồm điều kiện.
+        /// </summary>
+        internal static string tong_diem_bao_gom_dieu_kien {
+            get {
+                return ResourceManager.GetString("tong_diem_bao_gom_dieu_kien", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tổng điểm điều kiện.
+        /// </summary>
+        internal static string tong_diem_dieu_kien {
+            get {
+                return ResourceManager.GetString("tong_diem_dieu_kien", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tổng điểm sở hữu.
+        /// </summary>
+        internal static string tong_diem_so_huu {
+            get {
+                return ResourceManager.GetString("tong_diem_so_huu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Tổng giá trị QSDĐ.
         /// </summary>
         internal static string tong_gia_tri_qsdd {
@@ -4732,6 +4822,24 @@ namespace CustomerApp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Tổng điểm giao dịch.
+        /// </summary>
+        internal static string tong_tien_giao_dich {
+            get {
+                return ResourceManager.GetString("tong_tien_giao_dich", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tổng tiền sở hữu.
+        /// </summary>
+        internal static string tong_tien_so_huu {
+            get {
+                return ResourceManager.GetString("tong_tien_so_huu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Tổng tiền thanh toán.
         /// </summary>
         internal static string tong_tien_thanh_toan {
@@ -4746,6 +4854,15 @@ namespace CustomerApp.Resources {
         internal static string tong_tien_thue_vat {
             get {
                 return ResourceManager.GetString("tong_tien_thue_vat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tổng tiền trong thời gian hiệu lực.
+        /// </summary>
+        internal static string tong_tien_trong_thoi_gian_hieu_luc {
+            get {
+                return ResourceManager.GetString("tong_tien_trong_thoi_gian_hieu_luc", resourceCulture);
             }
         }
         

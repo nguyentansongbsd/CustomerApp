@@ -318,25 +318,25 @@ namespace CustomerApp.Views
         private void EditQuotes(object sender, EventArgs e)
         {
             LoadingHelper.Show();
-            //ReservationForm reservation = new ReservationForm(this.ReservationId);
-            //reservation.CheckReservation = async (isSuccess) =>
-            //{
-            //    if (isSuccess == 0)
-            //    {
-            //        await Navigation.PushAsync(reservation);
-            //        LoadingHelper.Hide();
-            //    }
-            //    else if (isSuccess == 1)
-            //    {
-            //        LoadingHelper.Hide();
-            //        ToastMessageHelper.ShortMessage(Language.san_pham_dang_o_trang_thai_reserve_khong_the_tao_bang_tinh_gia);
-            //    }
-            //    else
-            //    {
-            //        LoadingHelper.Hide();
-            //        ToastMessageHelper.ShortMessage(Language.khong_co_thong_tin_bang_tinh_gia);
-            //    }
-            //};
+            ReservationForm reservation = new ReservationForm(this.ReservationId);
+            reservation.CheckReservation = async (isSuccess) =>
+            {
+                if (isSuccess == 0)
+                {
+                    await Navigation.PushAsync(reservation);
+                    LoadingHelper.Hide();
+                }
+                else if (isSuccess == 1)
+                {
+                    LoadingHelper.Hide();
+                    ToastMessageHelper.ShortMessage(Language.san_pham_dang_o_trang_thai_reserve_khong_the_tao_bang_tinh_gia);
+                }
+                else
+                {
+                    LoadingHelper.Hide();
+                    ToastMessageHelper.ShortMessage(Language.khong_co_thong_tin_bang_tinh_gia);
+                }
+            };
         }
 
         private async void CreatePaymentScheme(object sender, EventArgs e)

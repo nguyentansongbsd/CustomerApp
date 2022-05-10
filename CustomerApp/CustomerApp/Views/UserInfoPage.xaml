@@ -109,6 +109,37 @@
                             </BindableLayout.ItemTemplate>
                         </StackLayout>
                     </StackLayout>
+                    <!--Loyalty-->
+                    <StackLayout>
+                        <controls:TitleSection Text="{x:Static lang:Language.loyalty}" IsExpanded="True">
+                            <controls:TitleSection.Content>
+                                <StackLayout BackgroundColor="#f1f1f1f1" Spacing="1">
+                                    <controls:LabelField Title="{x:Static lang:Language.da_giao_dich}"
+                                                 Text="{Binding Loyalty.bsd_transacted_format}"/>
+                                    <controls:LabelField Title="{x:Static lang:Language.tong_tien_giao_dich}"
+                                                 Text="{Binding Loyalty.bsd_totaltransaction}"/>
+                                    <controls:LabelField Title="{x:Static lang:Language.bac_thanh_vien}"
+                                                 Text="{Binding Loyalty.bsd_membershiptier_name}"/>
+                                    <controls:LabelField Title="{x:Static lang:Language.tong_diem_so_huu}"
+                                                 Text="{Binding Loyalty.bsd_totalpointsofownership}"/>
+                                    <controls:LabelField Title="{x:Static lang:Language.tong_diem_bao_gom_dieu_kien}"
+                                                 Text="{Binding Loyalty.bsd_totalpointsincludecondition}"/>
+                                    <controls:LabelField Title="{x:Static lang:Language.tong_tien_trong_thoi_gian_hieu_luc}"
+                                                 Text="{Binding Loyalty.bsd_totalamountineffectivetime}"/>
+                                    <controls:LabelField Title="{x:Static lang:Language.tong_tien_so_huu}"
+                                                 Text="{Binding Loyalty.bsd_totalamountofownership}"/>
+                                    <controls:LabelField Title="{x:Static lang:Language.layalty_date}"
+                                                 Text="{Binding Loyalty.bsd_loyaltydate}"/>
+                                    <controls:LabelField Title="{x:Static lang:Language.hang}"
+                                                 Text="{Binding Loyalty.bsd_rankup_name}"/>
+                                    <controls:LabelField Title="{x:Static lang:Language.hang_dac_biet}"
+                                                 Text="{Binding Loyalty.bsd_rankupspecial_name}"/>
+                                    <controls:LabelField Title="{x:Static lang:Language.tong_diem_dieu_kien}"
+                                                 Text="{Binding Loyalty.bsd_totalpointsofcondition}"/>
+                                </StackLayout>
+                            </controls:TitleSection.Content>
+                        </controls:TitleSection>
+                    </StackLayout>
                 </StackLayout>
             </ScrollView>
             <StackLayout Padding="10" BackgroundColor="White" AbsoluteLayout.LayoutBounds="0,1,1,60" AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional">

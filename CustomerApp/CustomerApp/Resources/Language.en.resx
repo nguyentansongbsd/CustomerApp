@@ -1899,4 +1899,43 @@
 <data name="san_pham_khong_the_tao_bang_tinh_gia" xml:space="preserve">
     <value>Unit can't create quatation final.</value>
   </data>
+<data name="san_pham_dang_o_trang_thai_reserve_khong_the_tao_bang_tinh_gia" xml:space="preserve">
+    <value>The Units is in the "Reserve" stage. Failed to create a Quotation.</value>
+  </data>
+  <data name="khong_co_thong_tin_bang_tinh_gia" xml:space="preserve">
+    <value>No quotation information</value>
+  </data>
+	<data name="da_giao_dich" xml:space="preserve">
+    <value>Transacted</value>
+  </data>
+	<data name="tong_tien_giao_dich" xml:space="preserve">
+    <value>Total transaction</value>
+  </data>
+	<data name="bac_thanh_vien" xml:space="preserve">
+    <value>Membership tier</value>
+  </data>
+	<data name="tong_diem_so_huu" xml:space="preserve">
+    <value>Total points of ownership</value>
+  </data>
+	<data name="tong_diem_bao_gom_dieu_kien" xml:space="preserve">
+    <value>Total points (Include Condition)</value>
+  </data>
+	<data name="tong_tien_trong_thoi_gian_hieu_luc" xml:space="preserve">
+    <value>Total amount in effective time</value>
+  </data>
+	<data name="hang" xml:space="preserve">
+    <value>Rank up</value>
+  </data>
+	<data name="hang_dac_biet" xml:space="preserve">
+    <value>Rank up (Special)</value>
+  </data>
+	<data name="tong_diem_dieu_kien" xml:space="preserve">
+    <value>Total points of</value>
+  </data>
+	<data name="layalty_date" xml:space="preserve">
+    <value>Loyalty date</value>
+  </data>
+	<data name="tong_tien_so_huu" xml:space="preserve">
+    <value>Total amount of ownership</value>
+  </data>
 </root>
