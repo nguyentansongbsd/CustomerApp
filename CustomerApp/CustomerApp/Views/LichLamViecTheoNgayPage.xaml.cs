@@ -74,6 +74,11 @@ namespace CustomerApp.Views
             }
         }
 
+        private void CloseContentActivity_Tapped(object sender, EventArgs e)
+        {
+            ContentActivity.IsVisible = false;
+        }
+
         void Handle_DisplayDateChanged(object sender, Telerik.XamarinForms.Common.ValueChangedEventArgs<object> e)
         {
             viewModel.selectedDate = (DateTime)e.NewValue;
