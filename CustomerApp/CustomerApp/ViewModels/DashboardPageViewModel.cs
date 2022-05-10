@@ -14,6 +14,7 @@ namespace CustomerApp.ViewModels
 {
     public class DashboardPageViewModel : BaseViewModel
     {
+        public ObservableCollection<CalendarModel> DataEvents { get; set; } = new ObservableCollection<CalendarModel>();
         public ObservableCollection<ChartModel> DataMonthQueue { get; set; } = new ObservableCollection<ChartModel>();
         public ObservableCollection<ChartModel> DataMonthQuote { get; set; } = new ObservableCollection<ChartModel>();
         public ObservableCollection<ChartModel> DataMonthOptionEntry { get; set; } = new ObservableCollection<ChartModel>();
@@ -124,6 +125,7 @@ namespace CustomerApp.ViewModels
             this.DataMonthQueue.Add(chartThirdMonth);
             this.DataMonthQueue.Add(chartFourthMonth);
         }
+
         public async Task LoadQuoteFourMonths()
         {
             string fetchXml = $@"<fetch version='1.0' output-format='xml-platform' mapping='logical' distinct='false'>
@@ -167,6 +169,7 @@ namespace CustomerApp.ViewModels
             this.DataMonthQuote.Add(chartThirdMonth);
             this.DataMonthQuote.Add(chartFourthMonth);
         }
+
         public async Task LoadOptionEntryFourMonths()
         {
             // ngoại trừ các sts Terminated , 1st Installment, Option, Qualify, Signed D.A
@@ -214,6 +217,7 @@ namespace CustomerApp.ViewModels
             this.DataMonthOptionEntry.Add(chartThirdMonth);
             this.DataMonthOptionEntry.Add(chartFourthMonth);
         }
+
         public async Task LoadUnitFourMonths()
         {
             string fetchXml = $@"<fetch version='1.0' output-format='xml-platform' mapping='logical' distinct='false'>
@@ -271,6 +275,278 @@ namespace CustomerApp.ViewModels
                 LoadOptionEntryFourMonths(),
                 LoadUnitFourMonths()
                 );
+        }
+
+        public async Task LoadMeetings()
+        {
+            string fetch = $@"<fetch version='1.0' count='3' page='1' output-format='xml-platform' mapping='logical' distinct='false'>
+                              <entity name='appointment'>
+                                    <attribute name='subject' alias='Title'/>
+                                    <attribute name='statecode' alias='State'/>
+                                    <attribute name='activityid' alias='Id'/>
+                                    <attribute name='scheduledstart' alias='StartDate'/>
+                                    <attribute name='scheduledend' alias='EndDate' />
+                                    <order attribute='modifiedon' descending='true' />
+                                    <filter type='and'>
+                                      <condition attribute='isregularactivity' operator='eq' value='1' />
+                                      <condition attribute='bsd_customer' operator='eq' value='{UserLogged.Id}' />
+                                      <condition attribute='scheduledstart' operator='today' />
+                                    </filter>
+                              </entity>
+                            </fetch>";
+            var result = await CrmHelper.RetrieveMultiple<RetrieveMultipleApiResponse<CalendarModel>>("appointments", fetch);
+            var data = result.value;
+            if (data.Any())
+            {
+                foreach (var item in data)
+                {
+                    item.Type = CalendarType.Meeting;
+                    item.StartDate = item.StartDate.ToLocalTime();
+                    item.EndDate = item.EndDate.ToLocalTime();
+                    item.Color = Color.FromHex("#d3ffce"); //Light Green
+                    item.BackgroundColor = Color.White;
+                    DataEvents.Add(item);
+                }
+            }
+        }
+
+        public async Task LoadQueues()
+        {
+            string fetchXml = $@"<fetch version='1.0' count='3' page='1' output-format='xml-platform' mapping='logical' distinct='false'>
+                                  <entity name='opportunity'>
+                                    <attribute name='name' alias='Title'/>
+                                    <attribute name='statuscode' alias='State'/>
+                                    <attribute name='opportunityid' alias='Id'/>
+                                    <attribute name='bsd_queuingexpired' alias='EndDate'/>
+                                    <attribute name='bsd_bookingtime' alias='StartDate'/>
+                                    <order attribute='createdon' descending='true' />
+                                    <filter type='and'>
+                                      <condition attribute='bsd_prioritynumber' operator='null' />
+                                      <condition attribute='bsd_priorityqueue' operator='null' />
+                                      <condition attribute='bsd_queuingexpired' operator='not-null' />
+                                      <condition attribute='bsd_bookingtime' operator='not-null' />
+                                      <condition attribute='statuscode' operator='not-in'>
+                                        <value>4</value>
+                                        <value>100000003</value>
+                                      </condition>
+                                      <condition attribute='parentcontactid' operator='eq' value='{UserLogged.Id}'/>
+                                      <condition attribute='bsd_bookingtime' operator='today' />
+                                    </filter>
+                                  </entity>
+                                </fetch>";
+            var result = await CrmHelper.RetrieveMultiple<RetrieveMultipleApiResponse<CalendarModel>>("opportunities", fetchXml);
+            var data = result.value;
+            if (data.Any())
+            {
+                foreach (var item in data)
+                {
+                    item.Type = CalendarType.Booking;
+                    item.Color = Color.FromHex("#54C483");
+                    item.BackgroundColor = Color.White;
+                    item.StartDate = item.StartDate.ToLocalTime();
+                    item.EndDate = item.EndDate.ToLocalTime();
+                    this.DataEvents.Add(item);
+                }
+            }
+        }
+
+        public async Task LoadDeposits()
+        {
+            string fetchXml = $@"<fetch version='1.0' count='3' page='1' output-format='xml-platform' mapping='logical' distinct='false'>
+                                  <entity name='quote'>
+                                    <attribute name='name' alias='Title'/>
+                                    <attribute name='statuscode' alias='State'/>
+                                    <attribute name='quoteid' alias='ID'/>
+                                    <attribute name='createdon' alias='StartDate'/>
+                                    <order attribute='createdon' descending='true' />
+                                    <filter type='and'>
+                                      <condition attribute='statuscode' operator='eq' value='861450002' />
+                                      <condition attribute='statuscode' operator='ne' value='6' />
+                                      <condition attribute='createdon' operator='today' />
+                                    </filter>
+                                    <link-entity name='contactquotes' from='quoteid' to='quoteid' visible='false' intersect='true'>
+                                      <link-entity name='contact' from='contactid' to='contactid' alias='aa'>
+                                        <filter type='and'>
+                                          <condition attribute='contactid' operator='eq' value='{UserLogged.Id}'/>
+                                        </filter>
+                                      </link-entity>
+                                    </link-entity>
+                                  </entity>
+                                </fetch>";
+            var result = await CrmHelper.RetrieveMultiple<RetrieveMultipleApiResponse<CalendarModel>>("quotes", fetchXml);
+            var data = result.value;
+            if (data.Any())
+            {
+                foreach (var item in data)
+                {
+                    item.Type = CalendarType.Deposit;
+                    item.StartDate = item.StartDate.ToLocalTime();
+                    item.EndDate = item.StartDate.ToLocalTime();
+                    item.Color = Color.FromHex("#FA7901");
+                    item.BackgroundColor = Color.White;
+                    DataEvents.Add(item);
+                }
+            }
+        }
+
+        public async Task LoadInstallments()
+        {
+            string fetchXml = $@"<fetch version='1.0' count='3' page='1' output-format='xml-platform' mapping='logical' distinct='false'>
+                                  <entity name='bsd_paymentschemedetail'>
+                                    <attribute name='bsd_paymentschemedetailid' alias='Id'/>
+                                    <attribute name='bsd_name' alias='Title' />
+                                    <attribute name='createdon' />
+                                    <attribute name='bsd_duedate' alias='StartDate'/>
+                                    <attribute name='statuscode' alias='State'/>
+                                    <order attribute='bsd_name' descending='false' />
+                                    <filter type='and'>
+                                      <condition attribute='statuscode' operator='eq' value='100000000' />
+                                      <condition attribute='bsd_duedate' operator='today' />
+                                    </filter>
+                                    <link-entity name='salesorder' from='salesorderid' to='bsd_optionentry' link-type='inner' alias='ah'>
+                                      <link-entity name='contactorders' from='salesorderid' to='salesorderid' visible='false' intersect='true'>
+                                        <link-entity name='contact' from='contactid' to='contactid' alias='ai'>
+                                          <filter type='and'>
+                                            <condition attribute='contactid' operator='eq' value='{UserLogged.Id}'/>
+                                          </filter>
+                                        </link-entity>
+                                      </link-entity>
+                                    </link-entity>
+                                  </entity>
+                                </fetch>";
+            var result = await CrmHelper.RetrieveMultiple<RetrieveMultipleApiResponse<CalendarModel>>("bsd_paymentschemedetails", fetchXml);
+            var data = result.value;
+            if (data.Any())
+            {
+                foreach (var item in data)
+                {
+                    item.Type = CalendarType.Installment;
+                    item.StartDate = item.StartDate.ToLocalTime();
+                    item.EndDate = item.StartDate.ToLocalTime();
+                    item.Color = Color.FromHex("#f79364");
+                    item.BackgroundColor = Color.White;
+                    DataEvents.Add(item);
+                }
+            }
+        }
+
+        public async Task LoadDepositsSigning()
+        {
+            string fetchXml = $@"<fetch version='1.0' count='3' page='1' output-format='xml-platform' mapping='logical' distinct='false'>
+                                  <entity name='quote'>
+                                    <attribute name='name' alias='Title'/>
+                                    <attribute name='statuscode' alias='State'/>
+                                    <attribute name='quoteid' alias='ID'/>
+                                    <attribute name='createdon' alias='StartDate'/>
+                                    <order attribute='createdon' descending='true' />
+                                    <filter type='and'>
+                                      <condition attribute='statuscode' operator='eq' value='861450002' />
+                                      <condition attribute='statuscode' operator='ne' value='6' />
+                                      <condition attribute='bsd_quotationprinteddate' operator='not-null' />
+                                      <condition attribute='bsd_quotationsigneddate' operator='null' />
+                                      <condition attribute='createdon' operator='today' />
+                                    </filter>
+                                    <link-entity name='contactquotes' from='quoteid' to='quoteid' visible='false' intersect='true'>
+                                      <link-entity name='contact' from='contactid' to='contactid' alias='aa'>
+                                        <filter type='and'>
+                                          <condition attribute='contactid' operator='eq' value='{UserLogged.Id}'/>
+                                        </filter>
+                                      </link-entity>
+                                    </link-entity>
+                                  </entity>
+                                </fetch>";
+            var result = await CrmHelper.RetrieveMultiple<RetrieveMultipleApiResponse<CalendarModel>>("quotes", fetchXml);
+            var data = result.value;
+            if (data.Any())
+            {
+                foreach (var item in data)
+                {
+                    item.Type = CalendarType.Deposit;
+                    item.StartDate = item.StartDate.ToLocalTime();
+                    item.EndDate = item.StartDate.ToLocalTime();
+                    item.Color = Color.FromHex("#FA7901");
+                    item.BackgroundColor = Color.White;
+                    DataEvents.Add(item);
+                }
+            }
+        }
+
+        public async Task LoadDepositAgreement()
+        {
+            string fetchXml = $@"<fetch version='1.0' count='3' page='1' output-format='xml-platform' mapping='logical' distinct='false'>
+                                  <entity name='salesorder'>
+                                    <attribute name='name' alias='Title'/>
+                                    <attribute name='statuscode' alias='State'/>
+                                    <attribute name='createdon' alias='StartDate'/>
+                                    <attribute name='salesorderid' alias='Id'/>
+                                    <order attribute='createdon' descending='true' />
+                                    <filter type='and'>
+                                      <condition attribute='bsd_agreementdate' operator='not-null' />
+                                      <condition attribute='bsd_signeddadate' operator='null' />
+                                      <condition attribute='createdon' operator='today' />
+                                    </filter>
+                                    <link-entity name='contactorders' from='salesorderid' to='salesorderid' visible='false' intersect='true'>
+                                      <link-entity name='contact' from='contactid' to='contactid' alias='aa'>
+                                        <filter type='and'>
+                                          <condition attribute='contactid' operator='eq' value='{UserLogged.Id}' />
+                                        </filter>
+                                      </link-entity>
+                                    </link-entity>
+                                  </entity>
+                                </fetch>";
+            var result = await CrmHelper.RetrieveMultiple<RetrieveMultipleApiResponse<CalendarModel>>("salesorders", fetchXml);
+            var data = result.value;
+            if (data.Any())
+            {
+                foreach (var item in data)
+                {
+                    item.Type = CalendarType.Contract;
+                    item.StartDate = item.StartDate.ToLocalTime();
+                    item.EndDate = item.StartDate.ToLocalTime();
+                    item.Color = Color.FromHex("#6897BB");
+                    item.BackgroundColor = Color.White;
+                    DataEvents.Add(item);
+                }
+            }
+        }
+
+        public async Task LoadContracts()
+        {
+            string fetchXml = $@"<fetch version='1.0' count='3' page='1' output-format='xml-platform' mapping='logical' distinct='false'>
+                                  <entity name='salesorder'>
+                                    <attribute name='name' alias='Title'/>
+                                    <attribute name='statuscode' alias='State'/>
+                                    <attribute name='createdon' alias='StartDate'/>
+                                    <attribute name='salesorderid' alias='Id'/>
+                                    <order attribute='createdon' descending='true' />
+                                    <filter type='and'>
+                                      <condition attribute='bsd_contractprinteddate' operator='not-null' />
+                                      <condition attribute='bsd_signedcontractdate' operator='null' />
+                                      <condition attribute='createdon' operator='today' />
+                                    </filter>
+                                    <link-entity name='contactorders' from='salesorderid' to='salesorderid' visible='false' intersect='true'>
+                                      <link-entity name='contact' from='contactid' to='contactid' alias='aa'>
+                                        <filter type='and'>
+                                          <condition attribute='contactid' operator='eq' value='{UserLogged.Id}' />
+                                        </filter>
+                                      </link-entity>
+                                    </link-entity>
+                                  </entity>
+                                </fetch>";
+            var result = await CrmHelper.RetrieveMultiple<RetrieveMultipleApiResponse<CalendarModel>>("salesorders", fetchXml);
+            var data = result.value;
+            if (data.Any())
+            {
+                foreach (var item in data)
+                {
+                    item.Type = CalendarType.Contract;
+                    item.StartDate = item.StartDate.ToLocalTime();
+                    item.EndDate = item.StartDate.ToLocalTime();
+                    item.Color = Color.FromHex("#A0DB8E");
+                    item.BackgroundColor = Color.White;
+                    DataEvents.Add(item);
+                }
+            }
         }
     }
 }

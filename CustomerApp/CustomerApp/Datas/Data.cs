@@ -144,6 +144,9 @@ namespace CustomerApp.Datas
                 new StatusCodeModel("100000002",Language.queue_waiting_sts,"#FDC206"),
                 new StatusCodeModel("100000003",Language.queue_expired_sts,"#B3B3B3"),
                 new StatusCodeModel("100000004",Language.queue_completed_sts,"#C50147"),
+                new StatusCodeModel("100000008","Xác nhận hủy","#C50147"),
+                new StatusCodeModel("100000009","Hủy giữ chỗ nhưng chưa hoàn tiền","#C50147"),
+                new StatusCodeModel("100000010","Hủy giữ chỗ đã hoàn tiền","#C50147"),
                 new StatusCodeModel("0","","#808080")
             };
         }
