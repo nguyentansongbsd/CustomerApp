@@ -314,25 +314,26 @@ namespace CustomerApp.Views
 
         private void BangTinhGia_Clicked(object sender, EventArgs e)
         {
-            //LoadingHelper.Show();
-            //ReservationForm reservationForm = new ReservationForm(viewModel.Unit.productid, null, null, null, null);
-            //reservationForm.CheckReservation = async (isSuccess) => {
-            //    if (isSuccess == 0)
-            //    {
-            //        await Navigation.PushAsync(reservationForm);
-            //        LoadingHelper.Hide();
-            //    }
-            //    else if (isSuccess == 1)
-            //    {
-            //        LoadingHelper.Hide();
-            //        ToastMessageHelper.ShortMessage(Language.san_pham_khong_the_tao_bang_tinh_gia);
-            //    }
-            //    else
-            //    {
-            //        LoadingHelper.Hide();
-            //        ToastMessageHelper.ShortMessage(Language.khong_tim_thay_san_pham);
-            //    }
-            //};
+            LoadingHelper.Show();
+            ReservationForm reservationForm = new ReservationForm(viewModel.Unit.productid, null, null, null, null);
+            reservationForm.CheckReservation = async (isSuccess) =>
+            {
+                if (isSuccess == 0)
+                {
+                    await Navigation.PushAsync(reservationForm);
+                    LoadingHelper.Hide();
+                }
+                else if (isSuccess == 1)
+                {
+                    LoadingHelper.Hide();
+                    ToastMessageHelper.ShortMessage(Language.san_pham_khong_the_tao_bang_tinh_gia);
+                }
+                else
+                {
+                    LoadingHelper.Hide();
+                    ToastMessageHelper.ShortMessage(Language.khong_tim_thay_san_pham);
+                }
+            };
         }
 
         private void GiuChoItem_Tapped(object sender, EventArgs e)

@@ -235,16 +235,16 @@ namespace CustomerApp.ViewModels
                 NumUnit = data.Count;
                 ChuanBi = data.Where(x => x.statuscode == 1).Count();
                 SanSang = data.Where(x => x.statuscode == 100000000).Count();
-                GiuCho = data.Where(x => x.statuscode == 100000004).Count();
-                DatCoc = data.Where(x => x.statuscode == 100000006).Count();
-                DongYChuyenCoc = data.Where(x => x.statuscode == 100000005).Count();
-                DaDuTienCoc = data.Where(x => x.statuscode == 100000003).Count();
-                ThanhToanDot1 = data.Where(x => x.statuscode == 100000001).Count();
                 DaBan = data.Where(x => x.statuscode == 100000002).Count();
-                Booking = data.Where(x => x.statuscode == 100000007).Count();
-                Option = data.Where(x => x.statuscode == 100000010).Count();
-                SignedDA = data.Where(x => x.statuscode == 100000009).Count();
-                Qualified = data.Where(x => x.statuscode == 100000008).Count();
+                GiuCho = data.Where(x => x.statuscode == 100000004).Count();
+                //DatCoc = data.Where(x => x.statuscode == 100000006).Count();
+                //DongYChuyenCoc = data.Where(x => x.statuscode == 100000005).Count();
+                //DaDuTienCoc = data.Where(x => x.statuscode == 100000003).Count();
+                //ThanhToanDot1 = data.Where(x => x.statuscode == 100000001).Count();
+                //Booking = data.Where(x => x.statuscode == 100000007).Count();
+                //Option = data.Where(x => x.statuscode == 100000010).Count();
+                //SignedDA = data.Where(x => x.statuscode == 100000009).Count();
+                //Qualified = data.Where(x => x.statuscode == 100000008).Count();
             }
 
             unitChartModels = new List<ChartModel>()
