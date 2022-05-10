@@ -1724,5 +1724,53 @@
   </data>
 	<data name="phuong_thuc_thanh_toan" xml:space="preserve">
     <value>Payment scheme</value>
+    </data>
+  <data name="lich_lam_viec" xml:space="preserve">
+    <value>Work schedule</value>
+  </data>
+  <data name="lich_lam_viec_theo_thang" xml:space="preserve">
+    <value>Working schedule by month</value>
+  </data>
+  <data name="lich_lam_viec_theo_tuan" xml:space="preserve">
+    <value>Working schedule by week</value>
+  </data>
+	<data name="lich_lam_viec_theo_ngay" xml:space="preserve">
+    <value>Working schedule by day</value>
+  </data>
+  <data name="khong_tim_thay_lich_lam_viec" xml:space="preserve">
+    <value>Couldn't find Work schedule.</value>
+  </data>
+  <data name="vui_long_chon_thoi_gian_ket_thuc_lon_hon_thoi_gian_bat_dau" xml:space="preserve">
+    <value>The end time must be greater than the start time.</value>
+  </data>
+  <data name="vui_long_chon_thoi_gian_bat_dau" xml:space="preserve">
+    <value>Please choose start date.</value>
+  </data>
+  <data name="nguoi_tham_du_bat_buoc" xml:space="preserve">
+    <value>Required</value>
+  </data>
+	<data name="nguoi_tham_khong_du_bat_buoc" xml:space="preserve">
+    <value>Optional</value>
+  </data>
+	<data name="nguoi_lien_quan" xml:space="preserve">
+    <value>Regarding</value>
+  </data>
+	<data name="dia_diem" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="su_kien_ca_ngay" xml:space="preserve">
+    <value>Event all day</value>
+  </data>
+  <data name="chon_thoi_gian_bat_dau" xml:space="preserve">
+    <value>Choose start time</value>
+  </data>
+	<data name="chon_thoi_gian_ket_thuc" xml:space="preserve">
+    <value>Choose end time</value>
+  </data>
+  <data name="cong_viec_hom_nay" xml:space="preserve">
+    <value>TODAY'S WORK</value>
+  </data>
+  <data name="hom_nay_khong_co_cong_vec" xml:space="preserve">
+    <value>No work today</value>
   </data>
 </root>

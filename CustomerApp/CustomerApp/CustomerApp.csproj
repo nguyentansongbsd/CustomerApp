@@ -139,5 +139,8 @@
     <Compile Update="Views\CaseDetailPage.xaml.cs">
       <DependentUpon>CaseDetailPage.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Views\LichLamViecTheoTuanPage.xaml.cs">
+      <DependentUpon>LichLamViecTheoTuanPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 </Project>
