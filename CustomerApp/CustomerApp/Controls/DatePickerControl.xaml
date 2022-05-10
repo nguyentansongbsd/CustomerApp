@@ -4,6 +4,7 @@
              xmlns:telerikInput="clr-namespace:Telerik.XamarinForms.Input;assembly=Telerik.XamarinForms.Input"
              x:Name="this"
              xmlns:lang="clr-namespace:CustomerApp.Resources" 
+             x:Name="this" 
              x:Class="CustomerApp.Controls.DatePickerControl">
     <ContentView.Resources>
         <ResourceDictionary>

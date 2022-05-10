@@ -1773,4 +1773,178 @@
   <data name="hom_nay_khong_co_cong_vec" xml:space="preserve">
     <value>No work today</value>
   </data>
+	<data name="kh_ca_nhan" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+	<data name="kh_doanh_nghiep" xml:space="preserve">
+    <value>Account</value>
+  </data>
+	<data name="kh_tiem_nang" xml:space="preserve">
+    <value>Lead</value>
+  </data>
+	<data name="giu_nguyen" xml:space="preserve">
+    <value>Unchanged</value>
+  </data>
+	<data name="gop_dau" xml:space="preserve">
+    <value>Merge at the beginning</value>
+  </data>
+	<data name="gop_cuoi" xml:space="preserve">
+    <value>Merge at the end</value>
+  </data>
+	<data name="da_co_lich_thanh_toan_khong_duoc_chinh_sua" xml:space="preserve">
+    <value>Editing that changes the transaction value is not allowed because the transaction has been created with a Payment Schedule.</value>
+  </data>
+	<data name="khong_co_chiet_khau" xml:space="preserve">
+    <value>No discounts</value>
+  </data>
+	<data name="dieu_kien_ban_giao_khong_phu_hop_voi_unit_type" xml:space="preserve">
+    <value>Handover Condition is not suitable with Unit type. Please check again or choose another handover condition.</value>
+  </data>
+	<data name="ban_co_chan_chan_muon_thay_doi_pttt" xml:space="preserve">
+    <value>Bạn có chắc chắn muốn thay đổi PTTT?</value>
+  </data>
+	<data name="ban_dang_tich_chon_chieu_khau_theo_pttt_ban_co_chac_chan_muon_thay_doi_pttt_nay" xml:space="preserve">
+    <value>Bạn đang tích chọn chiết khấu theo PTTT, bạn có chắc chắn muốn thay đổi PTTT này?</value>
+  </data>
+	<data name="them_khuyen_mai_thanh_cong" xml:space="preserve">
+    <value>Create promotion successed.</value>
+  </data>
+	<data name="ban_co_muon_xoa_khuyen_mai_khong" xml:space="preserve">
+    <value>Do you want to delete this promotions?</value>
+  </data>
+	<data name="xao_khuyen_mai_thanh_cong" xml:space="preserve">
+    <value>Delete promotion successed.</value>
+  </data>
+	<data name="ban_co_muon_xoa_nguoi_dong_so_huu_nay_khong" xml:space="preserve">
+    <value>Do you want to delete this co-owners?</value>
+  </data>
+	<data name="xoa_nguou_dong_so_huu_thanh_cong" xml:space="preserve">
+    <value>Delete co-owner successed.</value>
+  </data>
+	<data name="cap_nhat_dong_so_huu" xml:space="preserve">
+    <value>Update Co-owner</value>
+  </data>
+	<data name="vui_long_chon_quan_he" xml:space="preserve">
+    <value>Please choose relationship.</value>
+  </data>
+	<data name="khach_hang_khong_duoc_trung_voi_nguoi_mua" xml:space="preserve">
+    <value>Customer and Purchaser are duplicated. Please check again.</value>
+  </data>
+	<data name="khach_hang_da_duoc_chon" xml:space="preserve">
+    <value>Customer has been seleted.</value>
+  </data>
+	<data name="them_dong_so_huu_thanh_cong" xml:space="preserve">
+    <value>Create co-owner successed.</value>
+  </data>
+	<data name="cap_nhat_dong_so_huu_thanh_cong" xml:space="preserve">
+    <value>Update co-owner successed.</value>
+  </data>
+	<data name="vui_long_chon_khach_hang" xml:space="preserve">
+    <value>Please choose customer.</value>
+  </data>
+	<data name="nguoi_mua_khong_duoc_trung_voi_dai_ly_san_giao_dich_vui_long_chon_lai" xml:space="preserve">
+    <value>Purchaser and Sales agent company are duplicated. Please check again.</value>
+  </data>
+	<data name="khach_hang_coower_va_khach_hang_khong_duoc_trung" xml:space="preserve">
+    <value>Co-Owner and Customer are duplicated. Please check again.</value>
+  </data>
+	<data name="dai_ly_san_giao_dich_khong_duoc_trung_voi_nguoi_mua_vui_long_chon_lai" xml:space="preserve">
+    <value>Sales Agent Company and Purchaser are duplicated. Please check again.</value>
+  </data>
+	<data name="cong_tac_vien_khong_duoc_trung_voi_nguoi_mua_vui_long_chon_lai" xml:space="preserve">
+    <value>Collaborator and Purchaser are duplicated. Please check again.</value>
+  </data>
+	<data name="khach_hang_gioi_thieu_khong_duoc_trung_voi_nguoi_mua_vui_long_chon_lai" xml:space="preserve">
+    <value>Customer Referral and Purchaser are duplicated. Please check again.</value>
+  </data>
+	<data name="vui_long_chon_dieu_kien_ban_giao" xml:space="preserve">
+    <value>Please choose handover condition.</value>
+  </data>
+	<data name="vui_long_chon_phuong_thuc_thanh_toan" xml:space="preserve">
+    <value>Please choose payment scheme.</value>
+  </data>
+	<data name="vui_long_chon_ngay_bat_dau_tinh_ltt" xml:space="preserve">
+    <value>Please choose Starting date calculate of PS.</value>
+  </data>
+	<data name="cap_nhat_thanh_cong" xml:space="preserve">
+    <value>Update successed.</value>
+  </data>
+	<data name="cap_nhat_that_bai" xml:space="preserve">
+    <value>Update failed.</value>
+  </data>
+<data name="tao_bang_tinh_gia" xml:space="preserve">
+    <value>Create Quation</value>
+  </data>
+<data name="them_nguoi_dong_so_huu" xml:space="preserve">
+    <value>Create co-owner</value>
+  </data>
+  <data name="chon_dieu_kien_ban_giao" xml:space="preserve">
+    <value>Choose handover condition</value>
+  </data>
+  <data name="chon_phuong_thuc_thanh_toan" xml:space="preserve">
+    <value>Choose payment scheme</value>
+  </data>
+  <data name="loai_gop_dot" xml:space="preserve">
+    <value>Payment schemes type</value>
+  </data>
+  <data name="chon_loai_gop_dot" xml:space="preserve">
+    <value>Choose payment schemes type</value>
+  </data>
+  <data name="ngay_bat_dau_tinh_ltt" xml:space="preserve">
+    <value>Starting date calculate of PS</value>
+  </data>
+  <data name="khong_ap_dung" xml:space="preserve">
+    <value>Do not apply</value>
+  </data>
+<data name="het_han" xml:space="preserve">
+    <value>Expired</value>
+  </data>
+<data name="chon_quan_he" xml:space="preserve">
+    <value>Choose relationship</value>
+  </data>
+  <data name="thong_tin_phi_quan_ly" xml:space="preserve">
+    <value>M.F Information</value>
+  </data>
+  <data name="gia_ban_sau_thue" xml:space="preserve">
+    <value>Net selling price (After VAT)</value>
+  </data>
+  <data name="tong_tien_thue_vat" xml:space="preserve">
+    <value>Total VAT Tax</value>
+  </data>
+  <data name="tong_tien_dkbg" xml:space="preserve">
+    <value>Handover condition amount</value>
+  </data>
+  <data name="gia_ban_goc" xml:space="preserve">
+    <value>Listed price</value>
+  </data>
+  <data name="chon_dai_ly_san_giao_dich" xml:space="preserve">
+    <value>Choose sale agent company</value>
+  </data>
+<data name="chon_chiet_khau_chung" xml:space="preserve">
+    <value>Choose discount</value>
+  </data>
+  <data name="chon_chiet_khau_noi_bo" xml:space="preserve">
+    <value>Choose internal discount</value>
+  </data>
+  <data name="them_khuyen_mai" xml:space="preserve">
+    <value>Chooese Promotions</value>
+  </data>
+  <data name="chon_chiet_khau_quy_doi" xml:space="preserve">
+    <value>Choose exchange discount</value>
+  </data>
+  <data name="chon_giu_cho" xml:space="preserve">
+    <value>Choose queue</value>
+  </data>
+  <data name="thong_tin_bao_gia" xml:space="preserve">
+    <value>Quotation Information</value>
+  </data>
+  <data name="chon_khuyen_mai" xml:space="preserve">
+    <value>Choose promotions</value>
+  </data>
+  <data name="them_dong_so_huu" xml:space="preserve">
+    <value>Create Co-owner</value>
+  </data>
+<data name="san_pham_khong_the_tao_bang_tinh_gia" xml:space="preserve">
+    <value>Unit can't create quatation final.</value>
+  </data>
 </root>
