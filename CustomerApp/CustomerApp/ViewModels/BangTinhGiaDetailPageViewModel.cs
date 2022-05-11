@@ -1,6 +1,7 @@
 ﻿using CustomerApp.Datas;
 using CustomerApp.Helper;
 using CustomerApp.Models;
+using CustomerApp.Settings;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -807,6 +808,57 @@ namespace CustomerApp.ViewModels
             foreach (var x in result.value)
             {
                 Discount.distcount_list.Add(x);
+            }
+        }
+        // ful
+        public async Task<Guid> FULTerminate()
+        {
+            var fulid = Guid.NewGuid();
+
+            IDictionary<string, object> data = new Dictionary<string, object>();
+            data["bsd_followuplistid"] = fulid;
+            if (Reservation.project_id != Guid.Empty)
+            {
+                data["bsd_project@odata.bind"] = "/bsd_projects(" + Reservation.project_id + ")";
+            }
+
+            data["bsd_group"] = 100000000;
+            // parameters["bsd_date"] = new Date().toISOString();
+
+            if (Reservation.statuscode == 3) //Deposted
+                data["bsd_type"] = 100000005; //Reservation terminate
+            else if (Reservation.statuscode == 100000006 || Reservation.statuscode == 100000004) // Collected || Signed RS
+                data["bsd_type"] = 100000001; // Reservation Deposited
+            else if (Reservation.bsd_reservationformstatus == 100000001) // Prinetd RS
+                data["bsd_type"] = 100000000; //Sign off RS
+            else if (Reservation.statuscode == 100000000) 
+                data["bsd_type"] = 100000000; //Sign off RS
+
+            data["bsd_reservation@odata.bind"] = "/quotes(" + Reservation.quoteid + ")";
+            // chưa rõ cách đặt tên
+            //data["bsd_name"] = Reservation.name;
+            if (Reservation.unit_id != Guid.Empty)
+            {
+                data["bsd_Units@odata.bind"] = "/products(" + Reservation.unit_id + ")";
+            }
+            if (UserLogged.ManagerId != Guid.Empty)
+            {
+                data["ownerid@odata.bind"] = "/systemusers(" + UserLogged.ManagerId + ")";
+            }
+
+            //data["bsd_sellingprice"] = Reservation.totalamount;
+            //data["bsd_totalamount"] = Reservation.totalamount;
+            //data["bsd_totalamountpaid"] = Reservation.bsd_totalamountpaid;
+
+            string path = "/bsd_followuplists";
+            CrmApiResponse result = await CrmHelper.PostData(path, data);
+            if (result.IsSuccess)
+            {
+                return fulid;
+            }
+            else
+            {
+                return Guid.Empty;
             }
         }
     }

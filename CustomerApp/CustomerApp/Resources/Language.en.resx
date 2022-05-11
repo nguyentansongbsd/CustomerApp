@@ -1938,4 +1938,13 @@
 	<data name="tong_tien_so_huu" xml:space="preserve">
     <value>Total amount of ownership</value>
   </data>
+	<data name="de_nghi_thanh_ly" xml:space="preserve">
+    <value>FUL (Terminate)</value>
+  </data>
+	<data name="de_nghi_thanh_ly_that_bai" xml:space="preserve">
+    <value>Failed to FUL (Terminate).</value>
+  </data>
+	<data name="da_tao_danh_sach_theo_doi" xml:space="preserve">
+    <value>Follow up list created successfully.</value>
+  </data>
 </root>

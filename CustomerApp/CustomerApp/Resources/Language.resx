@@ -1941,4 +1941,13 @@
 	<data name="tong_tien_so_huu" xml:space="preserve">
     <value>Tổng tiền sở hữu</value>
   </data>
+	<data name="de_nghi_thanh_ly" xml:space="preserve">
+    <value>Đề nghị thanh lý</value>
+  </data>
+	<data name="de_nghi_thanh_ly_that_bai" xml:space="preserve">
+    <value>Đề nghị thanh lý thất bại.</value>
+  </data>
+	<data name="da_tao_danh_sach_theo_doi" xml:space="preserve">
+    <value>Đã tạo danh sách theo dõi.</value>
+  </data>
 </root>

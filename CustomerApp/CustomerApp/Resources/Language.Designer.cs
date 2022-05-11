@@ -1177,6 +1177,15 @@ namespace CustomerApp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Đã tạo danh sách theo dõi..
+        /// </summary>
+        internal static string da_tao_danh_sach_theo_doi {
+            get {
+                return ResourceManager.GetString("da_tao_danh_sach_theo_doi", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Đã thanh toán.
         /// </summary>
         internal static string da_thanh_toan {
@@ -1380,6 +1389,24 @@ namespace CustomerApp.Resources {
         internal static string ddktsp {
             get {
                 return ResourceManager.GetString("ddktsp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Đề nghị thanh lý.
+        /// </summary>
+        internal static string de_nghi_thanh_ly {
+            get {
+                return ResourceManager.GetString("de_nghi_thanh_ly", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Đề nghị thanh lý thất bại..
+        /// </summary>
+        internal static string de_nghi_thanh_ly_that_bai {
+            get {
+                return ResourceManager.GetString("de_nghi_thanh_ly_that_bai", resourceCulture);
             }
         }
         
