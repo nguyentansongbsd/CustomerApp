@@ -11,7 +11,8 @@
        xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
        ios:Page.UseSafeArea="true"
        Shell.BackgroundColor="{StaticResource NavigationPrimary}"
-       Shell.TabBarIsVisible="False" Shell.TitleColor="White" FlyoutHeaderBehavior="Fixed" FlyoutBackdrop="#C0808080" ForegroundColor="White"
+       Shell.TabBarIsVisible="False" Shell.TitleColor="White"
+       FlyoutHeaderBehavior="Fixed" FlyoutBackdrop="#C0808080" ForegroundColor="White"
        x:Class="CustomerApp.AppShell">
     <Shell.Resources>
         <ResourceDictionary>
@@ -72,12 +73,14 @@
                 <FontImageSource FontFamily="FontAwesomeSolid" Color="#7D7D7D" Glyph="&#xf07c;" Size="18"/>
             </ShellContent.Icon>
         </ShellContent>
+    </FlyoutItem>
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
         <ShellContent Title="{x:Static lang:Language.phan_hoi}" ContentTemplate="{DataTemplate views:CasesPage}">
             <ShellContent.Icon>
                 <FontImageSource FontFamily="FontAwesomeSolid" Color="#7D7D7D" Glyph="&#xf086;" Size="18"/>
             </ShellContent.Icon>
         </ShellContent>
-        <ShellContent Title="{x:Static lang:Language.lich}" ContentTemplate="{DataTemplate views:DashboardPage}">
+        <ShellContent Title="{x:Static lang:Language.lich}" ContentTemplate="{DataTemplate views:LichLamViecPage}">
             <ShellContent.Icon>
                 <FontImageSource FontFamily="FontAwesomeSolid" Color="#7D7D7D" Glyph="&#xf073;" Size="18"/>
             </ShellContent.Icon>
@@ -87,7 +90,6 @@
                 <FontImageSource FontFamily="FontAwesomeSolid" Color="#7D7D7D" Glyph="&#xf1ea;" Size="18"/>
             </ShellContent.Icon>
         </ShellContent>
-        
     </FlyoutItem>
     <MenuItem Text="{x:Static lang:Language.dang_xuat}" Clicked="Logout_Clicked">
         <MenuItem.IconImageSource>
